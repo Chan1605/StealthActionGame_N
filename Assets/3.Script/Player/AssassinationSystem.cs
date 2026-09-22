@@ -108,6 +108,12 @@ public class AssassinationSystem : MonoBehaviour
             return;
         }
 
+        // 문서를 읽는 중(또는 방금 닫은 프레임)의 E 입력으로 암살이 나가지 않게 막는다.
+        if (UI_DocumentViewer.IsBlockingInput)
+        {
+            return;
+        }
+
         TakedownVictim victim = FindVictim();
         if (victim == null)
         {
