@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CorpseContainerObject : MonoBehaviour, IInteractable
+public class CorpseContainerObject : MonoBehaviour, IInteractable, ICompletionState
 {
     [Header("Debug")]
     [SerializeField] private bool isDebugLog = false;
@@ -50,6 +50,17 @@ public class CorpseContainerObject : MonoBehaviour, IInteractable
         }
     }
 
+    private bool _isTracking;
+    private bool _isCompleted;
+
+    //  미션 차례 전에 숨겼어도 기록은 남는다
+    public bool IsCompleted
+    {
+        get { return _isCompleted; }
+    }
+
+
+
     private void Awake()
     {
         TryGetComponent(out _outLine);
@@ -82,8 +93,14 @@ public class CorpseContainerObject : MonoBehaviour, IInteractable
             Debug.LogWarning($"[CorpseContainer] 씬에서 PlayerInteractor를 찾지 못했습니다.", this);
         }
 
+        if (_container != null)
+        {
+            _container.OnCorpseStored += HandleCorpseStored;   // 추가: 실제 완료 이벤트 구독
+        }
+
         SetPanelActive(false);
     }
+
 
     private void Update()
     {
@@ -135,10 +152,32 @@ public class CorpseContainerObject : MonoBehaviour, IInteractable
 
     public void EnableInteraction()
     {
+        _isTracking = true;
     }
 
     public void DisableInteraction()
     {
+        _isTracking = false;
         SetPanelActive(false);
+    }
+
+    private void OnDestroy()
+    {
+        if (_container != null)
+        {
+            _container.OnCorpseStored -= HandleCorpseStored;
+        }
+    }
+
+    private void HandleCorpseStored(CarriableBody body)
+    {
+        if (_isCompleted) return;
+
+        _isCompleted = true;   
+
+        if (_isTracking)       // 차례일 때만 StageManager에 알린다
+        {
+            OnTargetCompleted?.Invoke();
+        }
     }
 }
