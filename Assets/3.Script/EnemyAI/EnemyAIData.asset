@@ -19,8 +19,8 @@ MonoBehaviour:
   viewRangeMid: 8
   viewRangeLong: 12
   viewScorePerSecShort: 100
-  viewScorePerSecMid: 25
-  viewScorePerSecLong: 6
+  viewScorePerSecMid: 50
+  viewScorePerSecLong: 25
   crouchViewWeight: 0.5
   hearingRadius: 10
   soundMemoryLockDuration: 3
@@ -42,7 +42,7 @@ MonoBehaviour:
   attackWindupTime: 0.4
   attackRecoveryTime: 0.6
   investigateCheckDuration: 2.5
-  soundInvestigateCheckDuration: 10
+  soundInvestigateCheckDuration: 15
   spawnMoveSpeed: 2.5
   detectedLoseTime: 2.5
   patrolIdleChance: 1

@@ -237,6 +237,12 @@ public class PlayerInteractionRunner : MonoBehaviour
             {
                 yield return new WaitForSeconds(rest);
             }
+
+            // 액션이 플레이어를 붙잡고 있는 동안 대기 (문서 보기 등)
+            while (action.isHoldingPlayer)
+            {
+                yield return null;
+            }
         }
         finally
         {
@@ -333,6 +339,12 @@ public class PlayerInteractionRunner : MonoBehaviour
     public void ForceRelease()
     {
         StopAllCoroutines();
+
+        if (UI_DocumentViewer.Instance != null)
+        {
+            UI_DocumentViewer.Instance.Close();
+        }
+
         Release();
     }
 
