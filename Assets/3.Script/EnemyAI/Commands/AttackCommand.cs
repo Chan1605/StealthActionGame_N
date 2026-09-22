@@ -52,6 +52,7 @@ public class AttackCommand : ICommand
 
                 if (_timer >= _fsm.Data.attackWindupTime)
                 {
+                    _fsm.Owner.PlayAttackSwingSound();
                     _fsm.DamageTarget?.TakeDamage(_fsm.Data.attackDamage);
                     _phase = Phase.Recovery;
                     _timer = 0f;

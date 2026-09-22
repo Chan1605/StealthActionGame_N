@@ -8,6 +8,7 @@ public class WeakSuspicionState : IEnemyState
     public void Enter(EnemyStateMachine fsm)
     {
         fsm.Owner.Indicator.ShowWeak();
+        fsm.Owner.PlayWeakSuspicionSound();
         fsm.Movement.Stop();
         _resumedMovement = false;
 
