@@ -11,9 +11,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/1.Scene/JC_EnemyScene/JC_EnemyScene/ProtoCapy_Enemynight.unity
     guid: b76977b0d42e3274aab64c9b38b19348
-  - enabled: 0
-    path: Assets/1.Scene/MG/LoadScene.unity
-    guid: f94e75cfb4e78fc42928c2a4d42194b7
+  - enabled: 1
+    path: Assets/1.Scene/MainScene/LoadingScene.unity
+    guid: 2c1535c85f4bf264f961d6cc0d536af9
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: fcc300271d2e47f4b8542d18e4fb0b67, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
     public void LoadWithLoadingScreen(string target_scene)
     {
         next_scene = target_scene;
-        SceneManager.LoadScene("LoadScene"); // 실제 로딩씬 이름
+        SceneManager.LoadScene("LoadingScene");
     }
 
     public void HandleMenuInput()

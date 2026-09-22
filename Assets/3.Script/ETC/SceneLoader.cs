@@ -90,7 +90,7 @@ public class SceneLoader : MonoBehaviour
             if (percentage >= 90)
             {
                 percentage = Mathf.Lerp(percentage, 100, timer);
-                if (percentage.Equals(100f))
+                if (percentage>=100f)
                 {
                     if (fade_canvas_group != null)
                     {
