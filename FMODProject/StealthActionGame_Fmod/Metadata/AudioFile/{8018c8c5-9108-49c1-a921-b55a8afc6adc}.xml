@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{8018c8c5-9108-49c1-a921-b55a8afc6adc}">
+		<property name="assetPath">
+			<value>woosh-dark-impact-deep-ghost-reversed_[cut_1sec].wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>1.1759375000000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9f9ee4b4-216d-4908-a803-387baa648ae1}</destination>
+		</relationship>
+	</object>
+</objects>

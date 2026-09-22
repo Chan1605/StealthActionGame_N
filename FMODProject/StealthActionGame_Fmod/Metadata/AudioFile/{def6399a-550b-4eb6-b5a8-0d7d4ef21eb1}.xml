@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{def6399a-550b-4eb6-b5a8-0d7d4ef21eb1}">
+		<property name="assetPath">
+			<value>7glass_foley_distant_smash_02.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.95595833333333335</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9f9ee4b4-216d-4908-a803-387baa648ae1}</destination>
+		</relationship>
+	</object>
+</objects>

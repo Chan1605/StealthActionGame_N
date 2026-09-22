@@ -104,3 +104,14 @@ InitTestScene*.unity*
 
 # Auto-generated cache in Assets folder
 /[Aa]ssets/[Ss]ceneDependencyCache*
+
+# =========================
+# FMOD Studio
+# =========================
+
+# FMOD cache / temp
+FMODProject/StealthActionGame_Fmod/.cache/
+
+# FMOD user-specific files
+FMODProject/StealthActionGame_Fmod/*.user
+FMODProject/StealthActionGame_Fmod/*.autosave

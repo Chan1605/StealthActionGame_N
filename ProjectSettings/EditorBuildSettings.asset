@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/1.Scene/JC_EnemyScene/JC_EnemyScene/DayScene_Capy.unity
+    guid: 52605cdfbdb47c6498256bf8b275de15
+  - enabled: 0
+    path: Assets/1.Scene/JC_EnemyScene/JC_EnemyScene/ProtoCapy_Enemynight.unity
+    guid: b76977b0d42e3274aab64c9b38b19348
+  - enabled: 0
+    path: Assets/1.Scene/MG/LoadScene.unity
+    guid: f94e75cfb4e78fc42928c2a4d42194b7
+  m_configObjects:
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: fcc300271d2e47f4b8542d18e4fb0b67, type: 3}
+  m_UseUCBPForAssetBundles: 0

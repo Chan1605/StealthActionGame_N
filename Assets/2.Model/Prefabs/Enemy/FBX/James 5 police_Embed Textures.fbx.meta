@@ -1,0 +1,300 @@
+fileFormatVersion: 2
+guid: a3093c51adf829a4daf16b4f9197a100
+ModelImporter:
+  serializedVersion: 24200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: G18C_Diffuse
+    second: {fileID: 2800000, guid: 2a66f7e413a60ad4993d708a854f56e7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: G18C_Normal
+    second: {fileID: 2800000, guid: b2ce0dcfa6f2ba44182dd3065937c95c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Handcuff_Diffuse
+    second: {fileID: 2800000, guid: 8b871c705b9ed77429d313d75246fbe3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Handcuff_Normal
+    second: {fileID: 2800000, guid: 1b7e7f67afa6e244393c7ae29fa35d61, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Handcuff_Reflection
+    second: {fileID: 2800000, guid: b6f2e848360920b43989cae958e26427, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Hat_0_Diffuse
+    second: {fileID: 2800000, guid: ea032f1956f44134583cf54dff9215d1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Hat_0_Normal
+    second: {fileID: 2800000, guid: bdbeec6bb0880d84db9174dc1cc2328b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Hat_0_Opacity
+    second: {fileID: 2800000, guid: 96aa8c098ae23af49b7eb5831202a87b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Hat_Diffuse
+    second: {fileID: 2800000, guid: 6c8bae2c1ba9537488c6f4a2adcf0683, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Hat_Normal
+    second: {fileID: 2800000, guid: 3e38316bc5c136d4992b541367940667, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Hat_Opacity
+    second: {fileID: 2800000, guid: 3ddb9cfa208e6e64abba51cd1b977c2b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Holster01_Diffuse
+    second: {fileID: 2800000, guid: 2e0794bbe0193b348bf8261314e3bf4b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Holster01_Normal
+    second: {fileID: 2800000, guid: 3bcdc4b593de4b0458c9800d3f603b7b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Holster02_Reflection
+    second: {fileID: 2800000, guid: d487eb2c409f10c409cff0b97ca72050, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pants_Bump
+    second: {fileID: 2800000, guid: d20648f55565ea34794dcf033360ddc0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pants_Diffuse
+    second: {fileID: 2800000, guid: a70a9b834ef67354796fc1e0c1b73ec3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: RL_Cavity_Diffuse
+    second: {fileID: 2800000, guid: 90eb5f5f53eef8c48a0d50460c3de3f5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: RL_DownTeeth_Diffuse
+    second: {fileID: 2800000, guid: af3f835924bf071448ce5d28fb14d2d0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: RL_DownTeeth_Opacity
+    second: {fileID: 2800000, guid: dccb542e051dd104ea3ab306b9b919d3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: RL_Hair_Transparency_Diffuse
+    second: {fileID: 2800000, guid: bd38768db7c575c40b3c2b2800d1f09f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: RL_Hair_Transparency_Opacity
+    second: {fileID: 2800000, guid: 48f88bbcd016f8e469c7913b75618fc9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: RL_Iris_Diffuse
+    second: {fileID: 2800000, guid: cd441b888ada8714abfb1288e37c7b94, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: RL_Iris_Diffuse_0001
+    second: {fileID: 2800000, guid: fc4e8eed12589f24e9ec618ca6ae4765, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: RL_Shoes_Diffuse
+    second: {fileID: 2800000, guid: 015b3735225f1e249b18379c1062ade3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: RL_Shoes_Normal
+    second: {fileID: 2800000, guid: 23736b7ddcec1c04cbdf27551ebcfd1e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: RL_Skin_Bump
+    second: {fileID: 2800000, guid: 6b7f6860f890f4545b6519a593437042, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: RL_Skin_Diffuse
+    second: {fileID: 2800000, guid: e43e26bbe660a80469b3a59863ad4da0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: RL_Skin_Diffuse_0001
+    second: {fileID: 2800000, guid: b1ab565a634474f479c1136fabe2fb18, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: RL_Skin_Diffuse_0002
+    second: {fileID: 2800000, guid: 78612bca7d07dc0419a3a5836871a5cc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: RL_Skin_Normal
+    second: {fileID: 2800000, guid: ec8925625ddfcf248bb3a344f37ae8a6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: RL_Skin_Normal_0001
+    second: {fileID: 2800000, guid: 2704c2983393c6b479be1dd744b308a0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: RL_Tongue_Diffuse
+    second: {fileID: 2800000, guid: 2602d4d4b04708b49bb30236d60bcc45, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: RL_Tongue_Opacity
+    second: {fileID: 2800000, guid: 70697a23718df304395383f3540989d9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Radio_Diffuse
+    second: {fileID: 2800000, guid: 7287ee9096d00c94e9e1518bc9d87408, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Radio_Normal
+    second: {fileID: 2800000, guid: 3dd685b425552b44dbc8c05da4bcabbe, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Shirt_Bump
+    second: {fileID: 2800000, guid: 3e480d1c517a63b4cb6e7d53aac036ba, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Shirt_Diffuse
+    second: {fileID: 2800000, guid: f21e11029c80da04ba04440e2829d332, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Shirt_Opacity
+    second: {fileID: 2800000, guid: 880a72ad51ddf8c418a01793978aab86, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    generateMeshLods: 0
+    meshLodGenerationFlags: 0
+    maximumMeshLod: -1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

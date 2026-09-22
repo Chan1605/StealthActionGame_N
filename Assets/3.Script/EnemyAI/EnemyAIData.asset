@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91ce15c3cdf9bd948a177571d3b18589, type: 3}
+  m_Name: EnemyAIData
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyAIData
+  viewAngle: 90
+  viewRangeShort: 5
+  instantDetectRange: 1.7
+  instantDetectAngle: 240
+  viewRangeMid: 8
+  viewRangeLong: 12
+  viewScorePerSecShort: 100
+  viewScorePerSecMid: 25
+  viewScorePerSecLong: 6
+  crouchViewWeight: 0.5
+  hearingRadius: 10
+  soundMemoryLockDuration: 3
+  weakSuspicionThreshold: 30
+  strongSuspicionThreshold: 70
+  maxScore: 100
+  scoreDecayPerSec: 12.5
+  scoreDropOnFailedCheck: 40
+  hiddenDecayMultiplier: 4
+  isHiddenRequiresCrouch: 1
+  patrolSpeed: 2
+  investigateSpeed: 3.5
+  stoppingDistance: 0.15
+  chaseSpeed: 5
+  chaseRepathInterval: 0.2
+  unreachableGiveUpTime: 2.5
+  attackRange: 1.8
+  attackDamage: 10
+  attackWindupTime: 0.4
+  attackRecoveryTime: 0.6
+  investigateCheckDuration: 2.5
+  soundInvestigateCheckDuration: 10
+  spawnMoveSpeed: 2.5
+  detectedLoseTime: 2.5
+  patrolIdleChance: 1
+  patrolIdleMinDuration: 1.5
+  patrolIdleMaxDuration: 3
+  lookAroundAngle: 45
+  singlePointIdleInterval: 4
+  soundGlanceDuration: 5
+  corpseLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  corpseDetectRadius: 12
+  corpseAlertDuration: 8
+  suspiciousActionLimit: 2
