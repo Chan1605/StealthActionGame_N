@@ -27,9 +27,20 @@ public class DetectedState : IEnemyState
         }
 
         _chase.Tick();
+
+        // 길이 막혔어도(난간 등) 여전히 보이거나 들리는 상태라면
+        // "놓쳤다"가 아니라 "막혀서 못 가지만 알고는 있다"로 취급한다.
+        bool isBlockedButAware = _chase.IsTargetUnreachable && fsm.Perception.IsCurrentlySensing;
+
+        if (isBlockedButAware)
+        {
+            _loseTimer = 0f;
+            return;   // 공격 판정도 스킵. 대부분 사거리 밖이라 의미 없다.
+        }
+
         if (_chase.IsTargetUnreachable)
         {
-            _loseTimer += fsm.Data.detectedLoseTime; // 강제로 포기 타이머를 즉시 만료시켜 바로 복귀 판정으로
+            _loseTimer += fsm.Data.detectedLoseTime; // 안 보이고 길도 없으면 기존처럼 즉시 놓친 것으로 처리
         }
         TickAttack(fsm);
 
@@ -38,7 +49,7 @@ public class DetectedState : IEnemyState
             _loseTimer = 0f;
             return;
         }
-        fsm.Owner.PlayLostPlayerSound();
+
         _loseTimer += Time.deltaTime;
         if (_loseTimer < fsm.Data.detectedLoseTime) return;
 

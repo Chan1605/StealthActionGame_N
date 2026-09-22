@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class CarryableObject : MonoBehaviour, IInteractable
+public class CarryableObject : MonoBehaviour, IInteractable, ICompletionState
 {
     public Transform ObjectTransform => transform;
 
@@ -20,7 +20,6 @@ public class CarryableObject : MonoBehaviour, IInteractable
     private UI_ObjKeyPanal keyPanal;
     private HUDManager hudManager;
     [SerializeField] private bool completeOnCarry = true;
-    private bool _isCompleted;
 
     public bool IsInteractable
     {
@@ -30,6 +29,9 @@ public class CarryableObject : MonoBehaviour, IInteractable
             return _carrySystem.CanCarry(body);
         }
     }
+    private bool _isTracking;
+    private bool _isCompleted;
+    public bool IsCompleted => _isCompleted;
 
     private void Awake()
     {
@@ -40,8 +42,12 @@ public class CarryableObject : MonoBehaviour, IInteractable
     private void Start()
     {
         hudManager = FindAnyObjectByType<HUDManager>();
-        keyPanal = hudManager.GetKeyPanal();
         _carrySystem = FindAnyObjectByType<CarrySystem>();
+
+        if (hudManager != null)
+        {
+            keyPanal = hudManager.GetKeyPanal();
+        }
 
         if (_carrySystem != null)
         {
@@ -68,7 +74,10 @@ public class CarryableObject : MonoBehaviour, IInteractable
         if (target != body) return;
         if (_isCompleted) return;
         _isCompleted = true;
-        OnTargetCompleted?.Invoke();
+        if (_isTracking)       // 차례일 때만 StageManager에 알린다
+        {
+            OnTargetCompleted?.Invoke();
+        }
     }
 
     private void HandleTargetAcquired(CarriableBody target)
@@ -94,6 +103,12 @@ public class CarryableObject : MonoBehaviour, IInteractable
         keyPanal.SetPanal_Off();
     }
 
-    public void EnableInteraction() { }
-    public void DisableInteraction() { }
+    public void EnableInteraction()
+    {
+        _isTracking = true;
+    }
+    public void DisableInteraction()
+    {
+        _isTracking = false;
+    }
 }

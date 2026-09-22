@@ -207,8 +207,6 @@ GameObject:
   - component: {fileID: 293408051226417615}
   - component: {fileID: 3717776445183496264}
   - component: {fileID: 671276611856997436}
-  - component: {fileID: 3607274712194754023}
-  - component: {fileID: 9026736888242380389}
   m_Layer: 3
   m_Name: Benjamin_Hips
   m_TagString: Untagged
@@ -346,36 +344,6 @@ MonoBehaviour:
   - {x: 3.4846556, y: 0.34116393, z: 1.5017443}
   - {x: 0.34158248, y: 359.75336, z: 0.30881792}
 --- !u!114 &671276611856997436
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 140656912568131738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3cad3de5ac55c7249b56623198beb995, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CarryableObject
-  uiAnchor: {fileID: 0}
-  isAct: 0
-  completeOnCarry: 1
---- !u!114 &3607274712194754023
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 140656912568131738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3cad3de5ac55c7249b56623198beb995, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CarryableObject
-  uiAnchor: {fileID: 0}
-  isAct: 0
-  completeOnCarry: 1
---- !u!114 &9026736888242380389
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
