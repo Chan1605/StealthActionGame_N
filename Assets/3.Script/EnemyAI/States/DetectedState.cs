@@ -10,6 +10,7 @@ public class DetectedState : IEnemyState
     {
         fsm.IsAssassinable = false;
         fsm.Owner.Indicator.ShowDetected();
+        fsm.Owner.PlayDetectedSound();
         fsm.Movement.SetStoppingDistance(fsm.Data.attackRange);
 
         _loseTimer = 0f;
@@ -37,7 +38,7 @@ public class DetectedState : IEnemyState
             _loseTimer = 0f;
             return;
         }
-
+        fsm.Owner.PlayLostPlayerSound();
         _loseTimer += Time.deltaTime;
         if (_loseTimer < fsm.Data.detectedLoseTime) return;
 

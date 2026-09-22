@@ -8,6 +8,7 @@ public class StrongSuspicionState : IEnemyState
     {
         fsm.Owner.Indicator.ShowStrong();
         fsm.Movement.SetInvestigateSpeed(fsm.Data);
+        fsm.Owner.PlayStrongSuspicionSound();
 
         Vector3 target = fsm.Perception.GetSuspectedPosition();
         float duration = fsm.Perception.IsSoundDominant
