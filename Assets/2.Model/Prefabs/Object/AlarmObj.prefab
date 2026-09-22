@@ -154,6 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GeneralObject
   isAct: 0
   completeOnUse: 1
+  lockUntilMissionTurn: 0
 --- !u!114 &7015350027074504361
 MonoBehaviour:
   m_ObjectHideFlags: 0
