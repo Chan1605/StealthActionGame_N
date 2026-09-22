@@ -208,6 +208,7 @@ GameObject:
   - component: {fileID: 3717776445183496264}
   - component: {fileID: 671276611856997436}
   - component: {fileID: 3607274712194754023}
+  - component: {fileID: 9026736888242380389}
   m_Layer: 3
   m_Name: Benjamin_Hips
   m_TagString: Untagged
@@ -360,6 +361,21 @@ MonoBehaviour:
   isAct: 0
   completeOnCarry: 1
 --- !u!114 &3607274712194754023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140656912568131738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cad3de5ac55c7249b56623198beb995, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CarryableObject
+  uiAnchor: {fileID: 0}
+  isAct: 0
+  completeOnCarry: 1
+--- !u!114 &9026736888242380389
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3191,6 +3207,49 @@ MonoBehaviour:
       Data3: 1113759380
       Data4: 1324988009
     Path: event:/Enemy/Enemy_Voice_ Detect
+  SE_AttackSwing:
+    Guid:
+      Data1: 1272217206
+      Data2: 1152807448
+      Data3: 169883304
+      Data4: -1764849667
+    Path: event:/Enemy/Enemy_SFX_Attack
+  SE_Assassinated:
+    Guid:
+      Data1: 429392580
+      Data2: 1174707143
+      Data3: 1743287971
+      Data4: -632915469
+    Path: event:/Enemy/Enemy_SFX_Die
+  SE_WeakSuspicion:
+    Guid:
+      Data1: 1305003059
+      Data2: 1196659769
+      Data3: 1535813007
+      Data4: 1852642575
+    Path: event:/Enemy/Enemy_Voice_WeakSuspicious
+  SE_StrongSuspicion:
+    Guid:
+      Data1: 1869497358
+      Data2: 1280935080
+      Data3: -343718225
+      Data4: -816153802
+    Path: event:/Enemy/Enemy_Voice_ StrongSuspicious
+  SE_Detected:
+    Guid:
+      Data1: -1104907653
+      Data2: 1327907595
+      Data3: 1113759380
+      Data4: 1324988009
+    Path: event:/Enemy/Enemy_Voice_ Detect
+  SE_LostPlayer:
+    Guid:
+      Data1: 1366145193
+      Data2: 1148764739
+      Data3: -788265852
+      Data4: 758276113
+    Path: event:/Enemy/Enemy_Voice_Missing
+  weakVoiceCooldown: 3
   isAlwaysAlert: 1
   debugCurrentState: 
   debugMaxScore: 0
