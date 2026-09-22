@@ -100,7 +100,7 @@ public class EnemyAI : MonoBehaviour
         PlayAssassinatedSound();
         indicator.Hide();
         _indicatorManager?.UnregisterEnemy(transform);
-        _mini?.RegisterEnemy(transform);
+        _mini?.UnregisterEnemy(transform);
         enabled = false;
     }
 
