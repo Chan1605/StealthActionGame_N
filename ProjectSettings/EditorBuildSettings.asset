@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/1.Scene/MG/LoadScene.unity
     guid: f94e75cfb4e78fc42928c2a4d42194b7
   - enabled: 1
-    path: Assets/1.Scene/MainScene/DayScene/DayScene.unity
+    path: Assets/1.Scene/MainScene/DayScene/Old/DayScene_Legacy.unity
     guid: 750d0f394964b03449d02cbbc5aac1ba
   - enabled: 1
     path: Assets/1.Scene/MainScene/Night_Scene/NightScene.unity
