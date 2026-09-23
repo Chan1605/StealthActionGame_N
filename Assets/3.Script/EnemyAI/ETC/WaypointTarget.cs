@@ -31,6 +31,14 @@ public class WaypointTarget : MonoBehaviour, IInteractable
         if (Vector3.Distance(_player.position, transform.position) <= completeRadius)
         {
             _isCompleted = true;
+            try
+            {
+                OnUse?.Invoke(); //
+            }
+            catch (Exception e)
+            {
+                Debug.LogException(e, this);
+            }
             OnTargetCompleted?.Invoke();
         }
     }
