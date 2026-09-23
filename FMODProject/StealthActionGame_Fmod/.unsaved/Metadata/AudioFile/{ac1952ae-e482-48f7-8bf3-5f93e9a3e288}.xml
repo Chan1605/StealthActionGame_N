@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{ac1952ae-e482-48f7-8bf3-5f93e9a3e288}">
+		<property name="assetPath">
+			<value>Player_Day_Bottle_01_The_Noise_That.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>3.8399999999999999</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9f9ee4b4-216d-4908-a803-387baa648ae1}</destination>
+		</relationship>
+	</object>
+</objects>
