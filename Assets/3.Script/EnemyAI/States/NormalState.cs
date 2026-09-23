@@ -99,6 +99,13 @@ public class NormalState : IEnemyState
             return;
         }
 
+        if (!fsm.Movement.HasArrived())
+        {
+            return; // 복귀 중에는 대기 타이머를 돌리지 않음
+        }
+
+        fsm.Owner.transform.rotation = fsm.Owner.SpawnRotation; // 대기 중엔 항상 처음 감지방향 유지
+
         _singlePointTimer += Time.deltaTime;
         if (_singlePointTimer < fsm.Data.singlePointIdleInterval) return;
 
