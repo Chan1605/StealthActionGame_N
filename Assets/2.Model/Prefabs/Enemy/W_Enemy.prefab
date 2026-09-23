@@ -3135,6 +3135,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 575d87e7b43d721428e7b1aa01dbb7ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyMovement
+  idleClipCount: 2
+  idleLoopSwitchWindow: 0.05
 --- !u!114 &8635502374479066289
 MonoBehaviour:
   m_ObjectHideFlags: 0

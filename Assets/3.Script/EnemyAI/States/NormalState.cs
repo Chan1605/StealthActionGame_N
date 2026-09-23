@@ -1,16 +1,19 @@
+using System;
 using UnityEngine;
 
 public class NormalState : IEnemyState
 {
     private ICommand _idleCommand;
     private float _singlePointTimer;
+    private bool _lookAroundPending;
+    private float _pendingLookAroundDuration;
 
     public void Enter(EnemyStateMachine fsm)
     {
         fsm.Owner.Indicator.Hide();
         fsm.Movement.SetPatrolSpeed(fsm.Data);
         MoveToCurrentWaypoint(fsm);
-        _singlePointTimer = Random.Range(0f, fsm.Data.singlePointIdleInterval);
+        _singlePointTimer = UnityEngine.Random.Range(0f, fsm.Data.singlePointIdleInterval);
     }
 
     public void Tick(EnemyStateMachine fsm)
@@ -39,17 +42,22 @@ public class NormalState : IEnemyState
             return;
         }
 
+        if (_lookAroundPending)
+        {
+            TryStartPendingLookAround(fsm, () =>
+            {
+                _idleCommand = null;
+                AdvanceWaypoint(fsm);
+            });
+            return;
+        }
+
         if (fsm.Movement.HasArrived())
         {
-            if (Random.value < fsm.Data.patrolIdleChance)
+            if (UnityEngine.Random.value < fsm.Data.patrolIdleChance)
             {
-                float duration = Random.Range(fsm.Data.patrolIdleMinDuration, fsm.Data.patrolIdleMaxDuration);
-                _idleCommand = new LookAroundCommand(fsm.Owner.transform, fsm.Movement, duration, fsm.Data.lookAroundAngle);
-                _idleCommand.Start(fsm, () =>
-                {
-                    _idleCommand = null;
-                    AdvanceWaypoint(fsm);
-                });
+                _pendingLookAroundDuration = UnityEngine.Random.Range(fsm.Data.patrolIdleMinDuration, fsm.Data.patrolIdleMaxDuration);
+                _lookAroundPending = true;
             }
             else
             {
@@ -62,6 +70,7 @@ public class NormalState : IEnemyState
     {
         _idleCommand?.Cancel();
         _idleCommand = null;
+        _lookAroundPending = false;
     }
 
     private void AdvanceWaypoint(EnemyStateMachine fsm)
@@ -84,12 +93,28 @@ public class NormalState : IEnemyState
             return;
         }
 
+        if (_lookAroundPending)
+        {
+            TryStartPendingLookAround(fsm, () => _idleCommand = null);
+            return;
+        }
+
         _singlePointTimer += Time.deltaTime;
         if (_singlePointTimer < fsm.Data.singlePointIdleInterval) return;
 
         _singlePointTimer = 0f;
-        float duration = Random.Range(fsm.Data.patrolIdleMinDuration, fsm.Data.patrolIdleMaxDuration);
-        _idleCommand = new LookAroundCommand(fsm.Owner.transform, fsm.Movement, duration, fsm.Data.lookAroundAngle);
-        _idleCommand.Start(fsm, () => _idleCommand = null);
+        _pendingLookAroundDuration = UnityEngine.Random.Range(fsm.Data.patrolIdleMinDuration, fsm.Data.patrolIdleMaxDuration);
+        _lookAroundPending = true;
+    }
+
+    // Idle 애니메이션이 루프 경계(막 끝났거나 막 시작한 지점)에 왔을 때만 실제로 LookAroundCommand를 시작한다.
+    // 재생 중인 클립이 도중에 뚝 끊기지 않도록 하기 위함.
+    private void TryStartPendingLookAround(EnemyStateMachine fsm, Action onComplete)
+    {
+        if (!fsm.Movement.IsIdleAtLoopBoundary()) return;
+
+        _lookAroundPending = false;
+        _idleCommand = new LookAroundCommand(fsm.Owner.transform, fsm.Movement, _pendingLookAroundDuration, fsm.Data.lookAroundAngle);
+        _idleCommand.Start(fsm, onComplete);
     }
 }

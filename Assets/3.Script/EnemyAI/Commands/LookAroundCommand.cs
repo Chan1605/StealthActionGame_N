@@ -23,6 +23,7 @@ public class LookAroundCommand : ICommand
     public void Start(EnemyStateMachine fsm, Action onComplete)
     {
         _movement.SetAutoRotation(false);
+        _movement.SetIdleIndex(0); // 회전 중엔 항상 기본(무난한) Idle 클립으로 고정
 
         Vector3 baseEuler = _transform.eulerAngles;
         float turnDuration = 0f;
@@ -48,6 +49,7 @@ public class LookAroundCommand : ICommand
         seq.OnComplete(() =>
         {
             _movement.SetAutoRotation(true);
+            _movement.RandomizeIdle(); // 회전이 끝나면 다시 대기 모션을 랜덤화
             onComplete?.Invoke();
         });
         _tween = seq;
@@ -59,5 +61,6 @@ public class LookAroundCommand : ICommand
     {
         _tween?.Kill();
         _movement.SetAutoRotation(true);
+        _movement.RandomizeIdle(); // 중간에 취소돼도 회전이 끝난 것과 동일하게 처리
     }
 }
