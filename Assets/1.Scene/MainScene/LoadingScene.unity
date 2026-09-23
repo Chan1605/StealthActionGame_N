@@ -351,10 +351,10 @@ RectTransform:
   - {fileID: 393854874}
   m_Father: {fileID: 312984167}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.25}
-  m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -5, y: 0}
-  m_SizeDelta: {x: -20, y: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &312984166
 GameObject:
@@ -390,8 +390,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -740, y: -513.1}
-  m_SizeDelta: {x: 160, y: 20}
+  m_AnchoredPosition: {x: -814.6, y: -517.9}
+  m_SizeDelta: {x: 83, y: 5.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &312984168
 MonoBehaviour:
@@ -479,7 +479,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 84, y: 5}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &393854875
 MonoBehaviour:
@@ -702,7 +702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27297f208fe374345b3c9efd0a7f2261, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneLoader
-  next_scene: ProtoCapy_Enemy
+  next_scene: DayScene
   tip_text: {fileID: 263039360}
   tips_data: {fileID: 11400000, guid: dde58a2cf25a3424da9004e5091d9340, type: 2}
   tip_interval: 1.5
@@ -711,7 +711,7 @@ MonoBehaviour:
   load_speed: 1
   bg_img: {fileID: 1414702942}
   slide_duration: 10
-  loading_slider: {fileID: 0}
+  loading_slider: {fileID: 312984168}
 --- !u!4 &988550029
 Transform:
   m_ObjectHideFlags: 0
