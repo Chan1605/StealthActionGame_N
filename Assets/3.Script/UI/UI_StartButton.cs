@@ -6,6 +6,6 @@ public class UI_StartButton : MonoBehaviour
 {
     public void StartLoading()
     {
-        GameManager.Instance.LoadWithLoadingScreen("ProtoCapy_Enemy");
+        GameManager.Instance.LoadWithLoadingScreen("DayScene");
     }
 }

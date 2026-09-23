@@ -9,14 +9,11 @@ public class NPCInteractionObject : MonoBehaviour, IInteractable
     [SerializeField] private string npcName;
     [SerializeField] private List<Narration_Data> dialogueLines;
 
-    [Header("Mission 연동 (선택)")]
-    [Tooltip("체크하면 대화가 끝났을 때 StageManager 쪽 OnTargetCompleted도 같이 호출됩니다.")]
+    [Header("Mission")]
     [SerializeField] private bool completeMissionTargetOnDialogueEnd = false;
 
     [Header("Animation")]
-    [Tooltip("Idle <-> Talk 전환용 Animator. 비워두면 애니메이션 전환 없이 대화만 진행됩니다.")]
     [SerializeField] private Animator animator;
-    [Tooltip("대화 중 true, 대화 끝나면 false로 세팅되는 Animator bool 파라미터 이름.")]
     [SerializeField] private string talkBoolParam = "IsTalking";
     [Header("Random Motion")]
     [SerializeField] private string idleIndexParam = "IdleIndex";
@@ -102,7 +99,7 @@ public class NPCInteractionObject : MonoBehaviour, IInteractable
         {
             Debug.LogWarning($"[NPCInteraction] 'Player' 태그를 가진 오브젝트를 찾지 못했습니다.", this);
         }
-
+        RandomizeMotion(idleIndexParam, idleClipCount);
         SetPanelActive(false);
     }
 
@@ -173,6 +170,7 @@ public class NPCInteractionObject : MonoBehaviour, IInteractable
         else
         {
             animator.SetBool(talkBoolParam, true);
+            RandomizeMotion(talkIndexParam, talkClipCount);
             Debug.Log($"[NPCInteraction] animator.SetBool(\"{talkBoolParam}\", true) 호출함 (대상 Animator: {animator.name}, Controller: {(animator.runtimeAnimatorController != null ? animator.runtimeAnimatorController.name : "없음")})", this);
         }
 
@@ -218,6 +216,7 @@ public class NPCInteractionObject : MonoBehaviour, IInteractable
         if (animator != null && !string.IsNullOrEmpty(talkBoolParam))
         {
             animator.SetBool(talkBoolParam, false);
+            RandomizeMotion(idleIndexParam, idleClipCount);
         }
 
         OnDialogueEnded?.Invoke();
