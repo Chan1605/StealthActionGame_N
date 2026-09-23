@@ -50,10 +50,9 @@ public class PlayerDetectable : MonoBehaviour, IDetectable
         if (playerController == null)
             Debug.LogWarning($"{name}: PlayerController를 찾지 못했습니다. IsCrouching이 항상 false로 처리됩니다.");
         KeyInventory inventory = GetComponent<KeyInventory>();
-        KeyInventory savedInventory = GameSession.Instance?.TakePendingKeys();
-        if (inventory != null && savedInventory != null)
+        if (inventory != null && GameSession.Instance != null)
         {
-            GetComponent<KeyInventory>()?.RestoreFrom(savedInventory);
+            inventory.RestoreFrom(GameSession.Instance.GetPendingKeys());
         }
     }
 }
