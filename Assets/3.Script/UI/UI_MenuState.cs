@@ -133,6 +133,21 @@ public class UI_MenuState : MonoBehaviour
         optionPanal.SetActive(false);
         pausePanal.SetActive(true);
 
+        Sequence backSeq = DOTween.Sequence().SetUpdate(true);
+
+        backSeq.Insert(0f, big_Option_Text.DOFade(0f, 0.3f));
+        backSeq.Insert(0.2f, big_Pause_Text.DOFade(0.7f, 0.3f));
+
+        for (int i = 0; i < pauseButtons.Length; i++)
+        {
+            CanvasGroup cg = pauseButtons[i].GetComponent<CanvasGroup>();
+
+            pauseButtons[i].anchoredPosition = new Vector2(-200f, pauseButtons[i].anchoredPosition.y);
+
+            backSeq.Insert(0.3f + (i * 0.1f), pauseButtons[i].DOAnchorPosX(0f, 0.4f));
+            backSeq.Insert(0.3f + (i * 0.1f), cg.DOFade(1f, 0.4f));
+        }
+
         currentState = MenuState.InPauseMenu;
     }
 
@@ -163,8 +178,6 @@ public class UI_MenuState : MonoBehaviour
         for (int i = 0; i < pauseButtons.Length; i++)
         {
             CanvasGroup cg = pauseButtons[i].GetComponent<CanvasGroup>();
-
-            pauseButtons[i].anchoredPosition = new Vector2(-200f, pauseButtons[i].anchoredPosition.y);
 
             sequence.Insert(i * 0.1f, pauseButtons[i].DOAnchorPosX(-200f, 0.4f).SetEase(Ease.InBack));
             sequence.Insert(i * 0.1f, cg.DOFade(0f, 0.4f));
