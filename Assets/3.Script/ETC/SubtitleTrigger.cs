@@ -28,7 +28,7 @@ public class SubtitleTrigger : MonoBehaviour
 
         if (endSubtitles != null && endSubtitles.Count > 0)
         {
-            target.OnTargetCompleted += HandleComplete;
+            target.OnUse += HandleComplete;
         }
     }
     private void HandleLook()
@@ -53,7 +53,7 @@ public class SubtitleTrigger : MonoBehaviour
         if(target!=null)
         {
             target.OnLook -= HandleLook;
-            target.OnTargetCompleted -= HandleComplete;
+            target.OnUse -= HandleComplete;
         }
     }
 

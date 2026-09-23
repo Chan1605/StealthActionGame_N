@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: Tip_List
   m_EditorClassIdentifier: Assembly-CSharp::Tips_Data
   Tip_List:
-  - Tip1
-  - Tip2
-  - Tip3
-  - Tip4
-  - Tip5
+  - "\uAD50\uB3C4\uAD00\uC744 \uB3C4\uBC1C\uD558\uBA74 \uACF5\uACA9\uBC1B\uC744 \uC218
+    \uC788\uC2B5\uB2C8\uB2E4."
+  - "\uBCD1\uC744 \uB358\uC9C4 \uACF3\uC73C\uB85C \uAD50\uB3C4\uAD00\uC744 \uC720\uB3C4\uD560
+    \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+  - "\uAD50\uB3C4\uAD00 \uC5B4\uCA4C"
+  - "\uC800\uCA4C"
+  - "\u3139\u3147\u3139\u3147\u3139\u3147\u3139"
