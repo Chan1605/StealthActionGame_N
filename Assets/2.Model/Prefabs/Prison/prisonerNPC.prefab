@@ -1279,9 +1279,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a0a7a7ef62ffe84c9272b337983fe7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCInteractionObject
-  npcName: hi
+  npcName: 
   dialogueLines:
-  - subtitleText: higg
+  - subtitleText: 
     audioEvent:
       Guid:
         Data1: -224323914

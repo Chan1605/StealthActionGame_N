@@ -42,11 +42,92 @@ MonoBehaviour:
   Path: FMODProject/StealthActionGame_Fmod/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 639256719749593387
+  lastModified: 639256699408028329
   FileSizes:
   - Name: Desktop
     Value: 551392
   Exists: 1
+--- !u!114 &-8796077311638325633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Area_1/Player_Day_Schedule_01_A_Shift_Schedule
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Area_1/Player_Day_Schedule_01_A_Shift_Schedule
+  Guid:
+    Data1: -498669479
+    Data2: 1077039279
+    Data3: -674110801
+    Data4: 1375223890
+  Banks:
+  - {fileID: -970304279502095472}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-8420286582635537309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Area_3/Player_Night_Con_01_I_Need_To
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Area_3/Player_Night_Con_01_I_Need_To
+  Guid:
+    Data1: 1881444157
+    Data2: 1240375805
+    Data3: 545429892
+    Data4: 220135198
+  Banks:
+  - {fileID: -2540922473016164417}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-8371151647985119844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Area_2/Player_Night_Start_02_I_Have_To
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Area_2/Player_Night_Start_02_I_Have_To
+  Guid:
+    Data1: -1225411486
+    Data2: 1284193767
+    Data3: 1644249021
+    Data4: 1538184763
+  Banks:
+  - {fileID: 8354602645938095227}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-8300424939153912469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,7 +143,7 @@ MonoBehaviour:
   Path: FMODProject/StealthActionGame_Fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639257808523130578
+  lastModified: 639257814264313501
   FileSizes:
   - Name: Desktop
     Value: 4714
@@ -82,7 +163,7 @@ MonoBehaviour:
   Path: FMODProject/StealthActionGame_Fmod/Build/Desktop/Enemy.bank
   Name: Enemy
   StudioPath: bank:/Enemy
-  lastModified: 639256719749549555
+  lastModified: 639256699407877353
   FileSizes:
   - Name: Desktop
     Value: 570816
@@ -156,7 +237,7 @@ MonoBehaviour:
   Path: FMODProject/StealthActionGame_Fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639256719749549555
+  lastModified: 639256699407917401
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -205,6 +286,33 @@ MonoBehaviour:
     Data4: 758276113
   Banks:
   - {fileID: -7777040713197349281}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-7355655491538424360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Area_2/Player_Night_Office_01_Now_That_I
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Area_2/Player_Night_Office_01_Now_That_I
+  Guid:
+    Data1: -999973298
+    Data2: 1133802319
+    Data3: 749387918
+    Data4: -1200520671
+  Banks:
+  - {fileID: 8354602645938095227}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -266,6 +374,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-6836424688781607372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Area_2/Player_Night_3F_02_But_It_Does
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Area_2/Player_Night_3F_02_But_It_Does
+  Guid:
+    Data1: -1248882167
+    Data2: 1295053130
+    Data3: -611505268
+    Data4: -1674619557
+  Banks:
+  - {fileID: 8354602645938095227}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-6559123763664442467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293,6 +428,87 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 180072
+--- !u!114 &-6047079506080137685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Area_1/Player_Day_Route_02_How_Can_I
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Area_1/Player_Day_Route_02_How_Can_I
+  Guid:
+    Data1: -200214779
+    Data2: 1224182249
+    Data3: 667448253
+    Data4: 1464596676
+  Banks:
+  - {fileID: -970304279502095472}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-5501199393032100034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Area_2/Guard_Night_Story2F_01_Should_We_Treat
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Area_2/Guard_Night_Story2F_01_Should_We_Treat
+  Guid:
+    Data1: 237600252
+    Data2: 1262117759
+    Data3: 365593778
+    Data4: 2014916979
+  Banks:
+  - {fileID: 8354602645938095227}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-5477252221719977164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Area_1/Player_Day_Start_06_This_Is_The
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Area_1/Player_Day_Start_06_This_Is_The
+  Guid:
+    Data1: -1889564284
+    Data2: 1101357055
+    Data3: 1062822077
+    Data4: 1142553482
+  Banks:
+  - {fileID: -970304279502095472}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-5100061385247778956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -313,6 +529,33 @@ MonoBehaviour:
     Data4: -1885152797
   Banks:
   - {fileID: 8354602645938095227}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-5028506839903770803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Area_1/Player_Day_Key_01_I_Need_A
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Area_1/Player_Day_Key_01_I_Need_A
+  Guid:
+    Data1: 648084022
+    Data2: 1295652634
+    Data3: 20767118
+    Data4: 825148230
+  Banks:
+  - {fileID: -970304279502095472}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -456,6 +699,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-3918155007847251734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Area_1/Player_Day_Start_04_That_Means_It
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Area_1/Player_Day_Start_04_That_Means_It
+  Guid:
+    Data1: 2005480099
+    Data2: 1315393331
+    Data3: -205782384
+    Data4: -544432719
+  Banks:
+  - {fileID: -970304279502095472}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-3891919592467550348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -474,6 +744,33 @@ MonoBehaviour:
     Data2: 1091220960
     Data3: 25564061
     Data4: -1551556350
+  Banks:
+  - {fileID: 8354602645938095227}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-3875561065512599303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Area_2/Guard_Night_Story2F_02_Yeah_This_is
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Area_2/Guard_Night_Story2F_02_Yeah_This_is
+  Guid:
+    Data1: -193423794
+    Data2: 1080759463
+    Data3: 1147726227
+    Data4: -1885152797
   Banks:
   - {fileID: 8354602645938095227}
   IsStream: 0
@@ -553,7 +850,7 @@ MonoBehaviour:
   Path: FMODProject/StealthActionGame_Fmod/Build/Desktop/Ending.bank
   Name: Ending
   StudioPath: bank:/Ending
-  lastModified: 639256719749499481
+  lastModified: 639256699407809209
   FileSizes:
   - Name: Desktop
     Value: 1549504
@@ -584,6 +881,33 @@ MonoBehaviour:
   Parameters:
   - {fileID: 6554920335831231412}
   - {fileID: -314243731651763240}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-3224857069912793793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Area_1/Player_Day_Bottle_01_The_Noise_That
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Area_1/Player_Day_Bottle_01_The_Noise_That
+  Guid:
+    Data1: 803610107
+    Data2: 1309498703
+    Data3: 713570469
+    Data4: 1682129704
+  Banks:
+  - {fileID: -970304279502095472}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -697,6 +1021,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-2846193681058068618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Area_1/Player_Day_Start_01_It_Really_Does
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Area_1/Player_Day_Start_01_It_Really_Does
+  Guid:
+    Data1: 713545362
+    Data2: 1164445543
+    Data3: -1204132979
+    Data4: -840279275
+  Banks:
+  - {fileID: -970304279502095472}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-2794253882930209980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -718,6 +1069,80 @@ MonoBehaviour:
   Banks:
   - {fileID: -7777040713197349281}
   - {fileID: -8864047739792405592}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-2540922473016164417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Area_3.bank
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
+  Path: FMODProject/StealthActionGame_Fmod/Build/Desktop/Area_3.bank
+  Name: Area_3
+  StudioPath: bank:/Area/Area_3
+  lastModified: 639257814264174487
+  FileSizes:
+  - Name: Desktop
+    Value: 219712
+  Exists: 1
+--- !u!114 &-2465813948056309407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Area_2/Record_Night_Infirmary_02_They_Should_Be
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Area_2/Record_Night_Infirmary_02_They_Should_Be
+  Guid:
+    Data1: -547050169
+    Data2: 1257622478
+    Data3: 1998700948
+    Data4: -276048473
+  Banks:
+  - {fileID: 8354602645938095227}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-2419523830143125430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Area_1/Guard_Day_Hit
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Area_1/Guard_Day_Hit
+  Guid:
+    Data1: 1089774929
+    Data2: 1293376720
+    Data3: 710384828
+    Data4: 1767916091
+  Banks:
+  - {fileID: -970304279502095472}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -808,6 +1233,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-1702635390250347194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Area_1/Guard_Day_Con_01_Ill_Go_On
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Area_1/Guard_Day_Con_01_Ill_Go_On
+  Guid:
+    Data1: 1789380407
+    Data2: 1164003659
+    Data3: -70498930
+    Data4: 964217763
+  Banks:
+  - {fileID: -970304279502095472}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-1573252528048641290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Area_3/Player_Night_Car_02_But_I_Need
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Area_3/Player_Night_Car_02_But_I_Need
+  Guid:
+    Data1: -275002634
+    Data2: 1163437919
+    Data3: 1619097749
+    Data4: -324993689
+  Banks:
+  - {fileID: -2540922473016164417}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-1539853277787538086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -877,7 +1356,7 @@ MonoBehaviour:
   Path: FMODProject/StealthActionGame_Fmod/Build/Desktop/Area_1.bank
   Name: Area_1
   StudioPath: bank:/Area/Area_1
-  lastModified: 639257808523081243
+  lastModified: 639257814264128835
   FileSizes:
   - Name: Desktop
     Value: 675424
@@ -963,6 +1442,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-474056261283022755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Area_3/Player_Night_Car_01_This_Was_The
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Area_3/Player_Night_Car_01_This_Was_The
+  Guid:
+    Data1: -1145111329
+    Data2: 1148486861
+    Data3: -307242602
+    Data4: 156511084
+  Banks:
+  - {fileID: -2540922473016164417}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-451841211258502231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1014,6 +1520,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-263342323194766673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Area_1/Player_Day_Key_02_I_Heard_That
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Area_1/Player_Day_Key_02_I_Heard_That
+  Guid:
+    Data1: -1356951221
+    Data2: 1173329014
+    Data3: -474217296
+    Data4: -1280137218
+  Banks:
+  - {fileID: -970304279502095472}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-184533264827584075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1090,7 +1623,7 @@ MonoBehaviour:
   - {fileID: -7558842593032024359}
   - {fileID: -8864047739792405592}
   - {fileID: 2037308013771676202}
-  - {fileID: 5464645370495334720}
+  - {fileID: -2540922473016164417}
   EditorEvents:
   - {fileID: -4000550750728796806}
   - {fileID: -2971459107962632365}
@@ -1120,51 +1653,51 @@ MonoBehaviour:
   - {fileID: -3149147282779833240}
   - {fileID: -2794253882930209980}
   - {fileID: -1777711126522110673}
-  - {fileID: -4720391138673260150}
-  - {fileID: 1941659227966666935}
-  - {fileID: -1512522676794227849}
-  - {fileID: 1820955036909236755}
-  - {fileID: -6967561863684803905}
-  - {fileID: 7991620860839374633}
-  - {fileID: -451841211258502231}
-  - {fileID: 3439329745457832634}
-  - {fileID: -3118149695735742077}
-  - {fileID: 7958809608718412177}
-  - {fileID: -7620071173535799946}
-  - {fileID: 1720201707363456890}
-  - {fileID: -171977822872540433}
-  - {fileID: 7870004880022964648}
-  - {fileID: 5192273939256335638}
-  - {fileID: 1945909713443595393}
-  - {fileID: 6991874403480987054}
-  - {fileID: -9195325661439900916}
-  - {fileID: 3558860511517804554}
-  - {fileID: 6291269902870985896}
-  - {fileID: 1218711637486866078}
-  - {fileID: 4392797601053888256}
-  - {fileID: -5100061385247778956}
-  - {fileID: -491572085464958842}
-  - {fileID: 6387798555678641138}
-  - {fileID: -4691138180027015771}
-  - {fileID: -3891919592467550348}
-  - {fileID: -506928995743924905}
-  - {fileID: 1233773156476926830}
-  - {fileID: -3150900094943897550}
-  - {fileID: 1753114713770010583}
-  - {fileID: -184533264827584075}
-  - {fileID: 2996455320660168198}
-  - {fileID: 3206250403850874033}
-  - {fileID: -7237237578823856267}
-  - {fileID: 999048066561392675}
-  - {fileID: -4038868349717262679}
-  - {fileID: -793862748941421714}
-  - {fileID: 6055817445109778756}
+  - {fileID: -6047079506080137685}
+  - {fileID: 5056007252897394789}
+  - {fileID: 9126432542386890049}
+  - {fileID: 1104978096524099560}
+  - {fileID: 7593019829296820762}
+  - {fileID: -5028506839903770803}
+  - {fileID: -1702635390250347194}
+  - {fileID: 5963809857119082443}
+  - {fileID: 6470997477017988870}
+  - {fileID: -263342323194766673}
+  - {fileID: -2419523830143125430}
+  - {fileID: -8796077311638325633}
+  - {fileID: -5477252221719977164}
+  - {fileID: -2846193681058068618}
+  - {fileID: -3918155007847251734}
+  - {fileID: 1214352122419896756}
+  - {fileID: 2680560804776194250}
+  - {fileID: 963245819899927143}
+  - {fileID: -3224857069912793793}
+  - {fileID: 4949157336102198074}
+  - {fileID: -6836424688781607372}
+  - {fileID: 5493870708935621171}
+  - {fileID: 3830791589055979209}
+  - {fileID: -2465813948056309407}
+  - {fileID: -3875561065512599303}
+  - {fileID: -7355655491538424360}
+  - {fileID: -8371151647985119844}
+  - {fileID: 6052373308467422803}
+  - {fileID: 2402184494988967632}
+  - {fileID: 4654014807606364326}
+  - {fileID: 5817746662916764465}
+  - {fileID: -5501199393032100034}
+  - {fileID: -8420286582635537309}
+  - {fileID: 1149616568180579823}
+  - {fileID: 2485373506350622854}
+  - {fileID: 8567605738116362809}
+  - {fileID: 1101210140509263242}
+  - {fileID: -474056261283022755}
+  - {fileID: -1573252528048641290}
   EditorParameters: []
   MasterBanks:
   - {fileID: -7558842593032024359}
   StringsBanks:
   - {fileID: -8300424939153912469}
-  cacheTime: 639257808523130578
+  cacheTime: 639257814264313501
   cacheVersion: 131637
 --- !u!114 &600344784844475082
 MonoBehaviour:
@@ -1222,6 +1755,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &963245819899927143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Area_1/Player_Day_Fin_01_All_I_Need
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Area_1/Player_Day_Fin_01_All_I_Need
+  Guid:
+    Data1: 1921744612
+    Data2: 1094408295
+    Data3: 267156374
+    Data4: 823566317
+  Banks:
+  - {fileID: -970304279502095472}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &970878475009029991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1270,6 +1830,114 @@ MonoBehaviour:
     Data4: 156511084
   Banks:
   - {fileID: 5464645370495334720}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &1101210140509263242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Area_3/Player_Night_Storage_02_I_Cant_Think
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Area_3/Player_Night_Storage_02_I_Cant_Think
+  Guid:
+    Data1: 1451310518
+    Data2: 1237609488
+    Data3: -1196034430
+    Data4: -900194561
+  Banks:
+  - {fileID: -2540922473016164417}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &1104978096524099560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Area_1/Player_Day_Wardens_01_Now_That_I
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Area_1/Player_Day_Wardens_01_Now_That_I
+  Guid:
+    Data1: 482236194
+    Data2: 1270004544
+    Data3: -1113300583
+    Data4: -1076054504
+  Banks:
+  - {fileID: -970304279502095472}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &1149616568180579823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Area_3/Player_Night_Check_01_Now_That_I
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Area_3/Player_Night_Check_01_Now_That_I
+  Guid:
+    Data1: -296268456
+    Data2: 1127767590
+    Data3: 1583958455
+    Data4: 870998321
+  Banks:
+  - {fileID: -2540922473016164417}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &1214352122419896756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Area_1/Player_Day_Car_01_That_Car_Will
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Area_1/Player_Day_Car_01_That_Car_Will
+  Guid:
+    Data1: -7005733
+    Data2: 1102125201
+    Data3: 1722708411
+    Data4: -1386346829
+  Banks:
+  - {fileID: -970304279502095472}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1563,7 +2231,7 @@ MonoBehaviour:
   Path: FMODProject/StealthActionGame_Fmod/Build/Desktop/Title.bank
   Name: Title
   StudioPath: bank:/Title
-  lastModified: 639256719749593387
+  lastModified: 639256699408064014
   FileSizes:
   - Name: Desktop
     Value: 1046
@@ -1617,6 +2285,87 @@ MonoBehaviour:
   Banks:
   - {fileID: -7777040713197349281}
   - {fileID: -8864047739792405592}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &2402184494988967632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Area_2/Player_Night_Kill_01_Now_That_I
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Area_2/Player_Night_Kill_01_Now_That_I
+  Guid:
+    Data1: -706034283
+    Data2: 1091220960
+    Data3: 25564061
+    Data4: -1551556350
+  Banks:
+  - {fileID: 8354602645938095227}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &2485373506350622854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Area_3/Player_Night_Storage_01_Why_There_Are
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Area_3/Player_Night_Storage_01_Why_There_Are
+  Guid:
+    Data1: 358941801
+    Data2: 1102887892
+    Data3: -920795507
+    Data4: 1435439887
+  Banks:
+  - {fileID: -2540922473016164417}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &2680560804776194250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Area_1/Player_Day_Schedule_02_I_Think_I
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Area_1/Player_Day_Schedule_02_I_Think_I
+  Guid:
+    Data1: -2070805025
+    Data2: 1231802542
+    Data3: -1774557806
+    Data4: -294654380
+  Banks:
+  - {fileID: -970304279502095472}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1759,6 +2508,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 159111
+--- !u!114 &3830791589055979209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Area_2/Player_Night_Office_02_Even_Better_When
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Area_2/Player_Night_Office_02_Even_Better_When
+  Guid:
+    Data1: 237310522
+    Data2: 1335014790
+    Data3: 85198510
+    Data4: 1209316504
+  Banks:
+  - {fileID: 8354602645938095227}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &4392797601053888256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1810,6 +2586,87 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &4654014807606364326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Area_2/Player_Night_Start_01_It_Is_Easier
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Area_2/Player_Night_Start_01_It_Is_Easier
+  Guid:
+    Data1: -163335470
+    Data2: 1103849978
+    Data3: 976487049
+    Data4: 1201267126
+  Banks:
+  - {fileID: 8354602645938095227}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &4949157336102198074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Area_1/Player_Day_Con_01_Was_That_Window
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Area_1/Player_Day_Con_01_Was_That_Window
+  Guid:
+    Data1: -1798610690
+    Data2: 1250767777
+    Data3: -1578348893
+    Data4: 1317900162
+  Banks:
+  - {fileID: -970304279502095472}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &5056007252897394789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Area_1/Player_Day_Start_02_That_Scream_Was
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Area_1/Player_Day_Start_02_That_Scream_Was
+  Guid:
+    Data1: -1416948461
+    Data2: 1307693494
+    Data3: 413851016
+    Data4: 1933088249
+  Banks:
+  - {fileID: -970304279502095472}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &5131471935231206571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1879,11 +2736,65 @@ MonoBehaviour:
   Path: FMODProject/StealthActionGame_Fmod/Build/Desktop/Area_3.bank
   Name: Area_3
   StudioPath: bank:/Area/Area_3
-  lastModified: 639257808523130578
+  lastModified: 639257749196066471
   FileSizes:
   - Name: Desktop
     Value: 219712
   Exists: 1
+--- !u!114 &5493870708935621171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Area_2/Player_Night_Kill_02_Barrels_They_Placed
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Area_2/Player_Night_Kill_02_Barrels_They_Placed
+  Guid:
+    Data1: 1600306735
+    Data2: 1098230398
+    Data3: -688395604
+    Data4: 647580622
+  Banks:
+  - {fileID: 8354602645938095227}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &5817746662916764465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Area_2/Record_Night_Infirmary_01_Im_Giving_A
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Area_2/Record_Night_Infirmary_01_Im_Giving_A
+  Guid:
+    Data1: 2041092064
+    Data2: 1132773354
+    Data3: -1203492480
+    Data4: -1566768273
+  Banks:
+  - {fileID: 8354602645938095227}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &5867556944425675471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1899,11 +2810,65 @@ MonoBehaviour:
   Path: FMODProject/StealthActionGame_Fmod/Build/Desktop/BGM.bank
   Name: BGM
   StudioPath: bank:/BGM
-  lastModified: 639256719749363691
+  lastModified: 639256699407633383
   FileSizes:
   - Name: Desktop
     Value: 5437984
   Exists: 1
+--- !u!114 &5963809857119082443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Area_1/Guard_Day_Unauthorized
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Area_1/Guard_Day_Unauthorized
+  Guid:
+    Data1: 1830579776
+    Data2: 1146641635
+    Data3: 931227554
+    Data4: 1376796321
+  Banks:
+  - {fileID: -970304279502095472}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &6052373308467422803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Area_2/Player_Night_3F_01_That_Window_I
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Area_2/Player_Night_3F_01_That_Window_I
+  Guid:
+    Data1: 1393852819
+    Data2: 1144437748
+    Data3: -1872589924
+    Data4: -2143367846
+  Banks:
+  - {fileID: 8354602645938095227}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &6055817445109778756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1985,6 +2950,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &6470997477017988870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Area_1/Player_Day_Route_01_It's_Time_For
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Area_1/Player_Day_Route_01_It's_Time_For
+  Guid:
+    Data1: 1015749962
+    Data2: 1236724442
+    Data3: 186402464
+    Data4: -1903060994
+  Banks:
+  - {fileID: -970304279502095472}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &6554920335831231412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2055,6 +3047,33 @@ MonoBehaviour:
     Data2: 1309498703
     Data3: 713570469
     Data4: 1682129704
+  Banks:
+  - {fileID: -970304279502095472}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &7593019829296820762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Area_1/Player_Day_Start_05_Which_Means_I
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Area_1/Player_Day_Start_05_Which_Means_I
+  Guid:
+    Data1: 685697066
+    Data2: 1291802905
+    Data3: -1677883258
+    Data4: -1700654675
   Banks:
   - {fileID: -970304279502095472}
   IsStream: 0
@@ -2189,11 +3208,38 @@ MonoBehaviour:
   Path: FMODProject/StealthActionGame_Fmod/Build/Desktop/Area_2.bank
   Name: Area_2
   StudioPath: bank:/Area/Area_2
-  lastModified: 639257808523110187
+  lastModified: 639257814264158666
   FileSizes:
   - Name: Desktop
     Value: 369536
   Exists: 1
+--- !u!114 &8567605738116362809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Area_3/Player_Night_StockKey_01_Is_This_The
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Area_3/Player_Night_StockKey_01_Is_This_The
+  Guid:
+    Data1: -151791959
+    Data2: 1308847368
+    Data3: -2042737220
+    Data4: -757087278
+  Banks:
+  - {fileID: -2540922473016164417}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &8856954376675533212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2242,6 +3288,33 @@ MonoBehaviour:
   Banks:
   - {fileID: -7777040713197349281}
   - {fileID: -8864047739792405592}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &9126432542386890049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Area_1/Player_Day_Start_03_I_Thought_He
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Area_1/Player_Day_Start_03_I_Thought_He
+  Guid:
+    Data1: 1808017437
+    Data2: 1128458464
+    Data3: 209973147
+    Data4: -1549732754
+  Banks:
+  - {fileID: -970304279502095472}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
