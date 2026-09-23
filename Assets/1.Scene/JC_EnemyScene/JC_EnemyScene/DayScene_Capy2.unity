@@ -18500,15 +18500,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPCInteractionObject
   npcName: hi
   dialogueLines:
-  - subtitleText: higg
+  - subtitleText: 21324
     audioEvent:
       Guid:
-        Data1: -224323914
-        Data2: 1242390912
-        Data3: -1921241427
-        Data4: 910925899
-      Path: event:/AMB/AMB_Day
-    duration: 5
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
+    duration: 3
     isObjectSound: 0
   completeMissionTargetOnDialogueEnd: 0
   animator: {fileID: 1718469879}
