@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dea20072d2d3d746a6e660ac87e4cd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CorpseContainerAction
-  animationTrigger: 
+  animationTrigger: PutDown
   actionDelay: 0
   duration: 0.7
   alignAnchor: {fileID: 0}
