@@ -344,6 +344,7 @@ MonoBehaviour:
   Banks:
   - Area_1
   - Area_2
+  - Area_3
   - BGM
   - Ending
   - Enemy
