@@ -109,7 +109,7 @@ public class EnemyMovement : MonoBehaviour
         _animator.SetFloat(_animIDSpeed, suppress ? 0f : _agent.velocity.magnitude);
     }
 
-    // 대기(Idle) 모션을 여러 개 중 랜덤으로 고른다. 루프 경계에서만 호출되므로 즉시 세팅해도 어색하지 않다.
+
     public void RandomizeIdle()
     {
         if (_animator == null || idleClipCount <= 1) return;
@@ -117,7 +117,7 @@ public class EnemyMovement : MonoBehaviour
         _animator.SetFloat(_animIDIdleIndex, Random.Range(0, idleClipCount));
     }
 
-    // Idle 인덱스를 특정 값으로 고정한다. LookAround처럼 회전과 겹치는 상황에서 사용.
+
     public void SetIdleIndex(int index)
     {
         if (_animator == null) return;
@@ -125,8 +125,7 @@ public class EnemyMovement : MonoBehaviour
         _animator.SetFloat(_animIDIdleIndex, index);
     }
 
-    // 지금이 현재 재생 중인 Idle 클립의 루프 경계(막 끝났거나 막 시작한 지점)인지 확인한다.
-    // 특수행동(LookAround 등) 시작을 이 경계까지 미뤄서 클립이 도중에 끊기지 않게 하는 용도.
+
     public bool IsIdleAtLoopBoundary()
     {
         if (_animator == null) return true;
