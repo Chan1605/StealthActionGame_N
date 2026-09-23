@@ -8,7 +8,7 @@ using DG.Tweening;
 public class SceneLoader : MonoBehaviour
 {
     [SerializeField] private string next_scene; //디버그용
-    [SerializeField] private Text percent_text;
+    //[SerializeField] private Text percent_text;
 
     [Header("툴팁")]
     [SerializeField] private Text tip_text;
@@ -16,10 +16,10 @@ public class SceneLoader : MonoBehaviour
     [SerializeField] private float tip_interval = 3f;
 
     [Header("로딩중")]
-    [SerializeField] private Text loading_dots_text;
-    [SerializeField] private string loading_base_text = "Loading";
-    [SerializeField] private int max_dots = 7;
-    [SerializeField] private float dot_interval = 0.5f;
+    //[SerializeField] private Text loading_dots_text;
+    //[SerializeField] private string loading_base_text = "Loading";
+    //[SerializeField] private int max_dots = 7;
+    //[SerializeField] private float dot_interval = 0.5f;
 
     [Header("Fade")]
     [SerializeField] private CanvasGroup fade_canvas_group;
@@ -28,6 +28,11 @@ public class SceneLoader : MonoBehaviour
     [Header("디버그용")]
     [Range(0f, 1f)]
     [SerializeField] private float load_speed = 1f;
+
+    [Header("연출")]
+    [SerializeField] private Image bg_img;
+    [SerializeField] private float slide_duration = 10f;
+    [SerializeField] private Slider loading_slider;
 
     private string[] tip_list;
     private Coroutine tip_co;
@@ -52,10 +57,20 @@ public class SceneLoader : MonoBehaviour
         {
             tip_co = StartCoroutine(Tooltip_co());
         }
-
+        /*
         if (loading_dots_text != null)
         {
             dots_co = StartCoroutine(LoadDots_co());
+        }
+        */
+
+        if(bg_img != null)
+        {
+            Sequence sequence = DOTween.Sequence();
+
+            sequence.Append(bg_img.transform.DOMoveX(1, slide_duration).SetRelative())
+                .Join(bg_img.transform.DOMoveY(0.3f, slide_duration).SetRelative())
+                .Append(bg_img.DOFade(0, 5f)).SetLoops(-1, LoopType.Yoyo);
         }
     }
 
@@ -70,11 +85,12 @@ public class SceneLoader : MonoBehaviour
         while (!load_op.isDone)
         {
             yield return null;
+
             timer += Time.deltaTime * load_speed;
             if (percentage >= 90)
             {
                 percentage = Mathf.Lerp(percentage, 100, timer);
-                if (percentage.Equals(100f))
+                if (percentage>=100f)
                 {
                     if (fade_canvas_group != null)
                     {
@@ -87,16 +103,19 @@ public class SceneLoader : MonoBehaviour
             else
             {
                 percentage = Mathf.Lerp(percentage, load_op.progress * 100f, timer);
+
                 if (percentage >= 90)
                 {
                     timer = 0;
                 }
-                percent_text.text = percentage.ToString("0") + "%";
+
+                // percent_text.text = percentage.ToString("0") + "%";
             }
+                loading_slider.value = percentage * 0.01f;
         }
 
         if (tip_co != null) StopCoroutine(tip_co);
-        if (dots_co != null) StopCoroutine(dots_co);
+        //if (dots_co != null) StopCoroutine(dots_co);
     }
 
     private IEnumerator Tooltip_co()
@@ -118,7 +137,7 @@ public class SceneLoader : MonoBehaviour
             yield return wait;
         }
     }
-
+    /*
     private IEnumerator LoadDots_co()
     {
         int dot_count = 0;
@@ -138,4 +157,6 @@ public class SceneLoader : MonoBehaviour
             dot_count = (dot_count + 1) % (max_dots + 1);
         }
     }
+     */
+
 }
