@@ -79,6 +79,15 @@ public abstract class InteractionAction : MonoBehaviour
         }
     }
 
+    // 시체를 든 채로도 실행할 수 있는 액션인지. (기본은 불가 — 시체 처리 장치만 허용)
+    public virtual bool isAllowedWhileCarrying
+    {
+        get
+        {
+            return false;
+        }
+    }
+
     public bool IsReady(Transform user)
     {
         if (isUsed && !isRepeatable)

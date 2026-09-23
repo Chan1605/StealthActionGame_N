@@ -212,6 +212,18 @@ public class PlayerInteractionRunner : MonoBehaviour
             return null;
         }
 
+        // 시체를 들고 있는 동안에는 시체 처리 장치 외의 상호작용을 막는다.
+        // 여기서 null을 돌려주면 CarrySystem이 대신 '내려놓기'를 실행한다.
+        if (_carry != null && _carry.isCarrying && !action.isAllowedWhileCarrying)
+        {
+            if (isDebugLog)
+            {
+                Debug.Log($"[Interaction] 시체를 든 상태에서는 '{action.name}'을(를) 쓸 수 없습니다.", action);
+            }
+
+            return null;
+        }
+
         return action;
     }
 
