@@ -32,6 +32,12 @@ public class AssassinationSystem : MonoBehaviour
     private PlayerCameraRig _cameraRig;
     private PlayerAnimator _playerAnimator;
 
+    // 동시 실행 방지용 (다른 행동이 진행 중인지 확인)
+    private PlayerInteractionRunner _runner;
+    private CarrySystem _carry;
+    private PlayerWallClimb _wallClimb;
+    private PlayerThrow _throw;
+
     private Vector3 _lockedPosition;
     private Quaternion _lockedRotation;
     private float _sequenceStartTime;
@@ -54,6 +60,11 @@ public class AssassinationSystem : MonoBehaviour
         _movement = GetComponent<PlayerController>();
         _cameraRig = GetComponent<PlayerCameraRig>();
         _playerAnimator = GetComponent<PlayerAnimator>();
+
+        _runner = GetComponent<PlayerInteractionRunner>();
+        _carry = GetComponent<CarrySystem>();
+        _wallClimb = GetComponent<PlayerWallClimb>();
+        _throw = GetComponent<PlayerThrow>();
 
         if (killCamera != null)
         {
@@ -114,6 +125,19 @@ public class AssassinationSystem : MonoBehaviour
             return;
         }
 
+        // 다른 행동이 진행 중이면 암살을 시작하지 않는다.
+        // 겹쳐서 실행되면 서로 PlayerController / CharacterController를 엇갈려 켜고 꺼서
+        // "CharacterController.Move called on inactive controller" 에러가 난다.
+        if (!IsFree())
+        {
+            if (isDebugLog)
+            {
+                Debug.Log("[Assassination] 다른 행동이 진행 중이라 무시합니다.");
+            }
+
+            return;
+        }
+
         TakedownVictim victim = FindVictim();
         if (victim == null)
         {
@@ -126,6 +150,32 @@ public class AssassinationSystem : MonoBehaviour
         }
 
         StartCoroutine(Execute_co(victim));
+    }
+
+    // 다른 플레이어 행동이 진행 중인지 확인한다. (PlayerThrow / CarrySystem / PlayerWallClimb와 같은 규칙)
+    private bool IsFree()
+    {
+        if (_runner != null && _runner.isBusy)
+        {
+            return false;
+        }
+
+        if (_carry != null && _carry.isBlockingOtherActions)
+        {
+            return false;
+        }
+
+        if (_wallClimb != null && _wallClimb.isBusy)
+        {
+            return false;
+        }
+
+        if (_throw != null && _throw.isBusy)
+        {
+            return false;
+        }
+
+        return true;
     }
 
     private TakedownVictim FindVictim()

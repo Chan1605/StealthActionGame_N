@@ -43,6 +43,7 @@ MonoBehaviour:
   attackRecoveryTime: 0.6
   investigateCheckDuration: 2.5
   soundInvestigateCheckDuration: 15
+  investigateCatchRadius: 5
   spawnMoveSpeed: 2.5
   detectedLoseTime: 2.5
   patrolIdleChance: 1
@@ -57,4 +58,4 @@ MonoBehaviour:
   corpseDetectRadius: 12
   corpseAlertDuration: 8
   suspiciousActionLimit: 2
-  suspiciousActionCooldown: 6.02
+  suspiciousActionCooldown: 1.5

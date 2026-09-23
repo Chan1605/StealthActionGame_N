@@ -1448,12 +1448,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   walkSpeed: 3.5
-  sprintSpeed: 6.5
+  sprintSpeed: 5
   crouchSpeed: 1.5
   acceleration: 14
   deceleration: 40
   turnSmoothTime: 0.1
-  jumpHeight: 1.2
+  jumpHeight: 1
   gravity: -22
   groundedGravity: -2
   coyoteTime: 0.12
@@ -1751,7 +1751,7 @@ MonoBehaviour:
   runSpeedThreshold: 4
   walkSoundScore: 20
   runSoundScore: 40
-  testStealthWeight: 0
+  testStealthWeight: 1
   debugSpeed: 0
   debugSoundIntensity: 0
 --- !u!114 &7605777532991227117
@@ -1890,6 +1890,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyInventory
   debugHeldKeys: []
+  isRestoreOnStart: 1
 --- !u!114 &5400224970547540629
 MonoBehaviour:
   m_ObjectHideFlags: 0
