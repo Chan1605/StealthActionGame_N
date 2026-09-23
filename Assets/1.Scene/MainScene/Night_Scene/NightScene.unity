@@ -3010,6 +3010,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prison
       objectReference: {fileID: 0}
+    - target: {fileID: 5626179329465013756, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
+      propertyPath: requiredKeyId
+      value: RoomKey
+      objectReference: {fileID: 0}
     - target: {fileID: 6550717789633109706, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
