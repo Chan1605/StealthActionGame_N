@@ -5,14 +5,37 @@ public class KeyInventory : MonoBehaviour
 {
     private readonly HashSet<string> _keys = new HashSet<string>();
 
-    [Header("µğ¹ö±× (ÀĞ±â Àü¿ë)")]
+    [Header("ë””ë²„ê·¸ìš© (ì½ê¸° ì „ìš©)")]
     [SerializeField] private List<string> debugHeldKeys = new List<string>();
+
+    [Header("ë³µì›")]
+    [SerializeField] private bool isRestoreOnStart = true;
+
+    private void Start()
+    {
+        if (!isRestoreOnStart)
+        {
+            return;
+        }
+
+        // ì´ì „ ì”¬ì—ì„œ ë„˜ì–´ì˜¨ í‚¤ë¥¼ ë³µì›í•œë‹¤.
+        RestoreFrom(GameSession.Instance.GetPendingKeys());
+    }
 
     public void AddKey(string keyId)
     {
-        _keys.Add(keyId);
+        if (string.IsNullOrEmpty(keyId))
+        {
+            return;
+        }
+
+        if (!_keys.Add(keyId))
+        {
+            return;
+        }
+
         debugHeldKeys.Add(keyId);
-        Debug.Log($"[KeyInventory] Å° È¹µæ: {keyId} (º¸À¯ {_keys.Count}°³)");
+        Debug.Log($"[KeyInventory] í‚¤ íšë“: {keyId} (í˜„ì¬ {_keys.Count}ê°œ)");
     }
 
     public bool HasKey(string keyId)
@@ -20,12 +43,31 @@ public class KeyInventory : MonoBehaviour
         return _keys.Contains(keyId);
     }
 
-    public void RestoreFrom(KeyInventory other)
+    public List<string> GetKeys()
     {
-        if (other == null) return;
-        foreach (string keyId in other.debugHeldKeys)
+        return new List<string>(_keys);
+    }
+
+    public void RestoreFrom(IEnumerable<string> keyIds)
+    {
+        if (keyIds == null)
+        {
+            return;
+        }
+
+        foreach (string keyId in keyIds)
         {
             AddKey(keyId);
         }
+    }
+
+    public void RestoreFrom(KeyInventory other)
+    {
+        if (other == null)
+        {
+            return;
+        }
+
+        RestoreFrom(other.GetKeys());
     }
 }

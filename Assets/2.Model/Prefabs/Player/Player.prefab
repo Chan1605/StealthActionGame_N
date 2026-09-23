@@ -1766,8 +1766,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c309ada2a3e117d4a8336965ce48bb30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DummyDamageable
-  maxHealth: 20
-  debugHealth: 20
+  maxHealth: 100
+  debugHealth: 100
   healthUI: {fileID: 0}
   regenDelay: 4
   regenInterval: 1

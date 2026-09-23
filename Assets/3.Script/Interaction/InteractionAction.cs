@@ -70,6 +70,15 @@ public abstract class InteractionAction : MonoBehaviour
 
     public bool isUsed { get; private set; }
 
+    // true인 동안 PlayerInteractionRunner가 조작 잠금을 유지한다. (문서 보기 등)
+    public virtual bool isHoldingPlayer
+    {
+        get
+        {
+            return false;
+        }
+    }
+
     public bool IsReady(Transform user)
     {
         if (isUsed && !isRepeatable)
