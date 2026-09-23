@@ -4573,6 +4573,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6633054249897145814, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
+      propertyPath: alarmSoundRadius
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8095754827116548373, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
       propertyPath: m_Materials.Array.size
       value: 2

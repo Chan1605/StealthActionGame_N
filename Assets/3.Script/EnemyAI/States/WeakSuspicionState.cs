@@ -58,27 +58,19 @@ public class WeakSuspicionState : IEnemyState
 
     private void HandleConfirmedSuspicion(EnemyStateMachine fsm)
     {
-        bool isZonedFreeTime = PrisonScheduleManager.Instance != null
-            && PrisonScheduleManager.Instance.IsFreeTime
-            && !fsm.Perception.IsAlwaysAlert;
-
-        if (!isZonedFreeTime)
+        if (fsm.Perception.IsAlarmSource)
         {
+            // 경보기 같은 환경음은 개인 도발이 아니므로, 예외 대상이라도 일단 수색하러 보낸다.
             fsm.ChangeState(new StrongSuspicionState());
             return;
         }
 
-        fsm.Perception.RegisterSuspiciousAction();
+        if (fsm.TryDetectedByProvocation())
+        {
+            return;
+        }
 
-        if (fsm.Perception.SuspiciousActionCount >= fsm.Data.suspiciousActionLimit)
-        {
-            fsm.ChangeState(new DetectedState()); // 2회째는 확인 절차 없이 곧바로 발견/공격
-        }
-        else
-        {
-            fsm.Owner.PlayWarningSound();
-            fsm.Perception.ReduceScoreSharply();
-        }
+        fsm.ChangeState(new StrongSuspicionState());
     }
 
     public void Exit(EnemyStateMachine fsm)

@@ -44,6 +44,30 @@ public class EnemyStateMachine
         ChangeState(new NormalState());
     }
 
+    public bool TryDetectedByProvocation()
+    {
+        bool isZonedFreeTime = PrisonScheduleManager.Instance != null
+            && PrisonScheduleManager.Instance.IsFreeTime
+            && !Perception.IsAlwaysAlert;
+
+        if (!isZonedFreeTime)
+        {
+            return false; // 예외 대상이 아니면 false로 반환, 호출한 쪽이 원래 로직대로 처리
+        }
+
+        Perception.RegisterSuspiciousAction(Data.suspiciousActionCooldown);
+
+        if (Perception.SuspiciousActionCount >= Data.suspiciousActionLimit)
+        {
+            ChangeState(new DetectedState());
+            return true;
+        }
+
+        Owner.PlayWarningSound();
+        Perception.ReduceScoreSharply();
+        return true; // 예외 대상이라 경고로 흡수했으니 호출한 쪽은 더 진행하면 안 됨
+    }
+
 #if UNITY_EDITOR
     public string CurrentStateName => _current?.GetType().Name ?? "None";
 #endif
