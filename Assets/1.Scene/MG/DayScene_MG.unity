@@ -462,6 +462,7 @@ GameObject:
   m_Component:
   - component: {fileID: 126951816}
   - component: {fileID: 126951817}
+  - component: {fileID: 126951818}
   m_Layer: 8
   m_Name: Away4
   m_TagString: Untagged
@@ -497,6 +498,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaypointTarget
   completeRadius: 3
+--- !u!114 &126951818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126951815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8338a1efc3f31eb43979c37169625e4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SubtitleTrigger
+  lookSubtitles: []
+  endSubtitles:
+  - subtitleText: "\uC800 \uCC28\uBA74 \uAC80\uBB38\uC18C\uB97C \uB3CC\uD30C\uD558\uAE30\uC5D4
+      \uCDA9\uBD84\uD560 \uAC83 \uAC19\uAD70. "
+    audioEvent:
+      Guid:
+        Data1: -7005733
+        Data2: 1102125201
+        Data3: 1722708411
+        Data4: -1386346829
+      Path: event:/Area_1/Player_Day_Car_01_That_Car_Will
+    duration: 3
+    isObjectSound: 0
 --- !u!1 &141666837 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 815024444929464275, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
@@ -758,7 +784,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8338a1efc3f31eb43979c37169625e4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SubtitleTrigger
-  lookSubtitles:
+  lookSubtitles: []
+  endSubtitles:
   - subtitleText: "\uC774\uC81C\uB294 \uC5B4\uB5BB\uAC8C \uD0C8\uCD9C\uD574\uC57C\uD560
       \uC9C0 \uB3D9\uC120\uC744 \uC9E4 \uCC28\uB840\uAD70."
     audioEvent:
@@ -781,7 +808,6 @@ MonoBehaviour:
       Path: event:/Area_1/Player_Day_Route_02_How_Can_I
     duration: 3
     isObjectSound: 0
-  endSubtitles: []
 --- !u!1 &363773323 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1985271141627831645, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
@@ -1521,6 +1547,7 @@ GameObject:
   - component: {fileID: 746241504}
   - component: {fileID: 746241503}
   - component: {fileID: 746241502}
+  - component: {fileID: 746241511}
   m_Layer: 7
   m_Name: Key
   m_TagString: Untagged
@@ -1718,6 +1745,31 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &746241511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 746241501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8338a1efc3f31eb43979c37169625e4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SubtitleTrigger
+  lookSubtitles: []
+  endSubtitles:
+  - subtitleText: "\uD0A4\uB97C \uD655\uBCF4\uD588\uC73C\uB2C8 \uC5B8\uC81C\uB4E0
+      \uB098\uAC08 \uC218 \uC788\uACA0\uC5B4."
+    audioEvent:
+      Guid:
+        Data1: 482236194
+        Data2: 1270004544
+        Data3: -1113300583
+        Data4: -1076054504
+      Path: event:/Area_1/Player_Day_Wardens_01_Now_That_I
+    duration: 4
+    isObjectSound: 0
 --- !u!1 &752859725
 GameObject:
   m_ObjectHideFlags: 0
@@ -3009,7 +3061,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8338a1efc3f31eb43979c37169625e4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SubtitleTrigger
-  lookSubtitles:
+  lookSubtitles: []
+  endSubtitles:
   - subtitleText: "\uBB38\uC744 \uC5F4 \uBC29\uBC95\uC774 \uD544\uC694\uD574."
     audioEvent:
       Guid:
@@ -3031,7 +3084,6 @@ MonoBehaviour:
       Path: event:/Area_1/Player_Day_Key_02_I_Heard_That
     duration: 5
     isObjectSound: 0
-  endSubtitles: []
 --- !u!1 &1348759210
 GameObject:
   m_ObjectHideFlags: 0
@@ -4303,6 +4355,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1685319916}
   - component: {fileID: 1685319917}
+  - component: {fileID: 1685319918}
   m_Layer: 0
   m_Name: Away3
   m_TagString: Untagged
@@ -4338,6 +4391,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaypointTarget
   completeRadius: 2.5
+--- !u!114 &1685319918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685319915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8338a1efc3f31eb43979c37169625e4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SubtitleTrigger
+  lookSubtitles: []
+  endSubtitles:
+  - subtitleText: "\uC800\uCABD\uC774 \uAC04\uC218\uC7A5\uC2E4\uC774\uC5C8\uC9C0?
+      \uADF8\uB7EC\uBA74 \uC800 \uCC3D\uBB38\uC5D0\uC11C \uC798 \uCC29\uB959\uD558\uBA74
+      \uAD1C\uCC2E\uACA0\uC5B4."
+    audioEvent:
+      Guid:
+        Data1: -1798610690
+        Data2: 1250767777
+        Data3: -1578348893
+        Data4: 1317900162
+      Path: event:/Area_1/Player_Day_Con_01_Was_That_Window
+    duration: 5
+    isObjectSound: 0
+  - subtitleText: "\uC624\uB298 \uC790\uC7AC\uC2E4 \uB2F9\uC9C1\uB9CC \uB05D\uB098\uBA74
+      \uB0B4 \uCCAB \uCC28\uB97C \uD0C0\uACE0 \uB4DC\uB77C\uC774\uBE0C\uB97C \uD55C
+      \uBC88 \uD574\uBCFC\uAE4C."
+    audioEvent:
+      Guid:
+        Data1: 1789380407
+        Data2: 1164003659
+        Data3: -70498930
+        Data4: 964217763
+      Path: event:/Area_1/Guard_Day_Con_01_Ill_Go_On
+    duration: 4
+    isObjectSound: 0
 --- !u!1 &1691497791 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4821929392590497647, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
@@ -4684,6 +4775,36 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1816534857 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5708110496642771988, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
+  m_PrefabInstance: {fileID: 1832282073}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1816534869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816534857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8338a1efc3f31eb43979c37169625e4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SubtitleTrigger
+  lookSubtitles: []
+  endSubtitles:
+  - subtitleText: "\uBCD1\uC774 \uAE68\uC9C0\uBA74 \uB098\uB294 \uC694\uB780\uD55C
+      \uC18C\uB9AC\uB77C\uBA74 \uAC04\uC218\uB97C \uC720\uB3C4\uD560 \uB54C \uC720\uC6A9\uD558\uACA0\uC5B4."
+    audioEvent:
+      Guid:
+        Data1: 803610107
+        Data2: 1309498703
+        Data3: 713570469
+        Data4: 1682129704
+      Path: event:/Area_1/Player_Day_Bottle_01_The_Noise_That
+    duration: 4
+    isObjectSound: 0
 --- !u!1 &1818163930 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5799505215783519586, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
@@ -4850,6 +4971,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5799505215783519586, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1818163939}
+    - targetCorrespondingSourceObject: {fileID: 5708110496642771988, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1816534869}
     - targetCorrespondingSourceObject: {fileID: 5783841158186572294, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1980429400}
@@ -4904,6 +5028,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4585078053885181286, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1978229067}
+    - targetCorrespondingSourceObject: {fileID: 4585078053885181286, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1978229071}
     - targetCorrespondingSourceObject: {fileID: 7096459054472166314, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 532888021}
@@ -5281,6 +5408,42 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.0202588, y: 0.000042289495, z: 0.0166767}
   m_Center: {x: 0.0239123, y: 0.033938464, z: -0.00653649}
+--- !u!114 &1978229071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1978229065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8338a1efc3f31eb43979c37169625e4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SubtitleTrigger
+  lookSubtitles: []
+  endSubtitles:
+  - subtitleText: "\uAD50\uB300\uADFC\uBB34\uD45C\uB77C, \uD0C8\uCD9C\uACC4\uD68D\uC744
+      \uB9CC\uB4E4 \uB54C \uCC38\uC870\uD558\uBA74 \uC720\uC6A9\uD558\uACA0\uC5B4."
+    audioEvent:
+      Guid:
+        Data1: -498669479
+        Data2: 1077039279
+        Data3: -674110801
+        Data4: 1375223890
+      Path: event:/Area_1/Player_Day_Schedule_01_A_Shift_Schedule
+    duration: 4
+    isObjectSound: 0
+  - subtitleText: "\uC774 \uC815\uB3C4\uBA74 \uC5B4\uB5BB\uAC8C \uD0C8\uCD9C\uD574\uC57C\uD560
+      \uC9C0 \uACC4\uD68D\uC744 \uC7A1\uC740 \uAC83 \uAC19\uAD70."
+    audioEvent:
+      Guid:
+        Data1: -2070805025
+        Data2: 1231802542
+        Data3: -1774557806
+        Data4: -294654380
+      Path: event:/Area_1/Player_Day_Schedule_02_I_Think_I
+    duration: 3
+    isObjectSound: 0
 --- !u!1 &1979490593 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2189277402768548908, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
