@@ -7,19 +7,19 @@ using FMODUnity;
 [RequireComponent(typeof(EnemyPerception))]
 public class EnemyAI : MonoBehaviour
 {
-    [Header("ë°ì´í„°")]
+    [Header("µ¥ÀÌÅÍ")]
     [SerializeField] private EnemyAIData data;
     [SerializeField] private WaypointGroup waypoints;
 
-    [Header("ê°ì§€ ëŒ€ìƒ")]
-    [SerializeField] private MonoBehaviour targetObject; // IDetectableì„ êµ¬í˜„í•œ ì»´í¬ë„ŒíŠ¸ë¥¼ ë“œë˜ê·¸
+    [Header("°¨Áö ´ë»ó")]
+    [SerializeField] private MonoBehaviour targetObject; // IDetectableÀ» ±¸ÇöÇÑ ÄÄÆ÷³ÍÆ®¸¦ µå·¡±×
 
-    [Header("ì—°ì¶œ")]
+    [Header("¿¬Ãâ")]
     [SerializeField] private Animator animator;
     [SerializeField] private EnemyIndicator indicator;
 
 
-    [Header("ì‚¬ìš´ë“œ (FMOD) - ë¹„ì›Œë‘ë©´ ì¬ìƒí•˜ì§€ ì•ŠìŒ")]
+    [Header("»ç¿îµå (FMOD) - ºñ¿öµÎ¸é Àç»ıÇÏÁö ¾ÊÀ½")]
     [SerializeField] private EventReference SE_Warning;
     [SerializeField] private EventReference SE_AttackSwing;
     [SerializeField] private EventReference SE_Assassinated;
@@ -27,15 +27,16 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private EventReference SE_StrongSuspicion;
     [SerializeField] private EventReference SE_Detected;
     [SerializeField] private EventReference SE_LostPlayer;
-    [SerializeField] private float weakVoiceCooldown = 3f;   // ì•½í•œ ì˜ì‹¬ ëª©ì†Œë¦¬ ìµœì†Œ ê°„ê²©
+    [SerializeField] private float weakVoiceCooldown = 3f;   // ¾àÇÑ ÀÇ½É ¸ñ¼Ò¸® ÃÖ¼Ò °£°İ
 
     private float _lastWeakVoiceTime = -999f;
 
     private Vector3 _spawnPosition;
     private Quaternion _spawnRotation;
     public EnemyIndicator Indicator => indicator;
-    [Header("ììœ ì‹œê°„ ì˜ˆì™¸")]
-    [SerializeField] private bool isAlwaysAlert; // ë°© ì§€í‚¤ëŠ” êµë„ê´€ ë“±
+    public Quaternion SpawnRotation => _spawnRotation;
+    [Header("ÀÚÀ¯½Ã°£ ¿¹¿Ü")]
+    [SerializeField] private bool isAlwaysAlert; // ¹æ ÁöÅ°´Â ±³µµ°ü µî
 
     private EnemyMovement _movement;
     private EnemyPerception _perception;
@@ -65,7 +66,7 @@ public class EnemyAI : MonoBehaviour
         _mini = FindAnyObjectByType<MinimapManager>();
         _mini?.RegisterEnemy(transform);
         if (_fsm.DamageTarget == null)
-            Debug.LogWarning($"{name}: targetObjectì—ì„œ IDamageableì„ ì°¾ì§€ ëª»í–ˆìŠµë‹ˆë‹¤. ë°œê²¬ ìƒíƒœ ê³µê²©ì´ ë¹„í™œì„±í™”ë©ë‹ˆë‹¤.");
+            Debug.LogWarning($"{name}: targetObject¿¡¼­ IDamageableÀ» Ã£Áö ¸øÇß½À´Ï´Ù. ¹ß°ß »óÅÂ °ø°İÀÌ ºñÈ°¼ºÈ­µË´Ï´Ù.");
     }
 
     private void Start()
@@ -141,7 +142,7 @@ public class EnemyAI : MonoBehaviour
     }
 
 
-    // ê³µí†µ ì¬ìƒ: ì´ë²¤íŠ¸ê°€ ë¹„ì–´ ìˆê±°ë‚˜ AudioManagerê°€ ì—†ìœ¼ë©´ ì¡°ìš©íˆ ë„˜ì–´ê°„ë‹¤.
+    // °øÅë Àç»ı: ÀÌº¥Æ®°¡ ºñ¾î ÀÖ°Å³ª AudioManager°¡ ¾øÀ¸¸é Á¶¿ëÈ÷ ³Ñ¾î°£´Ù.
     private void PlaySound(EventReference sound)
     {
         if (sound.IsNull) return;
@@ -167,7 +168,7 @@ public class EnemyAI : MonoBehaviour
 
     public void PlayWeakSuspicionSound()
     {
-        // ì ìˆ˜ê°€ ê²½ê³„ê°’ ê·¼ì²˜ì—ì„œ ì™”ë‹¤ ê°”ë‹¤ í•˜ë©´ Normal <-> Weakê°€ ë°˜ë³µë¼ì„œ ì†Œë¦¬ê°€ ì—°íƒ€ë  ìˆ˜ ìˆë‹¤.
+        // Á¡¼ö°¡ °æ°è°ª ±ÙÃ³¿¡¼­ ¿Ô´Ù °¬´Ù ÇÏ¸é Normal <-> Weak°¡ ¹İº¹µÅ¼­ ¼Ò¸®°¡ ¿¬Å¸µÉ ¼ö ÀÖ´Ù.
         if (Time.time - _lastWeakVoiceTime < weakVoiceCooldown) return;
         _lastWeakVoiceTime = Time.time;
 
@@ -190,7 +191,7 @@ public class EnemyAI : MonoBehaviour
     }
 
 #if UNITY_EDITOR
-    [Header("ë””ë²„ê·¸ (ì½ê¸° ì „ìš©)")]
+    [Header("µğ¹ö±× (ÀĞ±â Àü¿ë)")]
     [SerializeField, TextArea] private string debugCurrentState;
     [SerializeField] private float debugMaxScore;
 
@@ -202,12 +203,12 @@ public class EnemyAI : MonoBehaviour
         var candidate = targetObject.GetComponents<MonoBehaviour>().FirstOrDefault(m => m is IDetectable);
         if (candidate != null)
         {
-            Debug.LogWarning($"{name}: targetObjectê°€ IDetectableì´ ì•„ë‹ˆë¼ ê°™ì€ ì˜¤ë¸Œì íŠ¸ì˜ '{candidate.GetType().Name}'ë¡œ ìë™ êµì²´í–ˆìŠµë‹ˆë‹¤.");
+            Debug.LogWarning($"{name}: targetObject°¡ IDetectableÀÌ ¾Æ´Ï¶ó °°Àº ¿ÀºêÁ§Æ®ÀÇ '{candidate.GetType().Name}'·Î ÀÚµ¿ ±³Ã¼Çß½À´Ï´Ù.");
             targetObject = candidate;
         }
         else
         {
-            Debug.LogWarning($"{name}: targetObjectì˜ ì˜¤ë¸Œì íŠ¸ì—ì„œ IDetectableì„ êµ¬í˜„í•œ ì»´í¬ë„ŒíŠ¸ë¥¼ ì°¾ì§€ ëª»í–ˆìŠµë‹ˆë‹¤.");
+            Debug.LogWarning($"{name}: targetObjectÀÇ ¿ÀºêÁ§Æ®¿¡¼­ IDetectableÀ» ±¸ÇöÇÑ ÄÄÆ÷³ÍÆ®¸¦ Ã£Áö ¸øÇß½À´Ï´Ù.");
         }
     }
 
