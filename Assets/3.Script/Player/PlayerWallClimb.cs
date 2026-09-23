@@ -54,6 +54,7 @@ public class PlayerWallClimb : MonoBehaviour
     private PlayerInteractionRunner _runner;
     private AssassinationSystem _assassination;
     private PlayerThrow _throw;
+    private CarrySystem _carry;
 
     private Vector3 _wallPoint;
 
@@ -73,6 +74,7 @@ public class PlayerWallClimb : MonoBehaviour
         _runner = GetComponent<PlayerInteractionRunner>();
         _assassination = GetComponent<AssassinationSystem>();
         _throw = GetComponent<PlayerThrow>();
+        _carry = GetComponent<CarrySystem>();
     }
 
     private float footOffset
@@ -122,6 +124,12 @@ public class PlayerWallClimb : MonoBehaviour
         }
 
         if (_throw != null && _throw.isBusy)
+        {
+            return false;
+        }
+
+        // 시체를 들거나 내려놓는 연출 중 (CharacterController가 꺼져 있는 구간)
+        if (_carry != null && _carry.isBusy)
         {
             return false;
         }
