@@ -46,6 +46,7 @@ public class EnemyAIData : ScriptableObject
     [Header("확인 행동")]
     public float investigateCheckDuration = 2.5f;
     public float soundInvestigateCheckDuration = 7f;
+    public float investigateCatchRadius = 5f; //알람을 울리고 플레이어가 어느정도에 있으면 걸리도록 확인하는 거리
 
     [Header("배치 연출")]
     public float spawnMoveSpeed = 2.5f;
@@ -64,5 +65,6 @@ public class EnemyAIData : ScriptableObject
     public float corpseAlertDuration = 8f;
     [Header("구역 시스템 (죄수 허용 구역)")]
     public int suspiciousActionLimit = 2;
+    public float suspiciousActionCooldown = 1.5f;
 
 }

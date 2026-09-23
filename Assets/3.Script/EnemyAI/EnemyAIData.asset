@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAIData
   viewAngle: 90
   viewRangeShort: 5
-  instantDetectRange: 1.7
+  instantDetectRange: 0.5
   instantDetectAngle: 240
   viewRangeMid: 8
   viewRangeLong: 12
@@ -57,3 +57,4 @@ MonoBehaviour:
   corpseDetectRadius: 12
   corpseAlertDuration: 8
   suspiciousActionLimit: 2
+  suspiciousActionCooldown: 6.02

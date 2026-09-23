@@ -2712,30 +2712,6 @@ PrefabInstance:
       propertyPath: targetObject
       value: 
       objectReference: {fileID: 1196445871}
-    - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
-      propertyPath: isAlwaysAlert
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
-      propertyPath: SE_Warning.Path
-      value: event:/Enemy/Enemy_Voice_ Detect
-      objectReference: {fileID: 0}
-    - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
-      propertyPath: SE_Warning.Guid.Data1
-      value: -1104907653
-      objectReference: {fileID: 0}
-    - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
-      propertyPath: SE_Warning.Guid.Data2
-      value: 1327907595
-      objectReference: {fileID: 0}
-    - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
-      propertyPath: SE_Warning.Guid.Data3
-      value: 1113759380
-      objectReference: {fileID: 0}
-    - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
-      propertyPath: SE_Warning.Guid.Data4
-      value: 1324988009
-      objectReference: {fileID: 0}
     - target: {fileID: 6350980274577277247, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
       propertyPath: m_Name
       value: B_Enemy (1)
@@ -4573,6 +4549,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6633054249897145814, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
+      propertyPath: alarmSoundRadius
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8095754827116548373, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
       propertyPath: m_Materials.Array.size
       value: 2
@@ -6081,10 +6061,6 @@ PrefabInstance:
       propertyPath: targetObject
       value: 
       objectReference: {fileID: 1196445871}
-    - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
-      propertyPath: isAlwaysAlert
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6350980274577277247, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
       propertyPath: m_Name
       value: B_Enemy
