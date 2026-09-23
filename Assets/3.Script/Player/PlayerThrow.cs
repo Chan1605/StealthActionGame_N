@@ -35,6 +35,7 @@ public class PlayerThrow : MonoBehaviour
     private PlayerAnimator _playerAnimator;
     private PlayerCameraRig _cameraRig;
     private PlayerInteractionRunner _runner;
+    private CarrySystem _carry;
     private AssassinationSystem _assassination;
 
     private float _turnVelocity;
@@ -54,6 +55,7 @@ public class PlayerThrow : MonoBehaviour
         _cameraRig = GetComponent<PlayerCameraRig>();
         _runner = GetComponent<PlayerInteractionRunner>();
         _assassination = GetComponent<AssassinationSystem>();
+        _carry = GetComponent<CarrySystem>();
 
         if (aimCamera == null)
         {
@@ -130,6 +132,12 @@ public class PlayerThrow : MonoBehaviour
         }
 
         if (_assassination != null && _assassination.isBusy)
+        {
+            return false;
+        }
+
+        // 시체를 들거나 내려놓는 연출 중 (CharacterController가 꺼져 있는 구간)
+        if (_carry != null && _carry.isBusy)
         {
             return false;
         }

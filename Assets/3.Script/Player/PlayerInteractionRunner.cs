@@ -27,6 +27,7 @@ public class PlayerInteractionRunner : MonoBehaviour
     private AssassinationSystem _assassination;
     private PlayerHand _hand;
     private PlayerThrow _throw;
+    private CarrySystem _carry;
 
     private string _activeTrigger;
     private bool _isActiveUpper;
@@ -44,6 +45,7 @@ public class PlayerInteractionRunner : MonoBehaviour
         _playerAnimator = GetComponent<PlayerAnimator>();
         _assassination = GetComponent<AssassinationSystem>();
         _throw = GetComponent<PlayerThrow>();
+        _carry = GetComponent<CarrySystem>();
         _hand = GetComponentInChildren<PlayerHand>();
 
         if (interactor == null)
@@ -76,6 +78,20 @@ public class PlayerInteractionRunner : MonoBehaviour
 
         if (_throw != null && _throw.isBusy)
         {
+            return;
+        }
+
+        // 시체를 들거나 내려놓는 연출 중에는 받지 않는다.
+        // 이 구간에는 CarrySystem이 CharacterController를 꺼 두기 때문에,
+        // 겹치면 이쪽 Release()가 PlayerController만 되살려 조작이 엇갈린다.
+        // (그냥 들고 있는 상태는 막지 않는다. 들고도 상호작용은 가능해야 한다)
+        if (_carry != null && _carry.isBusy)
+        {
+            if (isDebugLog)
+            {
+                Debug.Log("[Interaction] 시체 운반 동작 중이라 무시합니다.");
+            }
+
             return;
         }
 
