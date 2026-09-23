@@ -296,23 +296,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
       propertyPath: SE_Warning.Path
-      value: event:/Enemy/Enemy_Voice_ Detect
+      value: event:/Area_1/Guard_Day_Hit
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
+      propertyPath: SE_Detected.Path
+      value: event:/Area_1/Guard_Day_Unauthorized
       objectReference: {fileID: 0}
     - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
       propertyPath: SE_Warning.Guid.Data1
-      value: -1104907653
+      value: 1089774929
       objectReference: {fileID: 0}
     - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
       propertyPath: SE_Warning.Guid.Data2
-      value: 1327907595
+      value: 1293376720
       objectReference: {fileID: 0}
     - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
       propertyPath: SE_Warning.Guid.Data3
-      value: 1113759380
+      value: 710384828
       objectReference: {fileID: 0}
     - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
       propertyPath: SE_Warning.Guid.Data4
-      value: 1324988009
+      value: 1767916091
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
+      propertyPath: SE_Detected.Guid.Data1
+      value: 1830579776
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
+      propertyPath: SE_Detected.Guid.Data2
+      value: 1146641635
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
+      propertyPath: SE_Detected.Guid.Data3
+      value: 931227554
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
+      propertyPath: SE_Detected.Guid.Data4
+      value: 1376796321
       objectReference: {fileID: 0}
     - target: {fileID: 6350980274577277247, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
       propertyPath: m_Name
@@ -668,23 +688,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
       propertyPath: SE_Warning.Path
-      value: event:/Enemy/Enemy_Voice_ Detect
+      value: event:/Area_1/Guard_Day_Hit
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
+      propertyPath: SE_Detected.Path
+      value: event:/Area_1/Guard_Day_Unauthorized
       objectReference: {fileID: 0}
     - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
       propertyPath: SE_Warning.Guid.Data1
-      value: -1104907653
+      value: 1089774929
       objectReference: {fileID: 0}
     - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
       propertyPath: SE_Warning.Guid.Data2
-      value: 1327907595
+      value: 1293376720
       objectReference: {fileID: 0}
     - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
       propertyPath: SE_Warning.Guid.Data3
-      value: 1113759380
+      value: 710384828
       objectReference: {fileID: 0}
     - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
       propertyPath: SE_Warning.Guid.Data4
-      value: 1324988009
+      value: 1767916091
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
+      propertyPath: SE_Detected.Guid.Data1
+      value: 1830579776
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
+      propertyPath: SE_Detected.Guid.Data2
+      value: 1146641635
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
+      propertyPath: SE_Detected.Guid.Data3
+      value: 931227554
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
+      propertyPath: SE_Detected.Guid.Data4
+      value: 1376796321
       objectReference: {fileID: 0}
     - target: {fileID: 6350980274577277247, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
       propertyPath: m_Name
@@ -2574,23 +2614,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
       propertyPath: SE_Warning.Path
-      value: event:/Enemy/Enemy_Voice_ Detect
+      value: event:/Area_1/Guard_Day_Hit
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
+      propertyPath: SE_Detected.Path
+      value: event:/Area_1/Guard_Day_Unauthorized
       objectReference: {fileID: 0}
     - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
       propertyPath: SE_Warning.Guid.Data1
-      value: -1104907653
+      value: 1089774929
       objectReference: {fileID: 0}
     - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
       propertyPath: SE_Warning.Guid.Data2
-      value: 1327907595
+      value: 1293376720
       objectReference: {fileID: 0}
     - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
       propertyPath: SE_Warning.Guid.Data3
-      value: 1113759380
+      value: 710384828
       objectReference: {fileID: 0}
     - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
       propertyPath: SE_Warning.Guid.Data4
-      value: 1324988009
+      value: 1767916091
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
+      propertyPath: SE_Detected.Guid.Data1
+      value: 1830579776
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
+      propertyPath: SE_Detected.Guid.Data2
+      value: 1146641635
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
+      propertyPath: SE_Detected.Guid.Data3
+      value: 931227554
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
+      propertyPath: SE_Detected.Guid.Data4
+      value: 1376796321
       objectReference: {fileID: 0}
     - target: {fileID: 6350980274577277247, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
       propertyPath: m_Name
@@ -2813,23 +2873,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
       propertyPath: SE_Warning.Path
-      value: event:/Enemy/Enemy_Voice_ Detect
+      value: event:/Area_1/Guard_Day_Hit
       objectReference: {fileID: 0}
     - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
       propertyPath: SE_Warning.Guid.Data1
-      value: -1104907653
+      value: 1089774929
       objectReference: {fileID: 0}
     - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
       propertyPath: SE_Warning.Guid.Data2
-      value: 1327907595
+      value: 1293376720
       objectReference: {fileID: 0}
     - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
       propertyPath: SE_Warning.Guid.Data3
-      value: 1113759380
+      value: 710384828
       objectReference: {fileID: 0}
     - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
       propertyPath: SE_Warning.Guid.Data4
-      value: 1324988009
+      value: 1767916091
       objectReference: {fileID: 0}
     - target: {fileID: 6350980274577277247, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
       propertyPath: m_Name
@@ -2976,23 +3036,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
       propertyPath: SE_Warning.Path
-      value: event:/Enemy/Enemy_Voice_ Detect
+      value: event:/Area_1/Guard_Day_Hit
       objectReference: {fileID: 0}
     - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
       propertyPath: SE_Warning.Guid.Data1
-      value: -1104907653
+      value: 1089774929
       objectReference: {fileID: 0}
     - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
       propertyPath: SE_Warning.Guid.Data2
-      value: 1327907595
+      value: 1293376720
       objectReference: {fileID: 0}
     - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
       propertyPath: SE_Warning.Guid.Data3
-      value: 1113759380
+      value: 710384828
       objectReference: {fileID: 0}
     - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
       propertyPath: SE_Warning.Guid.Data4
-      value: 1324988009
+      value: 1767916091
       objectReference: {fileID: 0}
     - target: {fileID: 6350980274577277247, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
       propertyPath: m_Name
@@ -3175,6 +3235,46 @@ PrefabInstance:
       propertyPath: targetObject
       value: 
       objectReference: {fileID: 1196445871}
+    - target: {fileID: 6821614140340590585, guid: ae7df8f336bcd43429039346004347e6, type: 3}
+      propertyPath: SE_Warning.Path
+      value: event:/Area_1/Guard_Day_Hit
+      objectReference: {fileID: 0}
+    - target: {fileID: 6821614140340590585, guid: ae7df8f336bcd43429039346004347e6, type: 3}
+      propertyPath: SE_Detected.Path
+      value: event:/Area_1/Guard_Day_Unauthorized
+      objectReference: {fileID: 0}
+    - target: {fileID: 6821614140340590585, guid: ae7df8f336bcd43429039346004347e6, type: 3}
+      propertyPath: SE_Warning.Guid.Data1
+      value: 1089774929
+      objectReference: {fileID: 0}
+    - target: {fileID: 6821614140340590585, guid: ae7df8f336bcd43429039346004347e6, type: 3}
+      propertyPath: SE_Warning.Guid.Data2
+      value: 1293376720
+      objectReference: {fileID: 0}
+    - target: {fileID: 6821614140340590585, guid: ae7df8f336bcd43429039346004347e6, type: 3}
+      propertyPath: SE_Warning.Guid.Data3
+      value: 710384828
+      objectReference: {fileID: 0}
+    - target: {fileID: 6821614140340590585, guid: ae7df8f336bcd43429039346004347e6, type: 3}
+      propertyPath: SE_Warning.Guid.Data4
+      value: 1767916091
+      objectReference: {fileID: 0}
+    - target: {fileID: 6821614140340590585, guid: ae7df8f336bcd43429039346004347e6, type: 3}
+      propertyPath: SE_Detected.Guid.Data1
+      value: 1830579776
+      objectReference: {fileID: 0}
+    - target: {fileID: 6821614140340590585, guid: ae7df8f336bcd43429039346004347e6, type: 3}
+      propertyPath: SE_Detected.Guid.Data2
+      value: 1146641635
+      objectReference: {fileID: 0}
+    - target: {fileID: 6821614140340590585, guid: ae7df8f336bcd43429039346004347e6, type: 3}
+      propertyPath: SE_Detected.Guid.Data3
+      value: 931227554
+      objectReference: {fileID: 0}
+    - target: {fileID: 6821614140340590585, guid: ae7df8f336bcd43429039346004347e6, type: 3}
+      propertyPath: SE_Detected.Guid.Data4
+      value: 1376796321
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3256,23 +3356,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6821614140340590585, guid: ae7df8f336bcd43429039346004347e6, type: 3}
       propertyPath: SE_Warning.Path
-      value: event:/Enemy/Enemy_Voice_ Detect
+      value: event:/Area_1/Guard_Day_Hit
       objectReference: {fileID: 0}
     - target: {fileID: 6821614140340590585, guid: ae7df8f336bcd43429039346004347e6, type: 3}
       propertyPath: SE_Warning.Guid.Data1
-      value: -1104907653
+      value: 1089774929
       objectReference: {fileID: 0}
     - target: {fileID: 6821614140340590585, guid: ae7df8f336bcd43429039346004347e6, type: 3}
       propertyPath: SE_Warning.Guid.Data2
-      value: 1327907595
+      value: 1293376720
       objectReference: {fileID: 0}
     - target: {fileID: 6821614140340590585, guid: ae7df8f336bcd43429039346004347e6, type: 3}
       propertyPath: SE_Warning.Guid.Data3
-      value: 1113759380
+      value: 710384828
       objectReference: {fileID: 0}
     - target: {fileID: 6821614140340590585, guid: ae7df8f336bcd43429039346004347e6, type: 3}
       propertyPath: SE_Warning.Guid.Data4
-      value: 1324988009
+      value: 1767916091
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3346,23 +3446,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
       propertyPath: SE_Warning.Path
-      value: event:/Enemy/Enemy_Voice_ Detect
+      value: event:/Area_1/Guard_Day_Hit
       objectReference: {fileID: 0}
     - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
       propertyPath: SE_Warning.Guid.Data1
-      value: -1104907653
+      value: 1089774929
       objectReference: {fileID: 0}
     - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
       propertyPath: SE_Warning.Guid.Data2
-      value: 1327907595
+      value: 1293376720
       objectReference: {fileID: 0}
     - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
       propertyPath: SE_Warning.Guid.Data3
-      value: 1113759380
+      value: 710384828
       objectReference: {fileID: 0}
     - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
       propertyPath: SE_Warning.Guid.Data4
-      value: 1324988009
+      value: 1767916091
       objectReference: {fileID: 0}
     - target: {fileID: 6350980274577277247, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
       propertyPath: m_Name
@@ -4091,23 +4191,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6821614140340590585, guid: ae7df8f336bcd43429039346004347e6, type: 3}
       propertyPath: SE_Warning.Path
-      value: event:/Enemy/Enemy_Voice_ Detect
+      value: event:/Area_1/Guard_Day_Hit
+      objectReference: {fileID: 0}
+    - target: {fileID: 6821614140340590585, guid: ae7df8f336bcd43429039346004347e6, type: 3}
+      propertyPath: SE_Detected.Path
+      value: event:/Area_1/Guard_Day_Unauthorized
       objectReference: {fileID: 0}
     - target: {fileID: 6821614140340590585, guid: ae7df8f336bcd43429039346004347e6, type: 3}
       propertyPath: SE_Warning.Guid.Data1
-      value: -1104907653
+      value: 1089774929
       objectReference: {fileID: 0}
     - target: {fileID: 6821614140340590585, guid: ae7df8f336bcd43429039346004347e6, type: 3}
       propertyPath: SE_Warning.Guid.Data2
-      value: 1327907595
+      value: 1293376720
       objectReference: {fileID: 0}
     - target: {fileID: 6821614140340590585, guid: ae7df8f336bcd43429039346004347e6, type: 3}
       propertyPath: SE_Warning.Guid.Data3
-      value: 1113759380
+      value: 710384828
       objectReference: {fileID: 0}
     - target: {fileID: 6821614140340590585, guid: ae7df8f336bcd43429039346004347e6, type: 3}
       propertyPath: SE_Warning.Guid.Data4
-      value: 1324988009
+      value: 1767916091
+      objectReference: {fileID: 0}
+    - target: {fileID: 6821614140340590585, guid: ae7df8f336bcd43429039346004347e6, type: 3}
+      propertyPath: SE_Detected.Guid.Data1
+      value: 1830579776
+      objectReference: {fileID: 0}
+    - target: {fileID: 6821614140340590585, guid: ae7df8f336bcd43429039346004347e6, type: 3}
+      propertyPath: SE_Detected.Guid.Data2
+      value: 1146641635
+      objectReference: {fileID: 0}
+    - target: {fileID: 6821614140340590585, guid: ae7df8f336bcd43429039346004347e6, type: 3}
+      propertyPath: SE_Detected.Guid.Data3
+      value: 931227554
+      objectReference: {fileID: 0}
+    - target: {fileID: 6821614140340590585, guid: ae7df8f336bcd43429039346004347e6, type: 3}
+      propertyPath: SE_Detected.Guid.Data4
+      value: 1376796321
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6299,6 +6419,46 @@ PrefabInstance:
       propertyPath: targetObject
       value: 
       objectReference: {fileID: 1196445871}
+    - target: {fileID: 6821614140340590585, guid: ae7df8f336bcd43429039346004347e6, type: 3}
+      propertyPath: SE_Warning.Path
+      value: event:/Area_1/Guard_Day_Hit
+      objectReference: {fileID: 0}
+    - target: {fileID: 6821614140340590585, guid: ae7df8f336bcd43429039346004347e6, type: 3}
+      propertyPath: SE_Detected.Path
+      value: event:/Area_1/Guard_Day_Unauthorized
+      objectReference: {fileID: 0}
+    - target: {fileID: 6821614140340590585, guid: ae7df8f336bcd43429039346004347e6, type: 3}
+      propertyPath: SE_Warning.Guid.Data1
+      value: 1089774929
+      objectReference: {fileID: 0}
+    - target: {fileID: 6821614140340590585, guid: ae7df8f336bcd43429039346004347e6, type: 3}
+      propertyPath: SE_Warning.Guid.Data2
+      value: 1293376720
+      objectReference: {fileID: 0}
+    - target: {fileID: 6821614140340590585, guid: ae7df8f336bcd43429039346004347e6, type: 3}
+      propertyPath: SE_Warning.Guid.Data3
+      value: 710384828
+      objectReference: {fileID: 0}
+    - target: {fileID: 6821614140340590585, guid: ae7df8f336bcd43429039346004347e6, type: 3}
+      propertyPath: SE_Warning.Guid.Data4
+      value: 1767916091
+      objectReference: {fileID: 0}
+    - target: {fileID: 6821614140340590585, guid: ae7df8f336bcd43429039346004347e6, type: 3}
+      propertyPath: SE_Detected.Guid.Data1
+      value: 1830579776
+      objectReference: {fileID: 0}
+    - target: {fileID: 6821614140340590585, guid: ae7df8f336bcd43429039346004347e6, type: 3}
+      propertyPath: SE_Detected.Guid.Data2
+      value: 1146641635
+      objectReference: {fileID: 0}
+    - target: {fileID: 6821614140340590585, guid: ae7df8f336bcd43429039346004347e6, type: 3}
+      propertyPath: SE_Detected.Guid.Data3
+      value: 931227554
+      objectReference: {fileID: 0}
+    - target: {fileID: 6821614140340590585, guid: ae7df8f336bcd43429039346004347e6, type: 3}
+      propertyPath: SE_Detected.Guid.Data4
+      value: 1376796321
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6512,6 +6672,26 @@ PrefabInstance:
     - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
       propertyPath: isAlwaysAlert
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
+      propertyPath: SE_Warning.Path
+      value: event:/Area_1/Guard_Day_Hit
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
+      propertyPath: SE_Warning.Guid.Data1
+      value: 1089774929
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
+      propertyPath: SE_Warning.Guid.Data2
+      value: 1293376720
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
+      propertyPath: SE_Warning.Guid.Data3
+      value: 710384828
+      objectReference: {fileID: 0}
+    - target: {fileID: 2379060538671553253, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
+      propertyPath: SE_Warning.Guid.Data4
+      value: 1767916091
       objectReference: {fileID: 0}
     - target: {fileID: 6350980274577277247, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
       propertyPath: m_Name
