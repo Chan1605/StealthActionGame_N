@@ -57,3 +57,4 @@ MonoBehaviour:
   corpseDetectRadius: 12
   corpseAlertDuration: 8
   suspiciousActionLimit: 2
+  suspiciousActionCooldown: 6.02

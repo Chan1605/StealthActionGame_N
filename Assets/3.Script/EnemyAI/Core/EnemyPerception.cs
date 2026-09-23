@@ -27,11 +27,9 @@ public class EnemyPerception : MonoBehaviour
 
     private int _suspiciousActionCount;
     public int SuspiciousActionCount => _suspiciousActionCount;
+    private float _lastSuspiciousActionTime = -999f;
+    public bool IsAlarmSource { get; private set; }
 
-    public void RegisterSuspiciousAction()
-    {
-        _suspiciousActionCount++;
-    }
     private float GetDecayPerSec()
     {
         if (_isTargetVisible)
@@ -219,14 +217,13 @@ public class EnemyPerception : MonoBehaviour
         _suspiciousActionCount = 0;
     }
 
-    public void RegisterSound(Vector3 sourcePosition, float sourceIntensity, bool isInstant, float radius = -1f)
+    public void RegisterSound(Vector3 sourcePosition, float sourceIntensity, bool isInstant, float radius = -1f, bool isEnvironmental = false)
     {
         if (sourceIntensity <= 0f) return;
 
         float effectiveRadius = radius > 0f ? radius : _data.hearingRadius;
         float distance = Vector3.Distance(eyeOrigin.position, sourcePosition);
         float attenuated = sourceIntensity * Mathf.Clamp01(1f - distance / effectiveRadius);
-
 
         if (attenuated <= 0f) return;
 
@@ -236,6 +233,7 @@ public class EnemyPerception : MonoBehaviour
             SoundMemoryPosition = sourcePosition;
             _soundMemoryIntensity = attenuated;
             _soundLockTimer = _data.soundMemoryLockDuration;
+            IsAlarmSource = isEnvironmental;
         }
 
         float gain;
@@ -249,7 +247,17 @@ public class EnemyPerception : MonoBehaviour
         }
         HearingScore = Mathf.Min(_data.maxScore, HearingScore + gain);
         _soundRegisteredThisFrame = true;
-     
+    }
+
+    public void RegisterSuspiciousAction(float cooldown)
+    {
+        if (Time.time - _lastSuspiciousActionTime < cooldown)
+        {
+            return; // 쿨다운 중이면 이번 프레임은 카운트하지 않음
+        }
+
+        _lastSuspiciousActionTime = Time.time;
+        _suspiciousActionCount++;
     }
 
 #if UNITY_EDITOR

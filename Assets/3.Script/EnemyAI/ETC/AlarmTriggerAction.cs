@@ -44,7 +44,7 @@ public class AlarmTriggerAction : InteractionAction
             alarmAudioSource.Play();
         }
 
-        // 구독자가 있을 때만 호출 (없으면 null이라 그냥 건너뜀)
+        // 구독자가 있을 때만 호출
         if (OnAlarmTriggered != null)
         {
             OnAlarmTriggered(transform.position);
@@ -82,7 +82,7 @@ public class AlarmTriggerAction : InteractionAction
             {
                 continue;
             }
-            enemy.RegisterSound(transform.position, alarmSoundIntensity, true, alarmSoundRadius);
+            enemy.RegisterSound(transform.position, alarmSoundIntensity, true, alarmSoundRadius, true);
         }
     }
 }

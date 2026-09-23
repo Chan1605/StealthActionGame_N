@@ -10,6 +10,11 @@ public class EnemyMovement : MonoBehaviour
     private int _animIDSpeed;
     private int _animIDGrounded;
     private int _animIDAttack;
+    private int _animIDIdleIndex;
+
+    [Header("Idle ¸ğ¼Ç ·£´ıÈ­")]
+    [SerializeField] private int idleClipCount = 1;
+    [SerializeField] private float idleLoopSwitchWindow = 0.05f; // ÀÌ ±¸°£(½ÃÀÛ/³¡ ±ÙÃ³) ¾È¿¡¼­¸¸ ÀüÈ¯ Çã¿ë
 
     public void Initialize(EnemyAIData data, Animator animator)
     {
@@ -23,13 +28,14 @@ public class EnemyMovement : MonoBehaviour
             _animIDSpeed = Animator.StringToHash("Speed");
             _animIDGrounded = Animator.StringToHash("IsGrounded");
             _animIDAttack = Animator.StringToHash("Attack");
+            _animIDIdleIndex = Animator.StringToHash("IdleIndex");
             if (HasParameter(_animIDSpeed))
             {
-                // SpeedëŠ” ì‹œì•¼/ì´ë™ì— í•„ìˆ˜ë¼ ì—†ìœ¼ë©´ ê²½ê³ ë§Œ ë‚¨ê¸°ê³  ë„˜ì–´ê°
+                // Speed´Â ½Ã¾ß/ÀÌµ¿¿¡ ÇÊ¼ö¶ó ¾øÀ¸¸é °æ°í¸¸ ³²±â°í ³Ñ¾î°¨
             }
             else
             {
-                Debug.LogWarning($"{name}: Animatorì— 'Speed' íŒŒë¼ë¯¸í„°ê°€ ì—†ìŠµë‹ˆë‹¤. ì´ë™ ì• ë‹ˆë©”ì´ì…˜ì´ ì¬ìƒë˜ì§€ ì•Šì„ ìˆ˜ ìˆìŠµë‹ˆë‹¤.");
+                Debug.LogWarning($"{name}: Animator¿¡ 'Speed' ÆÄ¶ó¹ÌÅÍ°¡ ¾ø½À´Ï´Ù. ÀÌµ¿ ¾Ö´Ï¸ŞÀÌ¼ÇÀÌ Àç»ıµÇÁö ¾ÊÀ» ¼ö ÀÖ½À´Ï´Ù.");
             }
 
             if (HasParameter(_animIDGrounded))
@@ -61,7 +67,7 @@ public class EnemyMovement : MonoBehaviour
         if (NavMesh.SamplePosition(destination, out NavMeshHit hit, 2f, NavMesh.AllAreas))
             _agent.SetDestination(hit.position);
         else
-            Debug.LogWarning($"{name}: ëª©í‘œ ì§€ì  ê·¼ì²˜ì—ì„œ ìœ íš¨í•œ NavMeshë¥¼ ì°¾ì§€ ëª»í–ˆìŠµë‹ˆë‹¤. ({destination})");
+            Debug.LogWarning($"{name}: ¸ñÇ¥ ÁöÁ¡ ±ÙÃ³¿¡¼­ À¯È¿ÇÑ NavMesh¸¦ Ã£Áö ¸øÇß½À´Ï´Ù. ({destination})");
     }
 
     public void Warp(Vector3 position)
@@ -101,5 +107,31 @@ public class EnemyMovement : MonoBehaviour
         if (_animator == null) return;
         if (!HasParameter(_animIDSpeed)) return;
         _animator.SetFloat(_animIDSpeed, suppress ? 0f : _agent.velocity.magnitude);
+    }
+
+    // ´ë±â(Idle) ¸ğ¼ÇÀ» ¿©·¯ °³ Áß ·£´ıÀ¸·Î °í¸¥´Ù. ·çÇÁ °æ°è¿¡¼­¸¸ È£ÃâµÇ¹Ç·Î Áï½Ã ¼¼ÆÃÇØµµ ¾î»öÇÏÁö ¾Ê´Ù.
+    public void RandomizeIdle()
+    {
+        if (_animator == null || idleClipCount <= 1) return;
+        if (!HasParameter(_animIDIdleIndex)) return;
+        _animator.SetFloat(_animIDIdleIndex, Random.Range(0, idleClipCount));
+    }
+
+    // Idle ÀÎµ¦½º¸¦ Æ¯Á¤ °ªÀ¸·Î °íÁ¤ÇÑ´Ù. LookAroundÃ³·³ È¸Àü°ú °ãÄ¡´Â »óÈ²¿¡¼­ »ç¿ë.
+    public void SetIdleIndex(int index)
+    {
+        if (_animator == null) return;
+        if (!HasParameter(_animIDIdleIndex)) return;
+        _animator.SetFloat(_animIDIdleIndex, index);
+    }
+
+    // Áö±İÀÌ ÇöÀç Àç»ı ÁßÀÎ Idle Å¬¸³ÀÇ ·çÇÁ °æ°è(¸· ³¡³µ°Å³ª ¸· ½ÃÀÛÇÑ ÁöÁ¡)ÀÎÁö È®ÀÎÇÑ´Ù.
+    // Æ¯¼öÇàµ¿(LookAround µî) ½ÃÀÛÀ» ÀÌ °æ°è±îÁö ¹Ì·ï¼­ Å¬¸³ÀÌ µµÁß¿¡ ²÷±âÁö ¾Ê°Ô ÇÏ´Â ¿ëµµ.
+    public bool IsIdleAtLoopBoundary()
+    {
+        if (_animator == null) return true;
+
+        float t = _animator.GetCurrentAnimatorStateInfo(0).normalizedTime % 1f;
+        return t <= idleLoopSwitchWindow || t >= 1f - idleLoopSwitchWindow;
     }
 }
