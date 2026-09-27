@@ -87,7 +87,7 @@ public class EnemyObject : MonoBehaviour, IInteractable, ICompletionState
         IsPlayerLook = true;
         isAct = true;
         outLine?.SetOutLine_On();
-        keyPanal.SetPanal_On(uiAnchor != null ? uiAnchor : transform);
+        keyPanal.SetPanal_On(uiAnchor != null ? uiAnchor : transform, objectData);
     }
 
     private void HandleTargetLost()

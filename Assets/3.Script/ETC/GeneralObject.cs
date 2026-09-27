@@ -93,7 +93,7 @@ public class GeneralObject : MonoBehaviour, IInteractable, ICompletionState
         IsPlayerLook = true;
         isAct = true;
         outLine.SetOutLine_On();
-        keyPanal.SetPanal_On(transform);
+        keyPanal.SetPanal_On(transform, objectData);
     }
 
     public void KeyPanal_Off()

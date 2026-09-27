@@ -13,7 +13,8 @@ public class IndicatorManager : MonoBehaviour
 
     [SerializeField] private List<Transform> enemyTransform = new List<Transform>();
     private List<UI_DirectIndicatorArrow> DirArrows = new List<UI_DirectIndicatorArrow>();
-
+    private List<KeyValuePair<int, float>> distanceList = new List<KeyValuePair<int, float>>();
+    private HashSet<int> closestIndices = new HashSet<int>();
     private void Start()
     {
         playerTransform = GameObject.FindWithTag("Player").transform;
@@ -32,9 +33,9 @@ public class IndicatorManager : MonoBehaviour
 
     private void UpdateDirIndicator()
     {
-        for (int i = enemyTransform.Count-1; i >= 0 ; i--)
+        for (int i = enemyTransform.Count - 1; i >= 0; i--)
         {
-            if(enemyTransform[i]==null)
+            if (enemyTransform[i] == null)
             {
                 if (DirArrows[i] != null)
                 {
@@ -44,19 +45,47 @@ public class IndicatorManager : MonoBehaviour
                 enemyTransform.RemoveAt(i);
                 continue;
             }
+        }
+
+
+        distanceList.Clear();
+        closestIndices.Clear();
+
+        for (int i = 0; i < enemyTransform.Count; i++)
+        {
+            float dist = Vector3.Distance(playerTransform.position, enemyTransform[i].position);
+            distanceList.Add(new KeyValuePair<int, float>(i, dist));
+        }
+
+        distanceList.Sort((a, b) => a.Value.CompareTo(b.Value));
+
+        int limit = Mathf.Min(4, distanceList.Count);
+        for (int i = 0; i < limit; i++)
+        {
+            closestIndices.Add(distanceList[i].Key);
+        }
+
+
+        for (int i = 0; i < enemyTransform.Count; i++)
+        {
+            if (!closestIndices.Contains(i))
+            {
+                DirArrows[i].SetActive(false);
+                continue;
+            }
 
             Vector3 viewportPos = cam.WorldToViewportPoint(enemyTransform[i].position);
 
             bool isOffScreen = false;
 
-            if(!(viewportPos.x>0 && viewportPos.x<1)||
-                !(viewportPos.y>0 && viewportPos.y<1)||
-                viewportPos.z<0)
+            if (!(viewportPos.x > 0 && viewportPos.x < 1) ||
+                !(viewportPos.y > 0 && viewportPos.y < 1) ||
+                viewportPos.z < 0)
             {
                 isOffScreen = true;
             }
 
-            if(!isOffScreen)
+            if (!isOffScreen)
             {
                 DirArrows[i].SetActive(false);
                 continue;
@@ -64,7 +93,7 @@ public class IndicatorManager : MonoBehaviour
 
             DirArrows[i].SetActive(true);
 
-            if(viewportPos.z < 0)
+            if (viewportPos.z < 0)
             {
                 viewportPos.x = 1 - viewportPos.x;
                 viewportPos.y = 1 - viewportPos.y;
@@ -72,8 +101,6 @@ public class IndicatorManager : MonoBehaviour
 
             Vector2 centerPos = new Vector2(0.5f, 0.5f);
             Vector2 dir = new Vector2(viewportPos.x, viewportPos.y) - centerPos;
-
-
 
             float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg - 90f;
 
