@@ -11,6 +11,7 @@ public class EnemyObject : MonoBehaviour, IInteractable, ICompletionState
     public event Action OnTargetCompleted;
 
     [SerializeField] private Transform uiAnchor;
+    [SerializeField] private Object_Data objectData;
 
     public bool IsPlayerLook { get; set; }
     public bool isAct;

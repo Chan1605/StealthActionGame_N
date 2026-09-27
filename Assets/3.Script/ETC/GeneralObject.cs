@@ -24,8 +24,9 @@ public class GeneralObject : MonoBehaviour, IInteractable, ICompletionState
     private HUDManager hudManager;
     [SerializeField] private bool completeOnUse = true;
     private bool _isCompleted;
-
     private bool _isTracking;
+
+    [SerializeField] private Object_Data objectData;
 
     // ICompletionState: 미션 차례 전에 사용됐더라도 "완료됨"으로 기록된다.
     public bool IsCompleted

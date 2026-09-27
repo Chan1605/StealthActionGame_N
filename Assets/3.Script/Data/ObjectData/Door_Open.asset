@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Door_Open
   m_EditorClassIdentifier: Assembly-CSharp::Object_Data
   ActionName: 0
-  Behaviour: "\uC5F4\uAE30"
-  Caution: 
+  Behaviour: "\uC5F4\uAE30 / \uB2EB\uAE30"
+  Caution: "\uBB38\uC744 \uC5F4\uACE0 \uB2EB\uC73C\uC138\uC694."
   SoundEvent:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 906798562
+      Data2: 1300308431
+      Data3: -1145791041
+      Data4: 2062139069
+    Path: event:/Object/Object_Door_Metal_Open

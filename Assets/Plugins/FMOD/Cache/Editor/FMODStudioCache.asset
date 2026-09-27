@@ -62,7 +62,7 @@ MonoBehaviour:
   Path: FMODProject/StealthActionGame_Fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639261421815849792
+  lastModified: 639261239295870730
   FileSizes:
   - Name: Desktop
     Value: 2430
@@ -331,8 +331,6 @@ MonoBehaviour:
   - {fileID: -970304279502095472}
   - {fileID: -970304279502095472}
   - {fileID: -970304279502095472}
-  - {fileID: -970304279502095472}
-  - {fileID: 8354602645938095227}
   - {fileID: 8354602645938095227}
   - {fileID: 8354602645938095227}
   - {fileID: 8354602645938095227}
@@ -935,7 +933,7 @@ MonoBehaviour:
   Path: FMODProject/StealthActionGame_Fmod/Build/Desktop/Area_1.bank
   Name: Area_1
   StudioPath: bank:/Area/Area_1
-  lastModified: 639261419173973909
+  lastModified: 639261226901098049
   FileSizes:
   - Name: Desktop
     Value: 675424
@@ -1180,12 +1178,13 @@ MonoBehaviour:
   - {fileID: -1777711126522110673}
   - {fileID: 1260557583621712388}
   - {fileID: -6519629457660979629}
+  - {fileID: 5035486335930938528}
   EditorParameters: []
   MasterBanks:
   - {fileID: -7558842593032024359}
   StringsBanks:
   - {fileID: -8300424939153912469}
-  cacheTime: 639261421815906691
+  cacheTime: 639261239295905885
   cacheVersion: 131637
 --- !u!114 &600344784844475082
 MonoBehaviour:
@@ -1389,8 +1388,6 @@ MonoBehaviour:
   - {fileID: -970304279502095472}
   - {fileID: -970304279502095472}
   - {fileID: -970304279502095472}
-  - {fileID: -970304279502095472}
-  - {fileID: 8354602645938095227}
   - {fileID: 8354602645938095227}
   - {fileID: 8354602645938095227}
   - {fileID: 8354602645938095227}
@@ -1887,6 +1884,64 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &5035486335930938528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: 
+  Guid:
+    Data1: 237600252
+    Data2: 1262117759
+    Data3: 365593778
+    Data4: 2014916979
+  Banks:
+  - {fileID: -970304279502095472}
+  - {fileID: -970304279502095472}
+  - {fileID: -970304279502095472}
+  - {fileID: -970304279502095472}
+  - {fileID: -970304279502095472}
+  - {fileID: -970304279502095472}
+  - {fileID: -970304279502095472}
+  - {fileID: -970304279502095472}
+  - {fileID: -970304279502095472}
+  - {fileID: -970304279502095472}
+  - {fileID: -970304279502095472}
+  - {fileID: -970304279502095472}
+  - {fileID: -970304279502095472}
+  - {fileID: -970304279502095472}
+  - {fileID: -970304279502095472}
+  - {fileID: -970304279502095472}
+  - {fileID: -970304279502095472}
+  - {fileID: -970304279502095472}
+  - {fileID: -970304279502095472}
+  - {fileID: -970304279502095472}
+  - {fileID: 8354602645938095227}
+  - {fileID: 8354602645938095227}
+  - {fileID: 8354602645938095227}
+  - {fileID: 8354602645938095227}
+  - {fileID: 8354602645938095227}
+  - {fileID: 8354602645938095227}
+  - {fileID: 8354602645938095227}
+  - {fileID: 8354602645938095227}
+  - {fileID: 8354602645938095227}
+  - {fileID: 8354602645938095227}
+  - {fileID: 8354602645938095227}
+  - {fileID: 8354602645938095227}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &5131471935231206571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2156,7 +2211,7 @@ MonoBehaviour:
   Path: FMODProject/StealthActionGame_Fmod/Build/Desktop/Area_3.bank
   Name: Area_3
   StudioPath: 
-  lastModified: 639261419173973909
+  lastModified: 639261226827158723
   FileSizes:
   - Name: Desktop
     Value: 219712
@@ -2286,7 +2341,7 @@ MonoBehaviour:
   Path: FMODProject/StealthActionGame_Fmod/Build/Desktop/Area_2.bank
   Name: Area_2
   StudioPath: bank:/Area/Area_2
-  lastModified: 639261419173973909
+  lastModified: 639261226901149839
   FileSizes:
   - Name: Desktop
     Value: 369536
