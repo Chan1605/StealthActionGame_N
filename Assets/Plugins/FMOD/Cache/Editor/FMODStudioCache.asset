@@ -116,7 +116,7 @@ MonoBehaviour:
   Path: FMODProject/StealthActionGame_Fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639261550037114364
+  lastModified: 639261778781840187
   FileSizes:
   - Name: Desktop
     Value: 4714
@@ -163,7 +163,7 @@ MonoBehaviour:
   Path: FMODProject/StealthActionGame_Fmod/Build/Desktop/Enemy.bank
   Name: Enemy
   StudioPath: bank:/Enemy
-  lastModified: 639261550036549324
+  lastModified: 639261778781820177
   FileSizes:
   - Name: Desktop
     Value: 575520
@@ -610,7 +610,6 @@ MonoBehaviour:
   - {fileID: 8354602645938095227}
   - {fileID: 8354602645938095227}
   - {fileID: 8354602645938095227}
-  - {fileID: 8354602645938095227}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -853,8 +852,8 @@ MonoBehaviour:
     Data3: -1746395489
     Data4: 359293219
   Banks:
-  - {fileID: -7777040713197349281}
   - {fileID: -8864047739792405592}
+  - {fileID: -7777040713197349281}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -962,8 +961,8 @@ MonoBehaviour:
     Data3: -1065347182
     Data4: 9093232
   Banks:
-  - {fileID: -7777040713197349281}
   - {fileID: -8864047739792405592}
+  - {fileID: -7777040713197349281}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -986,7 +985,7 @@ MonoBehaviour:
   Path: FMODProject/StealthActionGame_Fmod/Build/Desktop/Ending.bank
   Name: Ending
   StudioPath: bank:/Ending
-  lastModified: 639261550032323943
+  lastModified: 639261778781761679
   FileSizes:
   - Name: Desktop
     Value: 1549504
@@ -1066,8 +1065,8 @@ MonoBehaviour:
     Data3: 932640429
     Data4: 2087739542
   Banks:
-  - {fileID: -7777040713197349281}
   - {fileID: -8864047739792405592}
+  - {fileID: -7777040713197349281}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1148,8 +1147,8 @@ MonoBehaviour:
     Data3: -1846914673
     Data4: -1083411212
   Banks:
-  - {fileID: -7777040713197349281}
   - {fileID: -8864047739792405592}
+  - {fileID: -7777040713197349281}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1176,8 +1175,8 @@ MonoBehaviour:
     Data3: -1145791041
     Data4: 2062139069
   Banks:
-  - {fileID: -7777040713197349281}
   - {fileID: -8864047739792405592}
+  - {fileID: -7777040713197349281}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1204,8 +1203,8 @@ MonoBehaviour:
     Data3: 857282745
     Data4: 310215346
   Banks:
-  - {fileID: -7777040713197349281}
   - {fileID: -8864047739792405592}
+  - {fileID: -7777040713197349281}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1232,8 +1231,8 @@ MonoBehaviour:
     Data3: 1696951449
     Data4: -921944325
   Banks:
-  - {fileID: -7777040713197349281}
   - {fileID: -8864047739792405592}
+  - {fileID: -7777040713197349281}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1680,7 +1679,7 @@ MonoBehaviour:
   - {fileID: -7558842593032024359}
   StringsBanks:
   - {fileID: -8300424939153912469}
-  cacheTime: 639261733558039927
+  cacheTime: 639261778781840187
   cacheVersion: 131637
 --- !u!114 &108053269924957374
 MonoBehaviour:
@@ -1782,8 +1781,8 @@ MonoBehaviour:
     Data3: -791570296
     Data4: -116828311
   Banks:
-  - {fileID: -7777040713197349281}
   - {fileID: -8864047739792405592}
+  - {fileID: -7777040713197349281}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1810,8 +1809,8 @@ MonoBehaviour:
     Data3: -2137822318
     Data4: 500479295
   Banks:
-  - {fileID: -7777040713197349281}
   - {fileID: -8864047739792405592}
+  - {fileID: -7777040713197349281}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1838,8 +1837,8 @@ MonoBehaviour:
     Data3: 816507583
     Data4: -325151242
   Banks:
-  - {fileID: -7777040713197349281}
   - {fileID: -8864047739792405592}
+  - {fileID: -7777040713197349281}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1973,7 +1972,6 @@ MonoBehaviour:
   - {fileID: 8354602645938095227}
   - {fileID: 8354602645938095227}
   - {fileID: 8354602645938095227}
-  - {fileID: 8354602645938095227}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2027,8 +2025,8 @@ MonoBehaviour:
     Data3: -1034711151
     Data4: 1673416619
   Banks:
-  - {fileID: -7777040713197349281}
   - {fileID: -8864047739792405592}
+  - {fileID: -7777040713197349281}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2237,8 +2235,8 @@ MonoBehaviour:
     Data3: -55090560
     Data4: 673360501
   Banks:
-  - {fileID: -7777040713197349281}
   - {fileID: -8864047739792405592}
+  - {fileID: -7777040713197349281}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2292,8 +2290,8 @@ MonoBehaviour:
     Data3: -490128765
     Data4: 1444133490
   Banks:
-  - {fileID: -7777040713197349281}
   - {fileID: -8864047739792405592}
+  - {fileID: -7777040713197349281}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2846,7 +2844,7 @@ MonoBehaviour:
   Path: FMODProject/StealthActionGame_Fmod/Build/Desktop/BGM.bank
   Name: BGM
   StudioPath: bank:/BGM
-  lastModified: 639261550014993302
+  lastModified: 639261778781598990
   FileSizes:
   - Name: Desktop
     Value: 5437984
@@ -3002,8 +3000,8 @@ MonoBehaviour:
     Data3: 241254309
     Data4: 211622595
   Banks:
-  - {fileID: -7777040713197349281}
   - {fileID: -8864047739792405592}
+  - {fileID: -7777040713197349281}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -3291,7 +3289,7 @@ MonoBehaviour:
   Path: FMODProject/StealthActionGame_Fmod/Build/Desktop/Area_2.bank
   Name: Area_2
   StudioPath: bank:/Area/Area_2
-  lastModified: 639261733558039927
+  lastModified: 639261778781195337
   FileSizes:
   - Name: Desktop
     Value: 355680
@@ -3369,8 +3367,8 @@ MonoBehaviour:
     Data3: 23152267
     Data4: -1781262732
   Banks:
-  - {fileID: -7777040713197349281}
   - {fileID: -8864047739792405592}
+  - {fileID: -7777040713197349281}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1

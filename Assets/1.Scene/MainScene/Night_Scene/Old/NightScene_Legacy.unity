@@ -358,10 +358,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6350980274577277247, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 45282843}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
 --- !u!4 &45282832 stripped
 Transform:
@@ -373,31 +370,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6350980274577277247, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
   m_PrefabInstance: {fileID: 45282831}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &45282843
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 45282833}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8338a1efc3f31eb43979c37169625e4b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SubtitleTrigger
-  lookSubtitles: []
-  endSubtitles:
-  - subtitleText: "\uAC80\uBB38\uC18C \uC778\uC6D0\uAE4C\uC9C0 \uB2E4 \uCC98\uB9AC\uD588\uC73C\uB2C8
-      \uC774\uC81C\uB294 \uC548\uC804\uD788 \uD0C8\uC625\uC774 \uAC00\uB2A5\uD558\uACA0\uC5B4."
-    audioEvent:
-      Guid:
-        Data1: -296268456
-        Data2: 1127767590
-        Data3: 1583958455
-        Data4: 870998321
-      Path: event:/Area_3/Player_Night_Check_01_Now_That_I
-    duration: 4
-    isObjectSound: 0
 --- !u!1 &59355566
 GameObject:
   m_ObjectHideFlags: 0
@@ -489,7 +461,6 @@ GameObject:
   m_Component:
   - component: {fileID: 141178779}
   - component: {fileID: 141178780}
-  - component: {fileID: 141178781}
   m_Layer: 0
   m_Name: Way1
   m_TagString: Untagged
@@ -525,53 +496,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaypointTarget
   completeRadius: 1.5
---- !u!114 &141178781
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 141178778}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8338a1efc3f31eb43979c37169625e4b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SubtitleTrigger
-  lookSubtitles: []
-  endSubtitles:
-  - subtitleText: "\uB2E4\uC2DC \uBCF4\uB2C8 \uB0B4\uAC00 \uBD24\uB358 \uCC3D\uBB38\uC740
-      \uAC04\uC218\uC7A5\uC2E4\uC774 \uC544\uB2C8\uB77C \uBCF4\uC548\uC2E4 \uCC3D\uBB38\uC774\uC5C8\uAD70."
-    audioEvent:
-      Guid:
-        Data1: 1393852819
-        Data2: 1144437748
-        Data3: -1872589924
-        Data4: -2143367846
-      Path: event:/Area_2/Player_Night_3F_01_That_Window_I
-    duration: 4
-    isObjectSound: 0
-  - subtitleText: "\uADF8\uB798\uB3C4 \uB0B4\uAC00 \uB098\uAC00\uB294 \uAE38\uC740
-      \uBCC0\uD558\uC9C0 \uC54A\uC544"
-    audioEvent:
-      Guid:
-        Data1: -1248882167
-        Data2: 1295053130
-        Data3: -611505268
-        Data4: -1674619557
-      Path: event:/Area_2/Player_Night_3F_02_But_It_Does
-    duration: 2
-    isObjectSound: 0
-  - subtitleText: "\uBCF4\uC548\uC2E4\uC5D0\uC11C \uC54C\uB78C\uC744 \uAEBC \uB193\uB294\uB2E4\uBA74
-      \uB354 \uC88B\uACA0\uC9C0. "
-    audioEvent:
-      Guid:
-        Data1: 237310522
-        Data2: 1335014790
-        Data3: 85198510
-        Data4: 1209316504
-      Path: event:/Area_2/Player_Night_Office_02_Even_Better_When
-    duration: 3
-    isObjectSound: 0
 --- !u!1 &143093292
 GameObject:
   m_ObjectHideFlags: 0
@@ -2109,107 +2033,6 @@ MonoBehaviour:
   waypoints:
   - {fileID: 393425459}
   mode: 2
---- !u!1001 &662799736
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1189384023}
-    m_Modifications:
-    - target: {fileID: 607663919831719268, guid: 21f17d346a7478a458f7358a7b8e8452, type: 3}
-      propertyPath: m_Name
-      value: UI_SubtitleUI
-      objectReference: {fileID: 0}
-    - target: {fileID: 6400494832509434666, guid: 21f17d346a7478a458f7358a7b8e8452, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6400494832509434666, guid: 21f17d346a7478a458f7358a7b8e8452, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6400494832509434666, guid: 21f17d346a7478a458f7358a7b8e8452, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6400494832509434666, guid: 21f17d346a7478a458f7358a7b8e8452, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6400494832509434666, guid: 21f17d346a7478a458f7358a7b8e8452, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6400494832509434666, guid: 21f17d346a7478a458f7358a7b8e8452, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6400494832509434666, guid: 21f17d346a7478a458f7358a7b8e8452, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6400494832509434666, guid: 21f17d346a7478a458f7358a7b8e8452, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6400494832509434666, guid: 21f17d346a7478a458f7358a7b8e8452, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6400494832509434666, guid: 21f17d346a7478a458f7358a7b8e8452, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6400494832509434666, guid: 21f17d346a7478a458f7358a7b8e8452, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6400494832509434666, guid: 21f17d346a7478a458f7358a7b8e8452, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6400494832509434666, guid: 21f17d346a7478a458f7358a7b8e8452, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6400494832509434666, guid: 21f17d346a7478a458f7358a7b8e8452, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6400494832509434666, guid: 21f17d346a7478a458f7358a7b8e8452, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6400494832509434666, guid: 21f17d346a7478a458f7358a7b8e8452, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6400494832509434666, guid: 21f17d346a7478a458f7358a7b8e8452, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6400494832509434666, guid: 21f17d346a7478a458f7358a7b8e8452, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6400494832509434666, guid: 21f17d346a7478a458f7358a7b8e8452, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6400494832509434666, guid: 21f17d346a7478a458f7358a7b8e8452, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8122857423695348612, guid: 21f17d346a7478a458f7358a7b8e8452, type: 3}
-      propertyPath: playerTransform
-      value: 
-      objectReference: {fileID: 1196445874}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 21f17d346a7478a458f7358a7b8e8452, type: 3}
 --- !u!1001 &669926203
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3612,43 +3435,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6350980274577277247, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
   m_PrefabInstance: {fileID: 6326195777233368098}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &888652169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 888652168}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8338a1efc3f31eb43979c37169625e4b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SubtitleTrigger
-  lookSubtitles: []
-  endSubtitles:
-  - subtitleText: "\uAC04\uC218\uB97C \uC77C\uB2E8 \uCC98\uB9AC\uD558\uAE34 \uD588\uB294\uB370,
-      \uB4E4\uD0A4\uC9C0 \uC54A\uC73C\uB824\uBA74 \uC5B4\uB514 \uC228\uACA8\uC57C\uACA0\uC9C0. "
-    audioEvent:
-      Guid:
-        Data1: -706034283
-        Data2: 1091220960
-        Data3: 25564061
-        Data4: -1551556350
-      Path: event:/Area_2/Player_Night_Kill_01_Now_That_I
-    duration: 4
-    isObjectSound: 0
-  - subtitleText: "\uACF5\uC0AC\uD558\uB294 \uAC83 \uB54C\uBB38\uC5D0 \uB4DC\uB7FC\uD1B5\uC774
-      \uACF3\uACF3\uC5D0 \uC788\uB358\uB370, \uAC70\uAE30\uB2E4 \uC228\uAE30\uBA74
-      \uB418\uACA0\uC9C0"
-    audioEvent:
-      Guid:
-        Data1: 1600306735
-        Data2: 1098230398
-        Data3: -688395604
-        Data4: 647580622
-      Path: event:/Area_2/Player_Night_Kill_02_Barrels_They_Placed
-    duration: 5
-    isObjectSound: 0
 --- !u!1 &893512952
 GameObject:
   m_ObjectHideFlags: 0
@@ -3721,7 +3507,6 @@ GameObject:
   m_Component:
   - component: {fileID: 915856320}
   - component: {fileID: 915856319}
-  - component: {fileID: 915856321}
   m_Layer: 0
   m_Name: Way3
   m_TagString: Untagged
@@ -3757,42 +3542,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1705544561}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &915856321
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 915856318}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8338a1efc3f31eb43979c37169625e4b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SubtitleTrigger
-  lookSubtitles: []
-  endSubtitles:
-  - subtitleText: "\uC774 \uC5F4\uC1E0\uAC00 \uC774 \uCC28\uB7C9\uC758 \uC5F4\uC1E0\uAC00
-      \uB9DE\uC558\uAD70. \uAC71\uC815\uC744 \uB35C\uC5C8\uC5B4."
-    audioEvent:
-      Guid:
-        Data1: -1145111329
-        Data2: 1148486861
-        Data3: -307242602
-        Data4: 156511084
-      Path: event:/Area_3/Player_Night_Car_01_This_Was_The
-    duration: 4
-    isObjectSound: 0
-  - subtitleText: "\uADF8\uB807\uC9C0\uB9CC \uADF8 \uC804\uC5D0 \uAC80\uBB38\uC18C\uC5D0
-      \uC788\uB294 \uAC04\uC218\uB4E4\uC744 \uCC98\uB9AC\uD574\uC57C\uACA0\uC9C0."
-    audioEvent:
-      Guid:
-        Data1: -275002634
-        Data2: 1163437919
-        Data3: 1619097749
-        Data4: -324993689
-      Path: event:/Area_3/Player_Night_Car_02_But_I_Need
-    duration: 4
-    isObjectSound: 0
 --- !u!1 &935485572
 GameObject:
   m_ObjectHideFlags: 0
@@ -4619,10 +4368,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1734493012644964978, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 688144128}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5799505215783519586, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1951464535}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
 --- !u!1 &1118244521 stripped
 GameObject:
@@ -4977,7 +4723,6 @@ RectTransform:
   - {fileID: 4983571322331706687}
   - {fileID: 1425354034}
   - {fileID: 1763312766}
-  - {fileID: 1196539123}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -5038,16 +4783,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e344fec04ae38a748ae1fbff9d7ae861, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
---- !u!4 &1196445874 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2080584877347797051, guid: e96f270bc67bbaa4b8ab37459396ad91, type: 3}
-  m_PrefabInstance: {fileID: 7194624762344860263}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &1196539123 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 6400494832509434666, guid: 21f17d346a7478a458f7358a7b8e8452, type: 3}
-  m_PrefabInstance: {fileID: 662799736}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1227063391
 GameObject:
   m_ObjectHideFlags: 0
@@ -5518,7 +5253,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1313281845}
   - component: {fileID: 1313281846}
-  - component: {fileID: 1313281847}
   m_Layer: 0
   m_Name: Way2
   m_TagString: Untagged
@@ -5554,31 +5288,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaypointTarget
   completeRadius: 1.5
---- !u!114 &1313281847
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1313281844}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8338a1efc3f31eb43979c37169625e4b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SubtitleTrigger
-  lookSubtitles: []
-  endSubtitles:
-  - subtitleText: "\uC774\uC81C \uCC28 \uD0A4\uB97C \uAD6C\uD574\uC57C\uACA0\uC9C0.
-      \uC790\uC7AC\uC2E4\uB85C \uAC00\uC790"
-    audioEvent:
-      Guid:
-        Data1: -296268456
-        Data2: 1127767590
-        Data3: 1583958455
-        Data4: 870998321
-      Path: event:/Area_3/Player_Night_Check_01_Now_That_I
-    duration: 4
-    isObjectSound: 0
 --- !u!1 &1320912197 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 140656912568131738, guid: ae7df8f336bcd43429039346004347e6, type: 3}
@@ -8770,49 +8479,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1184562034495280939, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
   m_PrefabInstance: {fileID: 1948251501}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1951464533 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5799505215783519586, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
-  m_PrefabInstance: {fileID: 1118244520}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1951464535
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1951464533}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8338a1efc3f31eb43979c37169625e4b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SubtitleTrigger
-  lookSubtitles:
-  - subtitleText: "\uBC24\uC740 \uC5B4\uB450\uC6B0\uB2C8 \uBAB8\uC744 \uC228\uAE30\uAE30\uC5D4
-      \uC88B\uC9C0\uB9CC, \uADF8\uB798\uB3C4 \uAC04\uC218\uB4E4\uC774 \uB3CC\uC544\uB2E4\uB2C8\uACE0
-      \uC788\uC9C0."
-    audioEvent:
-      Guid:
-        Data1: -163335470
-        Data2: 1103849978
-        Data3: 976487049
-        Data4: 1201267126
-      Path: event:/Area_2/Player_Night_Start_01_It_Is_Easier
-    duration: 4
-    isObjectSound: 0
-  - subtitleText: "\uB4E4\uD0A4\uC9C0 \uC54A\uAE30 \uC704\uD574\uC11C\uB77C\uB3C4
-      \uAC04\uC218 \uD55C \uB458 \uCBE4\uC740 \uCC98\uB9AC\uD574\uC57C\uD560 \uD544\uC694\uAC00
-      \uC788\uACA0\uC5B4."
-    audioEvent:
-      Guid:
-        Data1: -1225411486
-        Data2: 1284193767
-        Data3: 1644249021
-        Data4: 1538184763
-      Path: event:/Area_2/Player_Night_Start_02_I_Have_To
-    duration: 4
-    isObjectSound: 0
-  endSubtitles: []
 --- !u!1 &1969094415
 GameObject:
   m_ObjectHideFlags: 0
@@ -10100,10 +9766,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6350980274577277247, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 888652169}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
 --- !u!1 &6379316969274137791
 GameObject:
