@@ -14,6 +14,14 @@ public class HUDManager : MonoBehaviour
 
     [SerializeField] private UI_MissionObjective ObjectiveUI_Scene; // 씬에 미리 배치한 것을 직접 연결
 
+    public void SetCanvasVisible(bool isVisible)
+    {
+        if (canvas != null)
+        {
+            canvas.enabled = isVisible;
+        }
+    }
+
     public UI_MissionObjective GetObjective()
     {
         return ObjectiveUI_Scene;

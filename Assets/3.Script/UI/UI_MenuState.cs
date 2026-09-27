@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering;
 using UnityEngine.UI;
 using DG.Tweening;
 
@@ -24,11 +25,12 @@ public class UI_MenuState : MonoBehaviour
     [SerializeField] private RectTransform[] pauseButtons;
 
     [SerializeField] private GameObject optionPanal;
-    [SerializeField] private VerticalLayoutGroup optionLayout;
+    [SerializeField] private HorizontalLayoutGroup optionLayout;
     [SerializeField] private RectTransform[] optionTabButtons;
 
     [SerializeField] private Text big_Pause_Text;
     [SerializeField] private Text big_Option_Text;
+    [SerializeField] private Image bigTextLine;
 
     [SerializeField] private RectTransform bottomBar;
 
@@ -37,9 +39,16 @@ public class UI_MenuState : MonoBehaviour
 
     [Header("뎁스 판정용")]
     private GameObject lastActiveButton;
+    private GameObject currentFocusedObject;
+
+    [Header("포스트 프로세싱")]
+    [SerializeField] private Volume postProcessVolume;
 
     [SerializeField] private InputActionAsset inputAsset;
+    private HUDManager hudManager;
 
+    private float[] pauseBtnOriginX;
+    private float[] optionTabOriginX;
     private void Awake()
     {
         if (GameManager.Instance != null)
@@ -50,8 +59,22 @@ public class UI_MenuState : MonoBehaviour
         LayoutRebuilder.ForceRebuildLayoutImmediate(pauseLayout.GetComponent<RectTransform>());
         pauseLayout.enabled = false;
 
+        pauseBtnOriginX = new float[pauseButtons.Length];
+        for (int i = 0; i < pauseButtons.Length; i++)
+        {
+            pauseBtnOriginX[i] = pauseButtons[i].anchoredPosition.x;
+        }
+
         LayoutRebuilder.ForceRebuildLayoutImmediate(optionLayout.GetComponent<RectTransform>());
         optionLayout.enabled = false;
+
+        optionTabOriginX = new float[optionTabButtons.Length];
+        for (int i = 0; i < optionTabButtons.Length; i++)
+        {
+            optionTabOriginX[i] = optionTabButtons[i].anchoredPosition.x;
+        }
+
+        hudManager = FindAnyObjectByType<HUDManager>();
 
     }
 
@@ -59,6 +82,27 @@ public class UI_MenuState : MonoBehaviour
     {
         pausePanal.SetActive(false);
         optionPanal.SetActive(false);
+    }
+
+    private void Update()
+    {
+        if (currentState == MenuState.InPlaying)
+        {
+            return;
+        }
+
+        if (EventSystem.current == null) return;
+
+        GameObject selected = EventSystem.current.currentSelectedGameObject;
+
+        if (selected != null)
+        {
+            currentFocusedObject = selected;
+        }
+        else if (currentFocusedObject != null && currentFocusedObject.activeInHierarchy)
+        {
+            EventSystem.current.SetSelectedGameObject(currentFocusedObject);
+        }
     }
     public void HandleMenuInput()
     {
@@ -86,12 +130,28 @@ public class UI_MenuState : MonoBehaviour
         currentState = MenuState.InPauseMenu;
         pausePanal.SetActive(true);
 
-        //TODO 등장 연출
+        if (hudManager != null)
+        {
+            hudManager.SetCanvasVisible(false);
+        }
+
+        if (GameManager.Instance.curPlayer != null)
+        {
+            GameManager.Instance.curPlayer.SwitchInputMode(true);
+        }
+
+        if (postProcessVolume != null)
+        {
+            postProcessVolume.gameObject.SetActive(true);
+            DOTween.To(() => postProcessVolume.weight, x => postProcessVolume.weight = x, 1f, 0.5f).SetUpdate(true);
+        }
+
         Color textColor = big_Pause_Text.color;
         textColor.a = 0f;
         big_Pause_Text.color = textColor;
 
         big_Pause_Text.DOFade(0.7f, 0.5f).SetUpdate(true);
+        bigTextLine.DOFade(0.7f, 0.5f).SetUpdate(true);
         bottomBar.anchoredPosition = new Vector2(0, -100f);
         bottomBar.DOAnchorPosY(0f, 0.5f).SetEase(Ease.OutQuint).SetUpdate(true);
 
@@ -101,15 +161,23 @@ public class UI_MenuState : MonoBehaviour
             CanvasGroup cg = pauseButtons[i].GetComponent<CanvasGroup>();
             cg.alpha = 0f;
 
-            pauseButtons[i].anchoredPosition = new Vector2(-200f, pauseButtons[i].anchoredPosition.y);
+            pauseButtons[i].anchoredPosition = new Vector2(pauseBtnOriginX[i] - 200f, pauseButtons[i].anchoredPosition.y);
 
-            btnSeq.Insert(i * 0.1f, pauseButtons[i].DOAnchorPosX(0f, 0.4f).SetEase(Ease.OutBack));
+            btnSeq.Insert(i * 0.1f, pauseButtons[i].DOAnchorPosX(pauseBtnOriginX[i], 0.4f).SetEase(Ease.OutBack));
             btnSeq.Insert(i * 0.1f, cg.DOFade(1f, 0.4f));
         }
 
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
 
+        if (pauseButtons.Length > 0)
+        {
+            Button firstBtn = pauseButtons[0].GetComponent<Button>();
+            if (firstBtn != null)
+            {
+                firstBtn.Select();
+            }
+        }
     }
 
     private void ClosePauseMenu()
@@ -121,6 +189,24 @@ public class UI_MenuState : MonoBehaviour
 
         Time.timeScale = 1f;
         pausePanal.SetActive(false);
+
+        if (hudManager != null)
+        {
+            hudManager.SetCanvasVisible(true);
+        }
+
+        if (GameManager.Instance.curPlayer != null)
+        {
+            GameManager.Instance.curPlayer.SwitchInputMode(false);
+        }
+
+        if (postProcessVolume != null)
+        {
+            DOTween.To(() => postProcessVolume.weight, x => postProcessVolume.weight = x, 0f, 0.3f).SetUpdate(true)
+                               .OnComplete(() => postProcessVolume.gameObject.SetActive(false));
+        }
+
+        bottomBar.DOAnchorPosY(-100f, 0.3f).SetUpdate(true);
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -137,18 +223,28 @@ public class UI_MenuState : MonoBehaviour
 
         backSeq.Insert(0f, big_Option_Text.DOFade(0f, 0.3f));
         backSeq.Insert(0.2f, big_Pause_Text.DOFade(0.7f, 0.3f));
+        backSeq.Insert(0.2f, bigTextLine.DOFade(0.7f, 0.3f));
 
         for (int i = 0; i < pauseButtons.Length; i++)
         {
             CanvasGroup cg = pauseButtons[i].GetComponent<CanvasGroup>();
 
-            pauseButtons[i].anchoredPosition = new Vector2(-200f, pauseButtons[i].anchoredPosition.y);
+            pauseButtons[i].anchoredPosition = new Vector2(pauseBtnOriginX[i] - 200f, pauseButtons[i].anchoredPosition.y);
 
-            backSeq.Insert(0.3f + (i * 0.1f), pauseButtons[i].DOAnchorPosX(0f, 0.4f));
-            backSeq.Insert(0.3f + (i * 0.1f), cg.DOFade(1f, 0.4f));
+            backSeq.Insert(i * 0.1f, pauseButtons[i].DOAnchorPosX(pauseBtnOriginX[i], 0.4f).SetEase(Ease.OutBack));
+            backSeq.Insert(i * 0.1f, cg.DOFade(1f, 0.4f));
         }
 
         currentState = MenuState.InPauseMenu;
+
+        if (pauseButtons.Length > 1)
+        {
+            Button optionBtn = pauseButtons[1].GetComponent<Button>();
+            if (optionBtn != null)
+            {
+                optionBtn.Select();
+            }
+        }
     }
 
     private void LeaveOptionTab()
@@ -169,6 +265,7 @@ public class UI_MenuState : MonoBehaviour
         Sequence sequence = DOTween.Sequence().SetUpdate(true);
 
         sequence.Insert(0f, big_Pause_Text.DOFade(0f, 0.3f));
+        sequence.Join(bigTextLine.DOFade(0f, 0.3f));
 
         Color optColor = big_Option_Text.color;
         optColor.a = 0f;
@@ -190,14 +287,26 @@ public class UI_MenuState : MonoBehaviour
             if (cg !=null)
             {
                 cg.alpha = 0f;
-                optionTabButtons[i].anchoredPosition = new Vector2(200f, optionTabButtons[i].anchoredPosition.y);
+                optionTabButtons[i].anchoredPosition = new Vector2(optionTabOriginX[i] + 200f, optionTabButtons[i].anchoredPosition.y);
 
-                sequence.Insert(0.3f + (i * 0.1f), optionTabButtons[i].DOAnchorPosX(0f, 0.4f).SetEase(Ease.OutBack));
+                sequence.Insert(0.3f + (i * 0.1f), optionTabButtons[i].DOAnchorPosX(optionTabOriginX[i], 0.4f).SetEase(Ease.OutBack));
                 sequence.Insert(0.3f + (i * 0.1f), cg.DOFade(1f, 0.4f));
             }
         }
 
-        sequence.OnComplete(() => { pausePanal.SetActive(false); });
+        sequence.OnComplete(() =>
+        {
+            pausePanal.SetActive(false);
+
+            if (optionTabButtons.Length > 0)
+            {
+                Button firstTabBtn = optionTabButtons[0].GetComponent<Button>();
+                if (firstTabBtn != null)
+                {
+                    firstTabBtn.Select();
+                }
+            }
+        });
     }
 
     public void OnClickResumeButton()
@@ -215,8 +324,33 @@ public class UI_MenuState : MonoBehaviour
     {
         optionTabSwitch.SwitchPanel(targetPanel);
         lastActiveButton = EventSystem.current.currentSelectedGameObject;
+        for (int i = 0; i < optionTabButtons.Length; i++)
+        {
+            UI_ButtonInteract interactScript = optionTabButtons[i].GetComponent<UI_ButtonInteract>();
 
+            if (interactScript != null)
+            {
+                if (optionTabButtons[i].gameObject == lastActiveButton)
+                {
+                    interactScript.SetTabActive(true);
+                }
+                else
+                {
+                    interactScript.SetTabActive(false);
+                }
+            }
+        }
         currentState = MenuState.InOptionTap;
+
+        if (targetPanel != null)
+        {
+            Selectable firstSelectable = targetPanel.GetComponentInChildren<Selectable>();
+
+            if (firstSelectable != null)
+            {
+                firstSelectable.Select();
+            }
+        }
     }
 
 }

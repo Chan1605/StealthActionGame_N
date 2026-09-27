@@ -73,6 +73,12 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{04bdce86-798b-4ac0-bf9c-241e9b1135b4}">
+		<property name="volume">
+			<value>-1.5</value>
+		</property>
+		<relationship name="modulators">
+			<destination>{98941ca0-5a99-4d38-8b44-7809abbbffb1}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{16316ded-a6a9-4b2f-8573-adfbbd7e7d19}</destination>
 		</relationship>
@@ -94,16 +100,49 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{e598bb27-8536-4c22-981f-7a5174606505}" />
+	<object class="ADSRModulator" id="{98941ca0-5a99-4d38-8b44-7809abbbffb1}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="initialValue">
+			<value>-80</value>
+		</property>
+		<property name="attackTime">
+			<value>0</value>
+		</property>
+		<property name="holdTime">
+			<value>46538.457</value>
+		</property>
+		<property name="decayTime">
+			<value>660</value>
+		</property>
+		<property name="sustainValue">
+			<value>-80</value>
+		</property>
+		<property name="releaseTime">
+			<value>0</value>
+		</property>
+		<property name="releaseShape">
+			<value>0.131628811</value>
+		</property>
+		<property name="finalValue">
+			<value>-80</value>
+		</property>
+	</object>
 	<object class="MixerBusEffectChain" id="{16316ded-a6a9-4b2f-8573-adfbbd7e7d19}">
 		<relationship name="effects">
 			<destination>{c5012234-2885-442b-a21b-13724f4d9b2d}</destination>
 			<destination>{4e5f5cb6-da91-492b-abe6-78ca56e96a1f}</destination>
+			<destination>{093f1b51-60b9-4794-84af-2c68f40c60a4}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{2ead3821-60be-4077-aff7-3df305575cb4}" />
 	<object class="SingleSound" id="{5c8f839e-dd3a-43bb-b862-15b46729728b}">
 		<property name="startOffset">
-			<value>11</value>
+			<value>7.5</value>
+		</property>
+		<property name="volume">
+			<value>-2.5</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{1a9235f5-37c9-4771-ab5e-1bb777ea88b8}</destination>
@@ -111,5 +150,23 @@
 	</object>
 	<object class="MixerBusFader" id="{1ebb80be-d1fb-4189-99f8-816176a9f5bb}" />
 	<object class="MixerBusFader" id="{c5012234-2885-442b-a21b-13724f4d9b2d}" />
-	<object class="SpatialiserEffect" id="{4e5f5cb6-da91-492b-abe6-78ca56e96a1f}" />
+	<object class="SpatialiserEffect" id="{4e5f5cb6-da91-492b-abe6-78ca56e96a1f}">
+		<property name="distanceRolloffType">
+			<value>1</value>
+		</property>
+	</object>
+	<object class="CompressorEffect" id="{093f1b51-60b9-4794-84af-2c68f40c60a4}">
+		<property name="threshold">
+			<value>-13.5</value>
+		</property>
+		<property name="attackTime">
+			<value>58</value>
+		</property>
+		<property name="releaseTime">
+			<value>86</value>
+		</property>
+		<property name="gain">
+			<value>-3.5</value>
+		</property>
+	</object>
 </objects>

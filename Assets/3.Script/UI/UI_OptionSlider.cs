@@ -2,20 +2,39 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class UI_OptionSlider : MonoBehaviour
 {
     [SerializeField] Slider slider;
     [SerializeField] Text Value_t;
 
+    [System.Serializable]
+    public class SliderEvent : UnityEvent<float> { }
+
+    [Header("외부 데이터 연결")]
+    [SerializeField] private SliderEvent onDataChanged;
+
     private void Start()
     {
-        slider.onValueChanged.AddListener(UpdateText);
-        UpdateText(slider.value);
+        if (slider != null)
+        {
+            slider.onValueChanged.AddListener(UpdateText);
+            slider.onValueChanged.AddListener(NotifyDataChanged);
+            UpdateText(slider.value);
+        }
     }
     public void UpdateText(float value)
     {
         Value_t.text = Mathf.RoundToInt(value).ToString();
+    }
+
+    private void NotifyDataChanged(float value)
+    {
+        if (onDataChanged != null)
+        {
+            onDataChanged.Invoke(value);
+        }
     }
 
     private void OnDestroy()
@@ -25,4 +44,5 @@ public class UI_OptionSlider : MonoBehaviour
             slider.onValueChanged.RemoveListener(UpdateText);
         }
     }
+
 }

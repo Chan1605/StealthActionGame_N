@@ -1,15 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PauseAndInputSetting : MonoBehaviour
 {
     private PlayerInput playerInput;
+    private PlayerCameraRig cameraRig;
     private void Start()
     {
         GameManager.Instance.curPlayer = this;
         playerInput = GetComponent<PlayerInput>();
+        cameraRig = GetComponent<PlayerCameraRig>();
     }
     public void OnMenu(InputValue value)
     {
@@ -42,5 +45,22 @@ public class PauseAndInputSetting : MonoBehaviour
         }
 
         return "?";
+    }
+
+    public void SwitchInputMode(bool isUIMode)
+    {
+        if (cameraRig == null)
+        {
+            return;
+        }
+
+        if (isUIMode == true)
+        {
+            cameraRig.enabled = false;
+        }
+        else
+        {
+            cameraRig.enabled = true;
+        }
     }
 }
