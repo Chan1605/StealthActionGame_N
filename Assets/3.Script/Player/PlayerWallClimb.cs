@@ -375,6 +375,36 @@ public class PlayerWallClimb : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// 사망 등으로 벽타기를 즉시 중단해야 할 때 호출합니다.
+    /// </summary>
+    public void ForceRelease()
+    {
+        if (!isBusy)
+        {
+            return;
+        }
+
+        isBusy = false;
+        StopAllCoroutines();
+
+        if (_playerAnimator != null)
+        {
+            _playerAnimator.ClearHandIK();
+            _playerAnimator.EndAction(climbTrigger);
+        }
+
+        _controller.enabled = true;
+
+        if (_movement != null)
+        {
+            _movement.StopVertical();
+            _movement.enabled = true;
+        }
+
+        OnClimbFinished?.Invoke();
+    }
+
     private void Log(string message)
     {
         if (isDebugLog)

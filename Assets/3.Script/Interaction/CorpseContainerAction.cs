@@ -37,6 +37,15 @@ public class CorpseContainerAction : InteractionAction
         }
     }
 
+    // 시체를 든 채로 쓰는 것이 이 액션의 목적이다.
+    public override bool isAllowedWhileCarrying
+    {
+        get
+        {
+            return true;
+        }
+    }
+
     public event Action<CarriableBody> OnCorpseStored;
     public event Action OnContainerFilled;
 

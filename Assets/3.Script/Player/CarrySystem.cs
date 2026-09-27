@@ -307,6 +307,50 @@ public class CarrySystem : MonoBehaviour
         return body;
     }
 
+    /// <summary>
+    /// 사망 등으로 즉시 상태를 되돌려야 할 때 호출합니다. 연출 없이 시체를 그 자리에 내려놓습니다.
+    /// </summary>
+    public void ForceDropBody()
+    {
+        StopAllCoroutines();
+
+        CarriableBody body = heldBody;
+
+        if (body != null)
+        {
+            heldBody = null;
+
+            GetPutDownPose(out Vector3 position, out Quaternion rotation);
+            body.EndCarry(position, rotation);
+            body.SetVisible(true);
+
+            OnCarryEnded?.Invoke(body);
+            Log("사망으로 시체를 내려놓았습니다.");
+        }
+
+        if (_movement != null)
+        {
+            _movement.ClearSpeedOverride();
+        }
+
+        if (_playerAnimator != null)
+        {
+            _playerAnimator.EndAction(pickUpTrigger);
+            _playerAnimator.EndAction(putDownTrigger);
+        }
+
+        _lastNotifiedBody = null;
+
+        SetPlayerControlEnabled(true);
+
+        if (_controller != null)
+        {
+            _controller.enabled = true;
+        }
+
+        isBusy = false;
+    }
+
     private bool IsFree()
     {
         if (_runner != null && _runner.isBusy)

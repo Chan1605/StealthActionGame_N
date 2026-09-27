@@ -38,6 +38,12 @@ public class PlayerDeath : MonoBehaviour
     private DummyDamageable _health;
     private PlayerDetectable _detectable;
 
+    // 죽는 순간 정리해야 하는 행동들
+    private CarrySystem _carry;
+    private PlayerInteractionRunner _runner;
+    private AssassinationSystem _assassination;
+    private PlayerWallClimb _wallClimb;
+
     private Vector3 _spawnPosition;
     private Quaternion _spawnRotation;
     private bool _isDying;
@@ -50,6 +56,10 @@ public class PlayerDeath : MonoBehaviour
         _playerAnimator = GetComponent<PlayerAnimator>();
         _health = GetComponent<DummyDamageable>();
         _detectable = GetComponent<PlayerDetectable>();
+        _carry = GetComponent<CarrySystem>();
+        _runner = GetComponent<PlayerInteractionRunner>();
+        _assassination = GetComponent<AssassinationSystem>();
+        _wallClimb = GetComponent<PlayerWallClimb>();
         if (healthUI == null) healthUI = FindAnyObjectByType<UI_PlayerHealth>();
 
         _spawnPosition = transform.position;
@@ -74,6 +84,15 @@ public class PlayerDeath : MonoBehaviour
     private void HandleDied()
     {
         if (_isDying) return;
+
+        // 진행 중이던 행동을 모두 정리한다.
+        // 이걸 하지 않으면 시체를 든 채로 부활하거나,
+        // 뒤늦게 끝난 상호작용이 조작을 되살려 컨트롤러 상태가 엇갈린다.
+        if (_runner != null) _runner.ForceRelease();
+        if (_assassination != null) _assassination.ForceRelease();
+        if (_wallClimb != null) _wallClimb.ForceRelease();
+        if (_carry != null) _carry.ForceDropBody();
+
         StartCoroutine(Die_co());
     }
 

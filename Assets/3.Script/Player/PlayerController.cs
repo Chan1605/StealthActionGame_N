@@ -170,8 +170,26 @@ public class PlayerController : MonoBehaviour
         _input.OnCrouchChanged -= HandleCrouchChanged;
     }
 
+    private bool _isInactiveWarned;
+
     private void Update()
     {
+        // 다른 시스템(상호작용 / 암살 / 시체 운반 / 벽타기 / 사망 연출)이
+        // CharacterController를 꺼 둔 동안에는 이동을 적용하지 않는다.
+        // 이 가드가 없으면 'Move called on inactive controller' 에러가 매 프레임 쌓인다.
+        if (!_controller.enabled)
+        {
+            if (!_isInactiveWarned)
+            {
+                _isInactiveWarned = true;
+                Debug.LogWarning("[PlayerController] CharacterController가 꺼져 있어 이동을 건너뜁니다. 다른 시스템이 잠금을 쥔 상태입니다.", this);
+            }
+
+            return;
+        }
+
+        _isInactiveWarned = false;
+
         ApplyGravity();
         ApplyCapsule();
         ApplyMove();
