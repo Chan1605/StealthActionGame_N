@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 8534995022234887671}
   - component: {fileID: 1786656780504293631}
   - component: {fileID: 8839752959146473287}
+  - component: {fileID: -5765677915085345711}
   m_Layer: 7
   m_Name: CarKey
   m_TagString: Untagged
@@ -214,3 +215,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-5765677915085345711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7854697079270803108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8338a1efc3f31eb43979c37169625e4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SubtitleTrigger
+  lookSubtitles: []
+  endSubtitles:
+  - subtitleText: "\uC774 \uC5F4\uC1E0\uAC00 \uB0B4\uAC00 \uBCF8 \uCC28\uB7C9\uC758
+      \uCC28\uB7C9 \uC5F4\uC1E0\uC77C\uAC00? \uC77C\uB2E8 \uCC59\uACA8\uC57C\uACA0\uC5B4."
+    audioEvent:
+      Guid:
+        Data1: -151791959
+        Data2: 1308847368
+        Data3: -2042737220
+        Data4: -757087278
+      Path: event:/Area_3/Player_Night_StockKey_01_Is_This_The
+    duration: 4
+    isObjectSound: 0
