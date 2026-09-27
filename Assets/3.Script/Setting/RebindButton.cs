@@ -17,6 +17,7 @@ public class RebindButton : MonoBehaviour
 
     private InputActionRebindingExtensions.RebindingOperation rebindOp;
 
+    private static RebindButton activeRebindButton;
     public static event Action OnrebindGlobal;
 
     private void Awake()
@@ -34,9 +35,24 @@ public class RebindButton : MonoBehaviour
     {
         OnrebindGlobal -= UpdateLabel;
     }
-
+    public void CancelRebind()
+    {
+        if (rebindOp != null)
+        {
+            rebindOp.Cancel();
+        }
+    }
     private void StartRebind()
     {
+        if (activeRebindButton != null)
+        {
+            if (activeRebindButton != this)
+            {
+                activeRebindButton.CancelRebind();
+            }
+        }
+        activeRebindButton = this;
+
         rebindButton.interactable = false;
         keyLabel.text = "...";
 
@@ -54,7 +70,15 @@ public class RebindButton : MonoBehaviour
                 UpdateLabel();
                 OnrebindGlobal?.Invoke();
 
-                rebindButton.Select();
+                if (activeRebindButton == this)
+                {
+                    rebindButton.Select();
+                }
+
+                if (activeRebindButton == this)
+                {
+                    activeRebindButton = null;
+                }
 
                 op.Dispose();
             })
@@ -67,6 +91,10 @@ public class RebindButton : MonoBehaviour
 
                 rebindButton.Select();
 
+                if (activeRebindButton == this)
+                {
+                    activeRebindButton = null;
+                }
                 op.Dispose();
             })
             .Start();
@@ -78,14 +106,17 @@ public class RebindButton : MonoBehaviour
 
         foreach (var action in actionRef.asset)
         {
-            if ( action == actionRef.action)
-            {
-                continue;
-            }
-
             for (int i = 0; i < action.bindings.Count;i++)
             {
-                if(action.bindings[i].effectivePath == newBindingPath)
+                if (action == actionRef.action)
+                {
+                    if (i == bindingIndex)
+                    {
+                        continue;
+                    }
+                }
+
+                if (action.bindings[i].effectivePath == newBindingPath)
                 {
                     action.ApplyBindingOverride(i, "");
                 }

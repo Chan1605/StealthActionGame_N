@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.InputSystem;
 using DG.Tweening;
+using FMODUnity;
 
 public class VisionManager : MonoBehaviour
 {
@@ -14,6 +15,9 @@ public class VisionManager : MonoBehaviour
     [SerializeField] private float normalFOV = 60f;
     [SerializeField] private float visionFOV = 50f;
     [SerializeField] private float transitionDuration = 1f;
+
+    [SerializeField] private EventReference visionStartSFX;
+    [SerializeField] private EventReference visionEndSFX;
 
     private PlayerInput _input;
 
@@ -72,12 +76,14 @@ public class VisionManager : MonoBehaviour
     public void StartVision()
     {
         ToggleVision(true);
+        AudioManager.Instance.PlayOneShot(visionStartSFX, transform.position);
         Debug.Log("투시 시작");
     }
 
     public void StopVision()
     {
         ToggleVision(false);
+        AudioManager.Instance.PlayOneShot(visionEndSFX, transform.position);
         Debug.Log("투시 종료");
     }
 
