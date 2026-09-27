@@ -42,11 +42,11 @@ MonoBehaviour:
   Path: FMODProject/StealthActionGame_Fmod/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 639261224298137813
+  lastModified: 639261239295905885
   FileSizes:
   - Name: Desktop
     Value: 551840
-  Exists: 0
+  Exists: 1
 --- !u!114 &-8300424939153912469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,7 +62,7 @@ MonoBehaviour:
   Path: FMODProject/StealthActionGame_Fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639261224295668076
+  lastModified: 639261239295870730
   FileSizes:
   - Name: Desktop
     Value: 2430
@@ -82,11 +82,11 @@ MonoBehaviour:
   Path: FMODProject/StealthActionGame_Fmod/Build/Desktop/Enemy.bank
   Name: Enemy
   StudioPath: bank:/Enemy
-  lastModified: 639261224295526575
+  lastModified: 639261239295855691
   FileSizes:
   - Name: Desktop
     Value: 571232
-  Exists: 0
+  Exists: 1
 --- !u!114 &-7734504629328131272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,7 +160,7 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 1036
-  Exists: 0
+  Exists: 1
 --- !u!114 &-7513017661268919909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -553,11 +553,11 @@ MonoBehaviour:
   Path: FMODProject/StealthActionGame_Fmod/Build/Desktop/Ending.bank
   Name: Ending
   StudioPath: bank:/Ending
-  lastModified: 639261224289957127
+  lastModified: 639261239295805446
   FileSizes:
   - Name: Desktop
     Value: 1549472
-  Exists: 0
+  Exists: 1
 --- !u!114 &-3488037927480083292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1126,7 +1126,7 @@ MonoBehaviour:
   - {fileID: -7558842593032024359}
   StringsBanks:
   - {fileID: -8300424939153912469}
-  cacheTime: 639261226901149839
+  cacheTime: 639261239295905885
   cacheVersion: 131637
 --- !u!114 &600344784844475082
 MonoBehaviour:
@@ -1587,7 +1587,7 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 1046
-  Exists: 0
+  Exists: 1
 --- !u!114 &2061311410271111296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1919,11 +1919,11 @@ MonoBehaviour:
   Path: FMODProject/StealthActionGame_Fmod/Build/Desktop/BGM.bank
   Name: BGM
   StudioPath: bank:/BGM
-  lastModified: 639261224272124017
+  lastModified: 639261239295705026
   FileSizes:
   - Name: Desktop
     Value: 5437920
-  Exists: 0
+  Exists: 1
 --- !u!114 &6055817445109778756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2100,7 +2100,9 @@ MonoBehaviour:
   Name: Area_3
   StudioPath: 
   lastModified: 639261226827158723
-  FileSizes: []
+  FileSizes:
+  - Name: Desktop
+    Value: 219712
   Exists: 1
 --- !u!114 &7829391776405318840
 MonoBehaviour:
