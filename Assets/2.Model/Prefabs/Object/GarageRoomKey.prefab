@@ -186,7 +186,7 @@ MonoBehaviour:
   alignTime: 0.15
   isRepeatable: 1
   isUpperBodyOnly: 0
-  keyId: SecurityRoomKey
+  keyId: GarageRoomKey
 --- !u!54 &8839752959146473287
 Rigidbody:
   m_ObjectHideFlags: 0
