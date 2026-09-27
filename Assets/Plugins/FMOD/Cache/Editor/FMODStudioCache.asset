@@ -611,7 +611,6 @@ MonoBehaviour:
   - {fileID: 8354602645938095227}
   - {fileID: 8354602645938095227}
   - {fileID: 8354602645938095227}
-  - {fileID: 8354602645938095227}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1681,7 +1680,7 @@ MonoBehaviour:
   - {fileID: -7558842593032024359}
   StringsBanks:
   - {fileID: -8300424939153912469}
-  cacheTime: 639261550047424370
+  cacheTime: 639261733558039927
   cacheVersion: 131637
 --- !u!114 &108053269924957374
 MonoBehaviour:
@@ -1966,7 +1965,6 @@ MonoBehaviour:
   - {fileID: -970304279502095472}
   - {fileID: -970304279502095472}
   - {fileID: -970304279502095472}
-  - {fileID: 8354602645938095227}
   - {fileID: 8354602645938095227}
   - {fileID: 8354602645938095227}
   - {fileID: 8354602645938095227}
@@ -3293,10 +3291,10 @@ MonoBehaviour:
   Path: FMODProject/StealthActionGame_Fmod/Build/Desktop/Area_2.bank
   Name: Area_2
   StudioPath: bank:/Area/Area_2
-  lastModified: 639261550045235346
+  lastModified: 639261733558039927
   FileSizes:
   - Name: Desktop
-    Value: 369536
+    Value: 355680
   Exists: 1
 --- !u!114 &8750515383139980675
 MonoBehaviour:
