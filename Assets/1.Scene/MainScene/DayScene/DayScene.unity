@@ -1849,6 +1849,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GeneralObject
   isAct: 0
   completeOnUse: 1
+  objectData: {fileID: 0}
   lockUntilMissionTurn: 1
 --- !u!64 &746241506
 MeshCollider:
@@ -4644,6 +4645,67 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1537117060}
   m_CullTransparentMesh: 1
+--- !u!1 &1548480125
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1548480127}
+  - component: {fileID: 1548480126}
+  m_Layer: 0
+  m_Name: SceneAudioStarter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1548480126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548480125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b24b21dedad7ee43935ab52ba358fa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SceneAudioStarter
+  banksToLoad:
+  - BGM
+  - AMB
+  bgmEvent:
+    Guid:
+      Data1: 2042122185
+      Data2: 1172088673
+      Data3: 1748250013
+      Data4: 520492329
+    Path: event:/BGM/BGM_Day
+  ambEvent:
+    Guid:
+      Data1: -224323914
+      Data2: 1242390912
+      Data3: -1921241427
+      Data4: 910925899
+    Path: event:/AMB/AMB_Day
+--- !u!4 &1548480127
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548480125}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 348.6626, y: 0, z: 6880.6323}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1556973242
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6538,6 +6600,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GeneralObject
   isAct: 0
   completeOnUse: 1
+  objectData: {fileID: 0}
   lockUntilMissionTurn: 0
 --- !u!65 &1978229070
 BoxCollider:
@@ -8551,3 +8614,4 @@ SceneRoots:
   - {fileID: 1485476200}
   - {fileID: 85112481}
   - {fileID: 4789393667575171937}
+  - {fileID: 1548480127}
