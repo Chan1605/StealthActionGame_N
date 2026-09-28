@@ -26,6 +26,7 @@ public class AudioManager : MonoBehaviour
     }
 
     private EventInstance bgmInstance;
+    private EventInstance ambInstance;
     [SerializeField] private EventReference playerFootstepPath;
 
     private string currentAreaBank;
@@ -46,7 +47,17 @@ public class AudioManager : MonoBehaviour
         bgmInstance = RuntimeManager.CreateInstance(bgmEvent);
         bgmInstance.start();
     }
+    public void PlayAMB(EventReference ambEvent)
+    {
+        if (ambInstance.isValid())
+        {
+            ambInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            ambInstance.release();
+        }
 
+        ambInstance = RuntimeManager.CreateInstance(ambEvent);
+        ambInstance.start();
+    }
     public void PauseBGM(bool isPaused)
     {
         if (bgmInstance.isValid())
