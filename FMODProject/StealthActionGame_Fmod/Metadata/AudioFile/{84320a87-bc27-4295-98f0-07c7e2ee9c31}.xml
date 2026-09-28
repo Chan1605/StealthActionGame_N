@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{84320a87-bc27-4295-98f0-07c7e2ee9c31}">
+		<property name="assetPath">
+			<value>Player_Night_02_But_It_Does [cut].mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.1600000000000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9f9ee4b4-216d-4908-a803-387baa648ae1}</destination>
+		</relationship>
+	</object>
+</objects>

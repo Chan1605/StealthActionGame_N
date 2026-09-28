@@ -103,6 +103,7 @@ public class EnemyObject : MonoBehaviour, IInteractable, ICompletionState
         KeyPanal_Off();
         isAct = false;
         IsPlayerLook = false;
+        OnUse?.Invoke();
     }
 
     private void KeyPanal_Off()
