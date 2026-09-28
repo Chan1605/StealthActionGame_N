@@ -18,6 +18,8 @@ public class MinimapManager : MonoBehaviour
 
     [Header("미니맵 세팅")]
     [SerializeField] private float mapScale = 10f;
+    [SerializeField] private Vector2 mapOffset = Vector2.zero; 
+    [SerializeField] private float mapImageScale = 1f;         
     [SerializeField] private List<FloorData> floorList;
 
     [Header("아이콘 트래킹")]
@@ -107,12 +109,10 @@ public class MinimapManager : MonoBehaviour
     private void UpdateMapTransform()
     {
         float cameraY = cameraTransform.eulerAngles.y;
-        mapRotator.localEulerAngles = new Vector3 (mapRotator.localEulerAngles.x, mapRotator.localEulerAngles.y, cameraY);
+        mapRotator.localEulerAngles = new Vector3(mapRotator.localEulerAngles.x, mapRotator.localEulerAngles.y, cameraY);
 
-        if (playerTransform.position.x != pastPlayerTransform.x || playerTransform.position.z != pastPlayerTransform.z)
-        {
-            mapImage.anchoredPosition = new Vector2(-playerTransform.position.x*mapScale, -playerTransform.position.z*mapScale);
-        }
+        mapImage.localScale = Vector3.one * mapImageScale;
+        mapImage.anchoredPosition = new Vector2(-playerTransform.position.x * mapScale, -playerTransform.position.z * mapScale) + mapOffset;
     }
 
     private void UpdatePlayerIcon()
