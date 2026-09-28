@@ -4379,9 +4379,113 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 340565284871243599, guid: a8471d1cd28420d47a305914da96032a, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 628605854856400107, guid: a8471d1cd28420d47a305914da96032a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 628605854856400107, guid: a8471d1cd28420d47a305914da96032a, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 628605854856400107, guid: a8471d1cd28420d47a305914da96032a, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1006
+      objectReference: {fileID: 0}
+    - target: {fileID: 628605854856400107, guid: a8471d1cd28420d47a305914da96032a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 508
+      objectReference: {fileID: 0}
+    - target: {fileID: 628605854856400107, guid: a8471d1cd28420d47a305914da96032a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -185
+      objectReference: {fileID: 0}
     - target: {fileID: 870050514736122753, guid: a8471d1cd28420d47a305914da96032a, type: 3}
       propertyPath: m_Name
       value: PopupCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452061935303987890, guid: a8471d1cd28420d47a305914da96032a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452061935303987890, guid: a8471d1cd28420d47a305914da96032a, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452061935303987890, guid: a8471d1cd28420d47a305914da96032a, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452061935303987890, guid: a8471d1cd28420d47a305914da96032a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 508
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452061935303987890, guid: a8471d1cd28420d47a305914da96032a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -355
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573801790726199294, guid: a8471d1cd28420d47a305914da96032a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573801790726199294, guid: a8471d1cd28420d47a305914da96032a, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573801790726199294, guid: a8471d1cd28420d47a305914da96032a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573801790726199294, guid: a8471d1cd28420d47a305914da96032a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5472460756982878923, guid: a8471d1cd28420d47a305914da96032a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5472460756982878923, guid: a8471d1cd28420d47a305914da96032a, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5472460756982878923, guid: a8471d1cd28420d47a305914da96032a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5472460756982878923, guid: a8471d1cd28420d47a305914da96032a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6964090581212245136, guid: a8471d1cd28420d47a305914da96032a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6964090581212245136, guid: a8471d1cd28420d47a305914da96032a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9069587192496408700, guid: a8471d1cd28420d47a305914da96032a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9069587192496408700, guid: a8471d1cd28420d47a305914da96032a, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9069587192496408700, guid: a8471d1cd28420d47a305914da96032a, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1006
+      objectReference: {fileID: 0}
+    - target: {fileID: 9069587192496408700, guid: a8471d1cd28420d47a305914da96032a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 508
+      objectReference: {fileID: 0}
+    - target: {fileID: 9069587192496408700, guid: a8471d1cd28420d47a305914da96032a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4542,7 +4646,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TutorialTrigger
   condition: 1
-  tutorialImage: {fileID: 0}
+  tutorialImage: {fileID: 21300000, guid: bbf015ba23aab5344b578d53d84782f1, type: 3}
   tutorialText: "\uC77C\uC815 \uB192\uC774\uC758 \uBCBD\uC740 \uD0C0\uACE0 \uC62C\uB77C\uAC08
     \uC218 \uC788\uC2B5\uB2C8\uB2E4.  \uC801\uC808\uD55C \uB192\uC774\uC5D0\uC11C
     Spacebar\uB97C \uB20C\uB7EC \uBCF4\uC138\uC694."
@@ -5182,6 +5286,52 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.00468399, y: 0.011164717, z: 0.007880211}
   m_Center: {x: -0.018781764, y: 0.05353544, z: 0.053140882}
+--- !u!1 &1635002596 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8298919934863400196, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
+  m_PrefabInstance: {fileID: 1832282073}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1635002608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635002596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74a98c72dc724e942a1abd4f8e23942f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TutorialTrigger
+  condition: 0
+  tutorialImage: {fileID: 21300000, guid: ddb159b319248ff4e97cbc07123edb4f, type: 3}
+  tutorialText: "\uBCD1\uC744 \uB358\uC9C0\uBA74 \uC77C\uC2DC\uC801\uC73C\uB85C \uC18C\uC74C\uC744
+    \uBC1C\uC0DD\uC2DC\uD0AC \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+--- !u!114 &1635002609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635002596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8338a1efc3f31eb43979c37169625e4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SubtitleTrigger
+  lookSubtitles:
+  - subtitleText: "\uBCD1\uC774 \uAE68\uC9C0\uBA74 \uB098\uB294 \uC694\uB780\uD55C
+      \uC18C\uB9AC\uB77C\uBA74 \uAC04\uC218\uB97C \uC720\uB3C4\uD560 \uB54C \uC720\uC6A9\uD558\uACA0\uC5B4."
+    audioEvent:
+      Guid:
+        Data1: 803610107
+        Data2: 1309498703
+        Data3: 713570469
+        Data4: 1682129704
+      Path: event:/Area_1/Player_Day_Bottle_01_The_Noise_That
+    duration: 4
+    isObjectSound: 0
+  endSubtitles: []
 --- !u!1 &1659157328
 GameObject:
   m_ObjectHideFlags: 0
@@ -5431,7 +5581,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TutorialTrigger
   condition: 1
-  tutorialImage: {fileID: 0}
+  tutorialImage: {fileID: 21300000, guid: 86bd920163ca8264ca5f1c37f9a4d878, type: 3}
   tutorialText: "\uAD50\uB3C4\uAD00\uC758 \uC2DC\uC57C\uC5D0 \uB4E4\uBA74 \uB4E4\uD0AC
     \uC218 \uC788\uC2B5\uB2C8\uB2E4. \uC77C\uC815 \uB192\uC774 \uC774\uC0C1\uC758
     \uD50C\uB808\uC774\uC5B4\uB294 \uBCF4\uC9C0 \uBABB\uD569\uB2C8\uB2E4."
@@ -5847,36 +5997,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1816534857 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5708110496642771988, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
-  m_PrefabInstance: {fileID: 1832282073}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1816534869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1816534857}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8338a1efc3f31eb43979c37169625e4b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SubtitleTrigger
-  lookSubtitles: []
-  endSubtitles:
-  - subtitleText: "\uBCD1\uC774 \uAE68\uC9C0\uBA74 \uB098\uB294 \uC694\uB780\uD55C
-      \uC18C\uB9AC\uB77C\uBA74 \uAC04\uC218\uB97C \uC720\uB3C4\uD560 \uB54C \uC720\uC6A9\uD558\uACA0\uC5B4."
-    audioEvent:
-      Guid:
-        Data1: 803610107
-        Data2: 1309498703
-        Data3: 713570469
-        Data4: 1682129704
-      Path: event:/Area_1/Player_Day_Bottle_01_The_Noise_That
-    duration: 4
-    isObjectSound: 0
 --- !u!1 &1818163930 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5799505215783519586, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
@@ -5976,7 +6096,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TutorialTrigger
   condition: 0
-  tutorialImage: {fileID: 0}
+  tutorialImage: {fileID: 21300000, guid: 628fde83bd4f9384cb21398f9b452d74, type: 3}
   tutorialText: "E \uD0A4\uB97C \uB20C\uB7EC \uBB3C\uCCB4\uC640 \uC0C1\uD638\uC791\uC6A9\uD560
     \uC218 \uC788\uC2B5\uB2C8\uB2E4."
 --- !u!114 &1818163949
@@ -5992,9 +6112,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TutorialTrigger
   condition: 1
-  tutorialImage: {fileID: 0}
-  tutorialText: "W A S D \uD0A4\uB97C \uB20C\uB7EC \uC6C0\uC9C1\uC77C \uC218 \uC788\uC2B5\uB2C8\uB2E4.
-    \uC2A4\uD398\uC774\uC2A4\uBC14\uB97C \uB20C\uB7EC \uC810\uD504\uD569\uB2C8\uB2E4."
+  tutorialImage: {fileID: 21300000, guid: 17dfc52aa92d93d45880ea09d4b3696e, type: 3}
+  tutorialText: "\uBCC0\uACBD\uB418\uC9C0 \uC54A\uC740 \uC774\uC0C1,  W A S D \uD0A4\uB97C
+    \uB20C\uB7EC \uC6C0\uC9C1\uC77C \uC218 \uC788\uC2B5\uB2C8\uB2E4. \uC2A4\uD398\uC774\uC2A4\uBC14\uB97C
+    \uB20C\uB7EC \uC810\uD504\uD569\uB2C8\uB2E4."
 --- !u!4 &1822697785 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1184562034495280939, guid: e98d6148c52c6fe4fb45041aecff971d, type: 3}
@@ -6117,15 +6238,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5799505215783519586, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1818163949}
+    - targetCorrespondingSourceObject: {fileID: 8298919934863400196, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1635002609}
+    - targetCorrespondingSourceObject: {fileID: 8298919934863400196, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1635002608}
     - targetCorrespondingSourceObject: {fileID: 1064112925605169447, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2124730327}
-    - targetCorrespondingSourceObject: {fileID: 1117921377559086757, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1892044195}
-    - targetCorrespondingSourceObject: {fileID: 5708110496642771988, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1816534869}
     - targetCorrespondingSourceObject: {fileID: 5783841158186572294, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1980429400}
@@ -6243,27 +6364,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.038029216, y: 0.0063047297, z: 0.03783817}
   m_Center: {x: 0.031125527, y: 0.036795735, z: 0.039685473}
---- !u!1 &1892044191 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1117921377559086757, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
-  m_PrefabInstance: {fileID: 1832282073}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1892044195
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1892044191}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74a98c72dc724e942a1abd4f8e23942f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TutorialTrigger
-  condition: 0
-  tutorialImage: {fileID: 0}
-  tutorialText: "\uBCD1\uC744 \uB358\uC9C0\uBA74 \uC77C\uC2DC\uC801\uC73C\uB85C \uC18C\uC74C\uC744
-    \uBC1C\uC0DD\uC2DC\uD0AC \uC218 \uC788\uC2B5\uB2C8\uB2E4."
 --- !u!1 &1921992062
 GameObject:
   m_ObjectHideFlags: 0
@@ -7069,7 +7169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TutorialTrigger
   condition: 1
-  tutorialImage: {fileID: 0}
+  tutorialImage: {fileID: 21300000, guid: 020ce5bac0501334ba4bf9c709eba335, type: 3}
   tutorialText: "\uC18C\uC74C\uC744 \uC77C\uC73C\uD0A4\uB294 \uC624\uBE0C\uC81D\uD2B8\uC640
     \uC0C1\uD638\uC791\uC6A9\uD558\uBA74 \uC77C\uC815\uC2DC\uAC04 \uAD50\uB3C4\uAD00\uC758
     \uC8FC\uC758\uB97C \uB04C \uC218 \uC788\uC2B5\uB2C8\uB2E4."
