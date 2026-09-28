@@ -1224,6 +1224,7 @@ Transform:
   - {fileID: 7649122774046313152}
   - {fileID: 1845816416051252053}
   - {fileID: 5358755930802637122}
+  - {fileID: 226987383907547916}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &437466728018002258
@@ -1290,6 +1291,8 @@ MonoBehaviour:
   talkClipCount: 3
   lookAtPlayerWhileTalking: 1
   turnSpeed: 3
+  objectData: {fileID: 11400000, guid: 2a72b44b0b2072848a69769da577620c, type: 2}
+  uiAnchor: {fileID: 226987383907547916}
   isDebugLog: 1
 --- !u!136 &6276862914101956823
 CapsuleCollider:
@@ -1328,7 +1331,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SubtitleTrigger
   lookSubtitles: []
   endSubtitles:
-  - subtitleText: "\uC5B4\uC774"
+  - subtitleText: "\uC9C0\uAE08\uC740 \uC77C\uAD11\uAC74\uC870 \uC2DC\uAC04\uC774\uC57C"
     audioEvent:
       Guid:
         Data1: 0
@@ -1336,9 +1339,9 @@ MonoBehaviour:
         Data3: 0
         Data4: 0
       Path: 
-    duration: 2
+    duration: 3
     isObjectSound: 0
-  - subtitleText: "\uB2E4\uC74C\uC5D0 \uB18D\uAD6C\uB098 \uD55C \uD310 \uD558\uC9C0"
+  - subtitleText: "\uB0B4\uAC00 \uC81C\uC77C \uC88B\uC544\uD558\uB294 \uC2DC\uAC04\uC774\uC9C0"
     audioEvent:
       Guid:
         Data1: 0
@@ -1474,6 +1477,37 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4956364811817594798}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2021220570803386880
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 226987383907547916}
+  m_Layer: 7
+  m_Name: UIpivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &226987383907547916
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021220570803386880}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.05, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7567764341511173324}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2208263539803251994
 GameObject:
