@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3436efd23164953409168d464c9c74bd, type: 3}
-  m_Name: Door_Close
+  m_Name: Car
   m_EditorClassIdentifier: Assembly-CSharp::Object_Data
   ActionName: 0
-  Behaviour: "\uB2EB\uAE30"
+  Behaviour: "\uCC28\uB7C9 \uD0D1\uC2B9"
   Caution: 
   SoundEvent:
     Guid:

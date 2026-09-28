@@ -3292,6 +3292,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyObject
   uiAnchor: {fileID: 1479604313016640767}
+  objectData: {fileID: 11400000, guid: 7e4e691f453368c41b286a01273bf48d, type: 2}
   isAct: 0
   completeOnAssassinate: 1
 --- !u!1 &2409265713705429991

@@ -11,6 +11,7 @@ public class EnemyObject : MonoBehaviour, IInteractable, ICompletionState
     public event Action OnTargetCompleted;
 
     [SerializeField] private Transform uiAnchor;
+    [SerializeField] private Object_Data objectData;
 
     public bool IsPlayerLook { get; set; }
     public bool isAct;
@@ -86,7 +87,7 @@ public class EnemyObject : MonoBehaviour, IInteractable, ICompletionState
         IsPlayerLook = true;
         isAct = true;
         outLine?.SetOutLine_On();
-        keyPanal.SetPanal_On(uiAnchor != null ? uiAnchor : transform);
+        keyPanal.SetPanal_On(uiAnchor != null ? uiAnchor : transform, objectData);
     }
 
     private void HandleTargetLost()
