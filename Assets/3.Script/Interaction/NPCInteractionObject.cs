@@ -23,6 +23,10 @@ public class NPCInteractionObject : MonoBehaviour, IInteractable
     [SerializeField] private bool lookAtPlayerWhileTalking = true;
     [SerializeField] private float turnSpeed = 6f;
 
+    [Header("Object Data")]
+    [SerializeField] private Object_Data objectData;
+    [SerializeField] private Transform uiAnchor;
+
     [Header("Debug")]
     [SerializeField] private bool isDebugLog = false;
 
@@ -259,8 +263,17 @@ public class NPCInteractionObject : MonoBehaviour, IInteractable
 
         if (_keyPanal != null)
         {
-            if (isOn) _keyPanal.SetPanal_On(transform);
-            else _keyPanal.SetPanal_Off();
+            if (isOn)
+            {
+                Transform anchor = uiAnchor != null ? uiAnchor : transform;
+
+                if (objectData != null) _keyPanal.SetPanal_On(anchor, objectData);
+                else _keyPanal.SetPanal_On(anchor);
+            }
+            else
+            {
+                _keyPanal.SetPanal_Off();
+            }
         }
 
         if (isDebugLog)
