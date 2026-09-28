@@ -10140,6 +10140,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GeneralObject
   isAct: 0
   completeOnUse: 1
+  objectData: {fileID: 0}
   lockUntilMissionTurn: 0
 --- !u!114 &8519900636793942886
 MonoBehaviour:
@@ -43876,6 +43877,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GeneralObject
   isAct: 0
   completeOnUse: 1
+  objectData: {fileID: 0}
   lockUntilMissionTurn: 0
 --- !u!114 &8364898784883180176
 MonoBehaviour:
@@ -50031,6 +50033,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GeneralObject
   isAct: 0
   completeOnUse: 1
+  objectData: {fileID: 0}
   lockUntilMissionTurn: 0
 --- !u!114 &6791308831326653320
 MonoBehaviour:
@@ -94064,6 +94067,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GeneralObject
   isAct: 0
   completeOnUse: 1
+  objectData: {fileID: 0}
   lockUntilMissionTurn: 0
 --- !u!1 &6121386680836389899
 GameObject:
@@ -111248,6 +111252,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GeneralObject
   isAct: 0
   completeOnUse: 1
+  objectData: {fileID: 0}
   lockUntilMissionTurn: 0
 --- !u!114 &3856548407273000342
 MonoBehaviour:
@@ -116498,6 +116503,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GeneralObject
   isAct: 0
   completeOnUse: 1
+  objectData: {fileID: 0}
   lockUntilMissionTurn: 0
 --- !u!114 &1560882396542818936
 MonoBehaviour:
@@ -127182,6 +127188,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GeneralObject
   isAct: 0
   completeOnUse: 1
+  objectData: {fileID: 0}
   lockUntilMissionTurn: 0
 --- !u!114 &8819112894987268348
 MonoBehaviour:
@@ -135519,6 +135526,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GeneralObject
   isAct: 0
   completeOnUse: 1
+  objectData: {fileID: 0}
   lockUntilMissionTurn: 0
 --- !u!208 &1524119311006096157
 NavMeshObstacle:
