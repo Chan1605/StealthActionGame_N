@@ -1191,6 +1191,7 @@ GameObject:
   - component: {fileID: 397330360213950451}
   - component: {fileID: 1481448233758617795}
   - component: {fileID: 6276862914101956823}
+  - component: {fileID: 8617161001880049853}
   m_Layer: 7
   m_Name: prisonerNPC
   m_TagString: Untagged
@@ -1265,7 +1266,7 @@ MonoBehaviour:
   alignAnchor: {fileID: 0}
   alignTime: 0.15
   isRepeatable: 1
-  isUpperBodyOnly: 0
+  isUpperBodyOnly: 1
   isDebugLog: 0
 --- !u!114 &1481448233758617795
 MonoBehaviour:
@@ -1280,17 +1281,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCInteractionObject
   npcName: 
-  dialogueLines:
-  - subtitleText: 
-    audioEvent:
-      Guid:
-        Data1: -224323914
-        Data2: 1242390912
-        Data3: -1921241427
-        Data4: 910925899
-      Path: event:/AMB/AMB_Day
-    duration: 5
-    isObjectSound: 0
   completeMissionTargetOnDialogueEnd: 0
   animator: {fileID: 437466728018002258}
   talkBoolParam: IsTalking
@@ -1299,7 +1289,7 @@ MonoBehaviour:
   talkIndexParam: TalkIndex
   talkClipCount: 3
   lookAtPlayerWhileTalking: 1
-  turnSpeed: 6
+  turnSpeed: 3
   isDebugLog: 1
 --- !u!136 &6276862914101956823
 CapsuleCollider:
@@ -1324,6 +1314,40 @@ CapsuleCollider:
   m_Height: 1.8
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &8617161001880049853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794453646874255363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8338a1efc3f31eb43979c37169625e4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SubtitleTrigger
+  lookSubtitles: []
+  endSubtitles:
+  - subtitleText: "\uC5B4\uC774"
+    audioEvent:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
+    duration: 2
+    isObjectSound: 0
+  - subtitleText: "\uB2E4\uC74C\uC5D0 \uB18D\uAD6C\uB098 \uD55C \uD310 \uD558\uC9C0"
+    audioEvent:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
+    duration: 3
+    isObjectSound: 0
 --- !u!1 &1894773841444954915
 GameObject:
   m_ObjectHideFlags: 0
