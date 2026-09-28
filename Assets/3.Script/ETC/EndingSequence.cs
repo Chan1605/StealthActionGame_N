@@ -35,7 +35,13 @@ public class EndingSequence : MonoBehaviour
 
     [Header("Scene")]
     [Tooltip("팀원이 만드는 엔딩 크레딧 씬 이름. Build Settings에 등록되어 있어야 한다.")]
-    [SerializeField] private string endingSceneName = "EndingCredits";
+    [SerializeField] private string endingSceneName = "CreditScene";
+
+    [Header("적 처리")]
+    [Tooltip("엔딩 화면이 뜨는 동안 적이 플레이어를 감지하지 못하게 한다.")]
+    [SerializeField] private bool isDisablePlayerDetection = true;
+    [Tooltip("이미 쫓아오던 적들의 추적 기억도 지운다.")]
+    [SerializeField] private bool isResetEnemies = true;
 
     private bool _isShown;
     private bool _isLoading;
@@ -85,6 +91,8 @@ public class EndingSequence : MonoBehaviour
         {
             session.StopTimer();
         }
+
+        DisableDetection();
 
         if (titleText != null)
         {
@@ -146,6 +154,37 @@ public class EndingSequence : MonoBehaviour
         if (keyboard.enterKey.wasPressedThisFrame || keyboard.numpadEnterKey.wasPressedThisFrame)
         {
             Continue();
+        }
+    }
+
+    // 엔딩 화면 동안 적이 플레이어를 감지하지 못하게 한다.
+    private void DisableDetection()
+    {
+        if (isDisablePlayerDetection)
+        {
+            GameObject playerObj = GameObject.FindWithTag("Player");
+
+            if (playerObj != null && playerObj.TryGetComponent(out PlayerDetectable detectable))
+            {
+                detectable.IsUndetectable = true;
+            }
+            else
+            {
+                Debug.LogWarning("[Ending] PlayerDetectable을 찾지 못해 감지 차단을 건너뜁니다.", this);
+            }
+        }
+
+        if (isResetEnemies)
+        {
+            EnemyAI[] enemies = FindObjectsByType<EnemyAI>(FindObjectsSortMode.None);
+
+            foreach (EnemyAI enemy in enemies)
+            {
+                if (enemy != null)
+                {
+                    enemy.ForceForgetPlayer();
+                }
+            }
         }
     }
 

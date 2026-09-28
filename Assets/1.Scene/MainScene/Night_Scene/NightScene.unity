@@ -2041,7 +2041,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -200, y: 0}
+  m_AnchoredPosition: {x: -400, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &650916780
@@ -2759,7 +2759,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uBBF8\uC158"
+  m_Text: "\uC8FD\uC5C8\uC2B5\uB2C8\uB2E4...."
 --- !u!222 &744612385
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3964,7 +3964,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -200, y: -300}
+  m_AnchoredPosition: {x: -400, y: -300}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &944222136
@@ -4750,7 +4750,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5050,7 +5050,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -200, y: 150}
+  m_AnchoredPosition: {x: -400, y: 150}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1158259990
@@ -8492,6 +8492,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1763312765}
   m_CullTransparentMesh: 1
+--- !u!114 &1773175403 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9156374650280869512, guid: e96f270bc67bbaa4b8ab37459396ad91, type: 3}
+  m_PrefabInstance: {fileID: 7194624762344860263}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Core.Runtime::UnityEngine.Rendering.Volume
 --- !u!1 &1787515526
 GameObject:
   m_ObjectHideFlags: 0
@@ -8951,7 +8962,9 @@ MonoBehaviour:
   fadeDuration: 0.8
   inputBlockTime: 0.6
   isShowCursor: 1
-  endingSceneName: EndingCredits
+  endingSceneName: CreditScene
+  isDisablePlayerDetection: 1
+  isResetEnemies: 1
 --- !u!4 &1858253976
 Transform:
   m_ObjectHideFlags: 0
@@ -10829,6 +10842,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1504181799468246811, guid: e96f270bc67bbaa4b8ab37459396ad91, type: 3}
+      propertyPath: sharedProfile
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2080584877347797051, guid: e96f270bc67bbaa4b8ab37459396ad91, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -10870,9 +10887,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2183038787288944304, guid: e96f270bc67bbaa4b8ab37459396ad91, type: 3}
+      propertyPath: volume
+      value: 
+      objectReference: {fileID: 1773175403}
+    - target: {fileID: 2183038787288944304, guid: e96f270bc67bbaa4b8ab37459396ad91, type: 3}
       propertyPath: detectable
       value: 
       objectReference: {fileID: 1196445871}
+    - target: {fileID: 2183038787288944304, guid: e96f270bc67bbaa4b8ab37459396ad91, type: 3}
+      propertyPath: isDebugLog
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2183038787288944304, guid: e96f270bc67bbaa4b8ab37459396ad91, type: 3}
       propertyPath: playerController
       value: 
@@ -10885,6 +10910,10 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 1449694169}
+    - target: {fileID: 5400224970547540629, guid: e96f270bc67bbaa4b8ab37459396ad91, type: 3}
+      propertyPath: fadeCanvasGroup
+      value: 
+      objectReference: {fileID: 1425354031}
     - target: {fileID: 5542624249164318190, guid: e96f270bc67bbaa4b8ab37459396ad91, type: 3}
       propertyPath: crouchSpeed
       value: 3
@@ -10949,6 +10978,14 @@ PrefabInstance:
       propertyPath: visionStartSFX.Guid.Data4
       value: 500479295
       objectReference: {fileID: 0}
+    - target: {fileID: 9156374650280869512, guid: e96f270bc67bbaa4b8ab37459396ad91, type: 3}
+      propertyPath: priority
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9156374650280869512, guid: e96f270bc67bbaa4b8ab37459396ad91, type: 3}
+      propertyPath: sharedProfile
+      value: 
+      objectReference: {fileID: 11400000, guid: dee8cf29eb953dc41acc8f3cefb19d9b, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

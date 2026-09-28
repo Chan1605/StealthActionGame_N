@@ -18,14 +18,19 @@ public class PlayerDetectable : MonoBehaviour, IDetectable
 
     public Vector3 Position => transform.position;
     public bool IsCrouching => playerController != null && playerController.isCrouched;
-    public float StealthWeight => IsDeadOrRespawning ? 0f : testStealthWeight;
+    public float StealthWeight => isHiddenFromEnemies ? 0f : testStealthWeight;
     public bool IsDeadOrRespawning { get; set; }
+
+    /// <summary>엔딩 연출 등에서 적 감지를 완전히 끈다.</summary>
+    public bool IsUndetectable { get; set; }
+
+    private bool isHiddenFromEnemies => IsDeadOrRespawning || IsUndetectable;
 
     public float SoundIntensity
     {
         get
         {
-            if (IsDeadOrRespawning) return 0f;
+            if (isHiddenFromEnemies) return 0f;
             debugSpeed = new Vector3(controller.velocity.x, 0f, controller.velocity.z).magnitude;
 
             float intensity;
