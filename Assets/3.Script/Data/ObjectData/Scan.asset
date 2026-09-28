@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3436efd23164953409168d464c9c74bd, type: 3}
-  m_Name: Pick
+  m_Name: Scan
   m_EditorClassIdentifier: Assembly-CSharp::Object_Data
   ActionName: 0
-  Behaviour: "\uC90D\uAE30"
+  Behaviour: "\uD6D4\uCCD0\uBCF4\uAE30"
   Caution: 
   SoundEvent:
     Guid:
