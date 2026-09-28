@@ -2872,7 +2872,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TutorialTrigger
   condition: 3
-  tutorialImage: {fileID: 0}
+  tutorialImage: {fileID: 21300000, guid: 325a774e301b8de45ab27e8b65ed1e28, type: 3}
   tutorialText: "\uC801\uB4E4\uC740 \uC18C\uB9AC\uB97C \uC778\uC2DD\uD569\uB2C8\uB2E4.
     \uAC78\uC744 \uB54C\uBCF4\uB2E4 \uB6F8 \uB54C \uC801 NPC\uB294 \uCE90\uB9AD\uD130\uC758
     \uC704\uCE58\uB97C \uB354 \uC798 \uC54C\uC544\uCC4C \uC218 \uC788\uC73C\uBA70,
@@ -4385,23 +4385,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 628605854856400107, guid: a8471d1cd28420d47a305914da96032a, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 628605854856400107, guid: a8471d1cd28420d47a305914da96032a, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 628605854856400107, guid: a8471d1cd28420d47a305914da96032a, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1006
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 628605854856400107, guid: a8471d1cd28420d47a305914da96032a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 508
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 628605854856400107, guid: a8471d1cd28420d47a305914da96032a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -185
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 870050514736122753, guid: a8471d1cd28420d47a305914da96032a, type: 3}
       propertyPath: m_Name
@@ -4425,23 +4425,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1452061935303987890, guid: a8471d1cd28420d47a305914da96032a, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1452061935303987890, guid: a8471d1cd28420d47a305914da96032a, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1452061935303987890, guid: a8471d1cd28420d47a305914da96032a, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1006
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1452061935303987890, guid: a8471d1cd28420d47a305914da96032a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 508
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1452061935303987890, guid: a8471d1cd28420d47a305914da96032a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -355
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2293860568409986972, guid: a8471d1cd28420d47a305914da96032a, type: 3}
       propertyPath: m_AnchorMax.x
@@ -4517,23 +4517,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9069587192496408700, guid: a8471d1cd28420d47a305914da96032a, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9069587192496408700, guid: a8471d1cd28420d47a305914da96032a, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9069587192496408700, guid: a8471d1cd28420d47a305914da96032a, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1006
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9069587192496408700, guid: a8471d1cd28420d47a305914da96032a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 508
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9069587192496408700, guid: a8471d1cd28420d47a305914da96032a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -15
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4694,7 +4694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TutorialTrigger
   condition: 1
-  tutorialImage: {fileID: 0}
+  tutorialImage: {fileID: 21300000, guid: 93ffc75393754ec4098b692ec36850b2, type: 3}
   tutorialText: "\uC77C\uC815 \uB192\uC774\uC758 \uBCBD\uC740 \uD0C0\uACE0 \uC62C\uB77C\uAC08
     \uC218 \uC788\uC2B5\uB2C8\uB2E4.  \uC801\uC808\uD55C \uB192\uC774\uC5D0\uC11C
     Spacebar\uB97C \uB20C\uB7EC \uBCF4\uC138\uC694."
@@ -5585,7 +5585,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TutorialTrigger
   condition: 1
-  tutorialImage: {fileID: 0}
+  tutorialImage: {fileID: 21300000, guid: 19b4bcf9bc460654b99769877130b444, type: 3}
   tutorialText: "\uAD50\uB3C4\uAD00\uC758 \uC2DC\uC57C\uC5D0 \uB4E4\uBA74 \uB4E4\uD0AC
     \uC218 \uC788\uC2B5\uB2C8\uB2E4. \uC77C\uC815 \uB192\uC774 \uC774\uC0C1\uC758
     \uD50C\uB808\uC774\uC5B4\uB294 \uBCF4\uC9C0 \uBABB\uD569\uB2C8\uB2E4."
@@ -6130,7 +6130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TutorialTrigger
   condition: 0
-  tutorialImage: {fileID: 0}
+  tutorialImage: {fileID: 21300000, guid: 465a6a0ed49da8846b288689601f9c50, type: 3}
   tutorialText: "E \uD0A4\uB97C \uB20C\uB7EC \uBB3C\uCCB4\uC640 \uC0C1\uD638\uC791\uC6A9\uD560
     \uC218 \uC788\uC2B5\uB2C8\uB2E4."
 --- !u!114 &1818163949
@@ -6146,7 +6146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TutorialTrigger
   condition: 1
-  tutorialImage: {fileID: 0}
+  tutorialImage: {fileID: 21300000, guid: b165395d926a7504898e9d5463017592, type: 3}
   tutorialText: "W A S D \uD0A4\uB97C \uB20C\uB7EC \uC6C0\uC9C1\uC77C \uC218 \uC788\uC2B5\uB2C8\uB2E4.
     \uC2A4\uD398\uC774\uC2A4\uBC14\uB97C \uB20C\uB7EC \uC810\uD504\uD569\uB2C8\uB2E4."
 --- !u!4 &1822697785 stripped
@@ -6415,7 +6415,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TutorialTrigger
   condition: 0
-  tutorialImage: {fileID: 0}
+  tutorialImage: {fileID: 21300000, guid: b35490fc0feccd042add06d920318773, type: 3}
   tutorialText: "\uBCD1\uC744 \uB358\uC9C0\uBA74 \uC77C\uC2DC\uC801\uC73C\uB85C \uC18C\uC74C\uC744
     \uBC1C\uC0DD\uC2DC\uD0AC \uC218 \uC788\uC2B5\uB2C8\uB2E4."
 --- !u!1 &1921992062
@@ -7223,7 +7223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TutorialTrigger
   condition: 1
-  tutorialImage: {fileID: 0}
+  tutorialImage: {fileID: 21300000, guid: 4bfa71726b01e1f478d7399d28046229, type: 3}
   tutorialText: "\uC18C\uC74C\uC744 \uC77C\uC73C\uD0A4\uB294 \uC624\uBE0C\uC81D\uD2B8\uC640
     \uC0C1\uD638\uC791\uC6A9\uD558\uBA74 \uC77C\uC815\uC2DC\uAC04 \uAD50\uB3C4\uAD00\uC758
     \uC8FC\uC758\uB97C \uB04C \uC218 \uC788\uC2B5\uB2C8\uB2E4."
@@ -7998,7 +7998,18 @@ MonoBehaviour:
   playerTransform: {fileID: 0}
   cameraTransform: {fileID: 0}
   mapScale: 10
-  floorList: []
+  mapOffset: {x: 16.25, y: 46.4}
+  mapImageScale: 3.74
+  floorList:
+  - floorName: 1
+    minHeight: -1
+    mapSprite: {fileID: 21300000, guid: fd2c1aacef56aeb4484c0b44e46396ec, type: 3}
+  - floorName: 2
+    minHeight: 3
+    mapSprite: {fileID: 21300000, guid: 16e21d6cb198d2e45bbe14e2b9911509, type: 3}
+  - floorName: 3
+    minHeight: 6.5
+    mapSprite: {fileID: 21300000, guid: ee8d94d4af102f0458a8bf3713254fe0, type: 3}
   iconContainer: {fileID: 1240777151839401171}
   enemyTransformList: []
   enemyIcons: []
