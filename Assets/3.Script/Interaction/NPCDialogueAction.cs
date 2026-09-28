@@ -7,6 +7,12 @@ public class NPCDialogueAction : InteractionAction
 
     private NPCInteractionObject _npc;
 
+
+    public override bool isHoldingPlayer
+    {
+        get { return _npc != null && _npc.isTalking; }
+    }
+
     protected override void Awake()
     {
         base.Awake();

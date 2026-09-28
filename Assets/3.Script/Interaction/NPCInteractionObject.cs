@@ -7,7 +7,6 @@ public class NPCInteractionObject : MonoBehaviour, IInteractable
 {
     [Header("Dialogue")]
     [SerializeField] private string npcName;
-    [SerializeField] private List<Narration_Data> dialogueLines;
 
     [Header("Mission")]
     [SerializeField] private bool completeMissionTargetOnDialogueEnd = false;
@@ -31,11 +30,12 @@ public class NPCInteractionObject : MonoBehaviour, IInteractable
     private UI_Outliner _outLine;
     private UI_ObjKeyPanal _keyPanal;
     private HUDManager _hudManager;
-    private UI_Subtitle _subtitleUI;
+    private SubtitleTrigger _subtitleTrigger;
 
     private bool _isPanelOn;
     private Coroutine _endWatchRoutine;
     private Transform _playerTransform;
+    private Quaternion _initialRotation;
 
     public Transform ObjectTransform
     {
@@ -66,13 +66,14 @@ public class NPCInteractionObject : MonoBehaviour, IInteractable
     private void Awake()
     {
         TryGetComponent(out _outLine);
+        TryGetComponent(out _subtitleTrigger);
+        _initialRotation = transform.rotation;
     }
 
     private void Start()
     {
         _hudManager = FindAnyObjectByType<HUDManager>();
         _interactor = FindAnyObjectByType<PlayerInteractor>();
-        _subtitleUI = FindAnyObjectByType<UI_Subtitle>();
 
         if (_hudManager != null)
         {
@@ -84,9 +85,9 @@ public class NPCInteractionObject : MonoBehaviour, IInteractable
             Debug.LogWarning($"[NPCInteraction] 씬에서 PlayerInteractor를 찾지 못했습니다.", this);
         }
 
-        if (_subtitleUI == null)
+        if (_subtitleTrigger == null)
         {
-            Debug.LogWarning($"[NPCInteraction] 씬에서 UI_Subtitle을 찾지 못했습니다.", this);
+            Debug.LogWarning($"[NPCInteraction] '{name}'에 SubtitleTrigger 컴포넌트가 없습니다. 같은 오브젝트에 추가하고 End Subtitles에 대화 내용을 넣어주세요.", this);
         }
 
         GameObject playerObj = GameObject.FindWithTag("Player");
@@ -109,7 +110,8 @@ public class NPCInteractionObject : MonoBehaviour, IInteractable
         {
             return;
         }
-;        animator.SetFloat(paramName, UnityEngine.Random.Range(0, clipCount));
+
+        animator.SetFloat(paramName, UnityEngine.Random.Range(0, clipCount));
     }
 
     private void Update()
@@ -119,12 +121,23 @@ public class NPCInteractionObject : MonoBehaviour, IInteractable
 
         if (isWanted != _isPanelOn)
         {
+            if (isWanted)
+            {
+                OnLook?.Invoke();
+            }
             SetPanelActive(isWanted);
         }
 
-        if (isTalking && lookAtPlayerWhileTalking && _playerTransform != null)
+        if (lookAtPlayerWhileTalking)
         {
-            FaceTowardsPlayer();
+            if (isTalking && _playerTransform != null)
+            {
+                FaceTowardsPlayer();
+            }
+            else
+            {
+                ReturnToInitialRotation();
+            }
         }
     }
 
@@ -142,6 +155,17 @@ public class NPCInteractionObject : MonoBehaviour, IInteractable
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * turnSpeed);
     }
 
+    // 대화 중이 아닐 때는 원래 바라보던 방향으로 서서히 복귀한다.
+    private void ReturnToInitialRotation()
+    {
+        if (Quaternion.Angle(transform.rotation, _initialRotation) < 0.05f)
+        {
+            return;
+        }
+
+        transform.rotation = Quaternion.Slerp(transform.rotation, _initialRotation, Time.deltaTime * turnSpeed);
+    }
+
     // NPCDialogueAction이 상호작용 실행 시 호출한다
     public void StartDialogue()
     {
@@ -150,9 +174,11 @@ public class NPCInteractionObject : MonoBehaviour, IInteractable
             return;
         }
 
-        if (dialogueLines == null || dialogueLines.Count == 0)
+        List<Narration_Data> lines = _subtitleTrigger != null ? _subtitleTrigger.EndSubtitles : null;
+
+        if (lines == null || lines.Count == 0)
         {
-            Debug.LogWarning($"[NPCInteraction] '{name}'에 대화 내용이 비어있습니다.", this);
+            Debug.LogWarning($"[NPCInteraction] '{name}'의 SubtitleTrigger End Subtitles가 비어있습니다.", this);
             return;
         }
 
@@ -174,20 +200,11 @@ public class NPCInteractionObject : MonoBehaviour, IInteractable
             Debug.Log($"[NPCInteraction] animator.SetBool(\"{talkBoolParam}\", true) 호출함 (대상 Animator: {animator.name}, Controller: {(animator.runtimeAnimatorController != null ? animator.runtimeAnimatorController.name : "없음")})", this);
         }
 
-        if (_subtitleUI != null)
-        {
-            _subtitleUI.PlaySequence(dialogueLines, transform.position);
-        }
-        else
-        {
-            // 자막 표시만 불가능할 뿐, 애니메이션 전환/바라보기/대화 종료 타이머는 그대로 진행된다.
-            Debug.LogWarning($"[NPCInteraction] UI_Subtitle이 없어 자막은 표시되지 않지만, 애니메이션/바라보기는 정상 진행됩니다.", this);
-        }
 
         float totalDuration = 0f;
-        for (int i = 0; i < dialogueLines.Count; i++)
+        for (int i = 0; i < lines.Count; i++)
         {
-            totalDuration += dialogueLines[i].duration;
+            totalDuration += lines[i].duration;
         }
 
         if (_endWatchRoutine != null)
@@ -205,9 +222,6 @@ public class NPCInteractionObject : MonoBehaviour, IInteractable
 
     private IEnumerator WaitForDialogueEnd_co(float totalDuration)
     {
-        // UI_Subtitle이 자체 코루틴으로 대사를 순서대로 보여주는 시간에 맞춰 대기한다.
-        // UI_Subtitle 내부에 완료 콜백이 없어서 총 재생시간으로 추정하는 방식이라,
-        // 대화 도중 다른 곳에서 UI_Subtitle.PlaySequence를 또 호출하면 이 타이머는 부정확해질 수 있다.
         yield return new WaitForSeconds(totalDuration);
 
         _endWatchRoutine = null;
