@@ -1276,7 +1276,7 @@ MonoBehaviour:
   priority: 0
   blendDistance: 0
   weight: 0
-  sharedProfile: {fileID: 11400000, guid: 7c47faabb28216543981d38bfda51186, type: 2}
+  sharedProfile: {fileID: 0}
 --- !u!1 &5689402967672617327
 GameObject:
   m_ObjectHideFlags: 0
@@ -1451,7 +1451,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   walkSpeed: 3.5
   sprintSpeed: 5
-  crouchSpeed: 1.5
+  crouchSpeed: 3
   acceleration: 14
   deceleration: 40
   turnSmoothTime: 0.1
@@ -1617,7 +1617,7 @@ MonoBehaviour:
   standRoomRayHeight: 0.1
   standRoomRayLength: 0.4
   standRoomStepTolerance: 0.2
-  reachHeight: 2.4
+  reachHeight: 1.8
   minClimbHeight: 0.6
   climbTrigger: Climb
   climbDuration: 1
@@ -1793,18 +1793,18 @@ MonoBehaviour:
   transitionDuration: 1
   visionStartSFX:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1923245001
+      Data2: 1159787345
+      Data3: -2137822318
+      Data4: 500479295
+    Path: event:/Player/SFX_VisionON
   visionEndSFX:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -421091392
+      Data2: 1310990700
+      Data3: 23152267
+      Data4: -1781262732
+    Path: event:/Player/SFX_VisionOFF
 --- !u!114 &963519254127613501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1867,7 +1867,7 @@ MonoBehaviour:
     m_Bits: 512
   pickUpRange: 1.8
   pickUpAngle: 120
-  isCrouchRequired: 1
+  isCrouchRequired: 0
   isAlignEnabled: 1
   alignTime: 0.18
   alignDistance: 0.55
@@ -1884,7 +1884,7 @@ MonoBehaviour:
   showDelay: 0.1
   attachStartRatio: 0.55
   detachRatio: 0.5
-  carrySpeed: 1.4
+  carrySpeed: 3
   carrySpeedDamping: 0.12
   putDownForward: 0.7
   putDownProbeHeight: 1.2
@@ -1975,12 +1975,12 @@ MonoBehaviour:
   maxWeight: 1
   fadeInTime: 0.35
   fadeOutTime: 0.2
-  playerController: {fileID: 0}
-  detectable: {fileID: 0}
+  playerController: {fileID: 5542624249164318190}
+  detectable: {fileID: 4426352943728395498}
   isCancelledWhenAlerted: 1
   alertScore: 30
   enemyScanInterval: 0.25
-  isDebugLog: 0
+  isDebugLog: 1
 --- !u!114 &702164579885289937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2808,10 +2808,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.RenderPipelines.Core.Runtime::UnityEngine.Rendering.Volume
   m_IsGlobal: 1
-  priority: -5
+  priority: 1
   blendDistance: 0
   weight: 0
-  sharedProfile: {fileID: 11400000, guid: 7c47faabb28216543981d38bfda51186, type: 2}
+  sharedProfile: {fileID: 11400000, guid: dee8cf29eb953dc41acc8f3cefb19d9b, type: 2}
 --- !u!1 &8109440323765680154
 GameObject:
   m_ObjectHideFlags: 0

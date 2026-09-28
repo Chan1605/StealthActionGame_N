@@ -154,6 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GeneralObject
   isAct: 0
   completeOnUse: 1
+  objectData: {fileID: 11400000, guid: b436206be64a3a447bacfce8f7d304da, type: 2}
   lockUntilMissionTurn: 0
 --- !u!114 &8534995022234887671
 MonoBehaviour:
