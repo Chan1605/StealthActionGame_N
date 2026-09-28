@@ -9944,6 +9944,10 @@ PrefabInstance:
       propertyPath: carrySpeed
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 3987448780140744970, guid: e96f270bc67bbaa4b8ab37459396ad91, type: 3}
+      propertyPath: reachHeight
+      value: 1.8
+      objectReference: {fileID: 0}
     - target: {fileID: 5267562774954770171, guid: e96f270bc67bbaa4b8ab37459396ad91, type: 3}
       propertyPath: cam
       value: 
