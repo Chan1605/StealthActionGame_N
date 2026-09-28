@@ -396,7 +396,7 @@ MonoBehaviour:
     holdDuration: 2
   fadeDuration: 1
   skipFadeDuration: 1
-  titleSceneName: Title_Prototype
+  titleSceneName: TitleScene
 --- !u!114 &1947841937600630984
 MonoBehaviour:
   m_ObjectHideFlags: 0
