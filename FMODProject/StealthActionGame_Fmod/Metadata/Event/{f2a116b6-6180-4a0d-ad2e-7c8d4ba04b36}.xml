@@ -5,7 +5,7 @@
 			<value>AMB_Day</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{0cd71d54-57c6-4be2-86e2-7b76cc75c5de}</destination>
@@ -53,7 +53,7 @@
 			<destination>{1181e586-c60b-4493-a7b5-16921fffec9d}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{6a467539-f16f-4b0c-ad63-7e2d1c71d079}</destination>
+			<destination>{52b77070-68b4-4e44-a5db-63b983ba9f6f}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{3044b480-5e8d-4da5-b1c0-86878bc21202}" />
@@ -116,7 +116,6 @@
 	<object class="MixerBusEffectChain" id="{e5e47ccc-d5e7-4767-bf47-89604a562412}">
 		<relationship name="effects">
 			<destination>{14a21ca1-301f-4e1b-a2db-61519786d111}</destination>
-			<destination>{4576f5c7-3fdb-40fa-9059-04479bc91a09}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{499f8bf1-8039-4166-b86d-b70dcba5f63a}" />
@@ -128,6 +127,5 @@
 	</object>
 	<object class="MixerBusPanner" id="{7e095fa6-8085-4989-aed5-d0516d5e46f9}" />
 	<object class="MixerBusFader" id="{14a21ca1-301f-4e1b-a2db-61519786d111}" />
-	<object class="SpatialiserEffect" id="{4576f5c7-3fdb-40fa-9059-04479bc91a09}" />
 	<object class="MixerBusFader" id="{f9884bc8-7b12-43f8-a119-cf2ae98d0d8a}" />
 </objects>

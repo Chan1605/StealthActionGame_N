@@ -15,6 +15,7 @@ public class UI_OptionSlider : MonoBehaviour
     [Header("외부 데이터 연결")]
     [SerializeField] private SliderEvent onDataChanged;
 
+
     private void Start()
     {
         if (slider != null)
@@ -26,7 +27,7 @@ public class UI_OptionSlider : MonoBehaviour
     }
     public void UpdateText(float value)
     {
-        Value_t.text = Mathf.RoundToInt(value).ToString();
+        Value_t.text = Mathf.RoundToInt(value * 100f).ToString();
     }
 
     private void NotifyDataChanged(float value)

@@ -5,7 +5,7 @@
 			<value>BGM_Credit</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{399e0f00-a0fd-470f-8d2d-c11559596940}</destination>
@@ -53,7 +53,7 @@
 			<destination>{5f61b63f-28e7-4400-94b0-2bf5e4881678}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{6a467539-f16f-4b0c-ad63-7e2d1c71d079}</destination>
+			<destination>{18fe99a3-3896-471b-80b8-5880d6670da6}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{b6cda234-4093-4d85-8447-b6dc741d2801}" />
@@ -113,7 +113,6 @@
 	<object class="MixerBusEffectChain" id="{718b5d62-b8ad-4ddf-b6b1-a8e9cc11bbd1}">
 		<relationship name="effects">
 			<destination>{51885dfa-ece1-44a4-ad5c-1412b9d7f208}</destination>
-			<destination>{56da6781-7bcd-489b-a4e4-d3abd665cc43}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{985973bc-5f28-4c58-b0ba-0b588d9dbd64}" />
@@ -125,6 +124,5 @@
 	</object>
 	<object class="MixerBusPanner" id="{8716a43c-197d-4f16-a368-5603b92b42e5}" />
 	<object class="MixerBusFader" id="{51885dfa-ece1-44a4-ad5c-1412b9d7f208}" />
-	<object class="SpatialiserEffect" id="{56da6781-7bcd-489b-a4e4-d3abd665cc43}" />
 	<object class="MixerBusFader" id="{338a9146-7867-4a08-af07-476b6b2e915a}" />
 </objects>
