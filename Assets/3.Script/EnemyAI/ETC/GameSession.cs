@@ -25,6 +25,23 @@ public class GameSession : MonoBehaviour
 
     private readonly List<string> _pendingKeys = new List<string>();
 
+    [Header("런 기록 (읽기 전용)")]
+    [SerializeField] private int assassinationCount;
+    [SerializeField] private float playTime;
+
+    public int assassinationTotal
+    {
+        get { return assassinationCount; }
+    }
+
+    public float playTimeTotal
+    {
+        get { return playTime; }
+    }
+
+    // 엔딩에서 타이머를 멈출 때 끈다.
+    public bool isTimerRunning { get; set; } = true;
+
     private void Awake()
     {
         if (_instance != null && _instance != this)
@@ -35,6 +52,41 @@ public class GameSession : MonoBehaviour
 
         _instance = this;
         DontDestroyOnLoad(gameObject);
+    }
+
+    private void Update()
+    {
+        // Time.deltaTime은 일시정지(timeScale 0) 동안 0이라 메뉴 시간은 빠진다.
+        if (isTimerRunning)
+        {
+            playTime += Time.deltaTime;
+        }
+    }
+
+    public void AddAssassination()
+    {
+        assassinationCount++;
+    }
+
+    public void StopTimer()
+    {
+        isTimerRunning = false;
+    }
+
+    /// <summary>새 게임을 시작할 때 호출한다. 이전 판의 기록과 키를 모두 지운다.</summary>
+    public void ResetRun()
+    {
+        assassinationCount = 0;
+        playTime = 0f;
+        isTimerRunning = true;
+        _pendingKeys.Clear();
+    }
+
+    /// <summary>mm:ss 형태의 플레이 타임 문자열.</summary>
+    public string GetPlayTimeText()
+    {
+        int total = Mathf.Max(0, Mathf.FloorToInt(playTime));
+        return $"{total / 60:00}:{total % 60:00}";
     }
 
     private void OnApplicationQuit()

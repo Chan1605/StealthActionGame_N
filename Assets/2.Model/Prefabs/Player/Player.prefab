@@ -1341,6 +1341,7 @@ GameObject:
   - component: {fileID: 2183038787288944304}
   - component: {fileID: 702164579885289937}
   - component: {fileID: -6775150775897751103}
+  - component: {fileID: 1524421387213463074}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -1790,6 +1791,20 @@ MonoBehaviour:
   normalFOV: 60
   visionFOV: 50
   transitionDuration: 1
+  visionStartSFX:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  visionEndSFX:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &963519254127613501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1995,6 +2010,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0a06f2aa163e3748b5e4ddf86c072ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PauseAndInputSetting
+--- !u!114 &1524421387213463074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5742646099022529022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1140eaaf720594f4d8812888660d2225, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RunStatsRecorder
 --- !u!1 &5844849879543606322
 GameObject:
   m_ObjectHideFlags: 0
