@@ -1841,7 +1841,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GeneralObject
   isAct: 0
   completeOnUse: 1
-  objectData: {fileID: 0}
+  objectData: {fileID: 11400000, guid: b436206be64a3a447bacfce8f7d304da, type: 2}
   lockUntilMissionTurn: 1
 --- !u!64 &746241506
 MeshCollider:
@@ -6162,6 +6162,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 527268862540040940, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
+      propertyPath: objectData
+      value: 
+      objectReference: {fileID: 11400000, guid: b436206be64a3a447bacfce8f7d304da, type: 2}
+    - target: {fileID: 701465468362282932, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
+      propertyPath: objectData
+      value: 
+      objectReference: {fileID: 11400000, guid: b436206be64a3a447bacfce8f7d304da, type: 2}
+    - target: {fileID: 782921817561401547, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
+      propertyPath: objectData
+      value: 
+      objectReference: {fileID: 11400000, guid: b436206be64a3a447bacfce8f7d304da, type: 2}
+    - target: {fileID: 2021325475860395845, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
+      propertyPath: objectData
+      value: 
+      objectReference: {fileID: 11400000, guid: b436206be64a3a447bacfce8f7d304da, type: 2}
     - target: {fileID: 2322128855644046761, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
       propertyPath: m_Materials.Array.size
       value: 2
@@ -6170,6 +6186,30 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: 58efb4c557915be45875a10df2099828, type: 2}
+    - target: {fileID: 2498472861048498511, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
+      propertyPath: objectData
+      value: 
+      objectReference: {fileID: 11400000, guid: b436206be64a3a447bacfce8f7d304da, type: 2}
+    - target: {fileID: 2515779813282278396, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
+      propertyPath: objectData
+      value: 
+      objectReference: {fileID: 11400000, guid: b436206be64a3a447bacfce8f7d304da, type: 2}
+    - target: {fileID: 3171940919527405220, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
+      propertyPath: objectData
+      value: 
+      objectReference: {fileID: 11400000, guid: b436206be64a3a447bacfce8f7d304da, type: 2}
+    - target: {fileID: 3188967212685915159, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
+      propertyPath: objectData
+      value: 
+      objectReference: {fileID: 11400000, guid: b436206be64a3a447bacfce8f7d304da, type: 2}
+    - target: {fileID: 3811169637787424236, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
+      propertyPath: objectData
+      value: 
+      objectReference: {fileID: 11400000, guid: b436206be64a3a447bacfce8f7d304da, type: 2}
+    - target: {fileID: 3869043041067125377, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
+      propertyPath: objectData
+      value: 
+      objectReference: {fileID: 11400000, guid: bdaea24b3d50b47499831555d8646e77, type: 2}
     - target: {fileID: 3927515897803861077, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
       propertyPath: m_Layer
       value: 8
@@ -6186,6 +6226,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prison
       objectReference: {fileID: 0}
+    - target: {fileID: 4867862606381148073, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
+      propertyPath: objectData
+      value: 
+      objectReference: {fileID: 11400000, guid: b436206be64a3a447bacfce8f7d304da, type: 2}
+    - target: {fileID: 5576362486723803889, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
+      propertyPath: objectData
+      value: 
+      objectReference: {fileID: 11400000, guid: b436206be64a3a447bacfce8f7d304da, type: 2}
+    - target: {fileID: 5621156705442538894, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
+      propertyPath: objectData
+      value: 
+      objectReference: {fileID: 11400000, guid: b436206be64a3a447bacfce8f7d304da, type: 2}
+    - target: {fileID: 6151442990997755943, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
+      propertyPath: objectData
+      value: 
+      objectReference: {fileID: 11400000, guid: b436206be64a3a447bacfce8f7d304da, type: 2}
     - target: {fileID: 6550717789633109706, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -6226,6 +6282,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6607756822734554495, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
+      propertyPath: objectData
+      value: 
+      objectReference: {fileID: 11400000, guid: b436206be64a3a447bacfce8f7d304da, type: 2}
+    - target: {fileID: 7302480643627358662, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
+      propertyPath: objectData
+      value: 
+      objectReference: {fileID: 11400000, guid: b436206be64a3a447bacfce8f7d304da, type: 2}
+    - target: {fileID: 7782004467298731565, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
+      propertyPath: objectData
+      value: 
+      objectReference: {fileID: 11400000, guid: b436206be64a3a447bacfce8f7d304da, type: 2}
     - target: {fileID: 7893560064027887036, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
       propertyPath: m_Layer
       value: 8
@@ -6258,6 +6326,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 8313004491268433878, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
+      propertyPath: objectData
+      value: 
+      objectReference: {fileID: 11400000, guid: b436206be64a3a447bacfce8f7d304da, type: 2}
+    - target: {fileID: 9056913220902926990, guid: 1b86f76f989c7414ea9453b9d838550f, type: 3}
+      propertyPath: objectData
+      value: 
+      objectReference: {fileID: 11400000, guid: b436206be64a3a447bacfce8f7d304da, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6714,7 +6790,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GeneralObject
   isAct: 0
   completeOnUse: 1
-  objectData: {fileID: 0}
+  objectData: {fileID: 11400000, guid: b6e93830cd8709a4e833885c7b46af5a, type: 2}
   lockUntilMissionTurn: 0
 --- !u!65 &1978229070
 BoxCollider:
