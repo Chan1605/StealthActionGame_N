@@ -23,11 +23,21 @@ public class AudioManager : MonoBehaviour
 
         RuntimeManager.LoadBank("Master.strings", true);
         RuntimeManager.LoadBank("Master", true);
+
+        masterBus = RuntimeManager.GetBus("bus:/");
+        bgmBus = RuntimeManager.GetBus("bus:/BGM");
+        sfxBus = RuntimeManager.GetBus("bus:/SFX");
+        ambBus = RuntimeManager.GetBus("bus:/AMB");
     }
 
     private EventInstance bgmInstance;
     private EventInstance ambInstance;
     [SerializeField] private EventReference playerFootstepPath;
+
+    private Bus masterBus;
+    private Bus bgmBus;
+    private Bus sfxBus;
+    private Bus ambBus;
 
     private string currentAreaBank;
 
@@ -110,5 +120,25 @@ public class AudioManager : MonoBehaviour
 
         RuntimeManager.LoadBank($"Area_{AreaNum}", true);
         currentAreaBank = AreaNum;
+    }
+
+    public void SetMasterVolume(float volume)
+    {
+        masterBus.setVolume(volume);
+    }
+
+    public void SetBGMVolume(float volume)
+    {
+        bgmBus.setVolume(volume);
+    }
+
+    public void SetSFXVolume(float volume)
+    {
+        sfxBus.setVolume(volume);
+    }
+
+    public void SetAMBVolume(float volume)
+    {
+        ambBus.setVolume(volume);
     }
 }

@@ -5,7 +5,7 @@
 			<value>BGM_Night</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{399e0f00-a0fd-470f-8d2d-c11559596940}</destination>
@@ -53,7 +53,7 @@
 			<destination>{e57258fc-682b-48ad-9105-d86db8868289}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{6a467539-f16f-4b0c-ad63-7e2d1c71d079}</destination>
+			<destination>{18fe99a3-3896-471b-80b8-5880d6670da6}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{804f7914-09ba-4f80-b675-01c2ea587599}" />
@@ -116,7 +116,6 @@
 	<object class="MixerBusEffectChain" id="{08b42d44-d2a5-4017-bfae-0bb0c4a48ad7}">
 		<relationship name="effects">
 			<destination>{6e8327b2-5364-4479-b32f-1782a53f66a5}</destination>
-			<destination>{c2ee0537-39af-4fde-b9f8-25d404dc5d74}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{fa768fb0-7488-428e-9c4a-9992bdfedd74}" />
@@ -128,6 +127,5 @@
 	</object>
 	<object class="MixerBusPanner" id="{57cc92b2-24a0-4954-a0a7-765a5f15dbd2}" />
 	<object class="MixerBusFader" id="{6e8327b2-5364-4479-b32f-1782a53f66a5}" />
-	<object class="SpatialiserEffect" id="{c2ee0537-39af-4fde-b9f8-25d404dc5d74}" />
 	<object class="MixerBusFader" id="{807d9063-7375-4972-a22f-3042104b756c}" />
 </objects>

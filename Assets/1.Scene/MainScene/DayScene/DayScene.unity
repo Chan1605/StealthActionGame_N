@@ -127,33 +127,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 978637101}
     m_Modifications:
-    - target: {fileID: 1481448233758617795, guid: c188522448191384590ad84c3a6ede84, type: 3}
-      propertyPath: dialogueLines.Array.data[0].audioEvent.Path
+    - target: {fileID: 437466728018002258, guid: c188522448191384590ad84c3a6ede84, type: 3}
+      propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1481448233758617795, guid: c188522448191384590ad84c3a6ede84, type: 3}
-      propertyPath: dialogueLines.Array.data[0].audioEvent.Guid.Data1
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1481448233758617795, guid: c188522448191384590ad84c3a6ede84, type: 3}
-      propertyPath: dialogueLines.Array.data[0].audioEvent.Guid.Data2
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1481448233758617795, guid: c188522448191384590ad84c3a6ede84, type: 3}
-      propertyPath: dialogueLines.Array.data[0].audioEvent.Guid.Data3
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1481448233758617795, guid: c188522448191384590ad84c3a6ede84, type: 3}
-      propertyPath: dialogueLines.Array.data[0].audioEvent.Guid.Data4
-      value: 0
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 9100000, guid: d0dca44379d0c63479d038edfadb00b0, type: 2}
     - target: {fileID: 1794453646874255363, guid: c188522448191384590ad84c3a6ede84, type: 3}
       propertyPath: m_Name
       value: prisonerNPC (2)
       objectReference: {fileID: 0}
     - target: {fileID: 7567764341511173324, guid: c188522448191384590ad84c3a6ede84, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.32
+      value: -5.2
       objectReference: {fileID: 0}
     - target: {fileID: 7567764341511173324, guid: c188522448191384590ad84c3a6ede84, type: 3}
       propertyPath: m_LocalPosition.y
@@ -161,7 +145,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7567764341511173324, guid: c188522448191384590ad84c3a6ede84, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 30.1
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 7567764341511173324, guid: c188522448191384590ad84c3a6ede84, type: 3}
       propertyPath: m_LocalRotation.w
@@ -190,6 +174,14 @@ PrefabInstance:
     - target: {fileID: 7567764341511173324, guid: c188522448191384590ad84c3a6ede84, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8617161001880049853, guid: c188522448191384590ad84c3a6ede84, type: 3}
+      propertyPath: endSubtitles.Array.data[0].subtitleText
+      value: "\uBB58\uBD10?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8617161001880049853, guid: c188522448191384590ad84c3a6ede84, type: 3}
+      propertyPath: endSubtitles.Array.data[1].subtitleText
+      value: "\uC808\uB300 \uD0C8\uC625\uD560 \uC0DD\uAC01\uC740 \uD558\uC9C0 \uB9C8"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2147,57 +2139,37 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 978637101}
     m_Modifications:
-    - target: {fileID: 1481448233758617795, guid: c188522448191384590ad84c3a6ede84, type: 3}
-      propertyPath: dialogueLines.Array.data[0].audioEvent.Path
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1481448233758617795, guid: c188522448191384590ad84c3a6ede84, type: 3}
-      propertyPath: dialogueLines.Array.data[0].audioEvent.Guid.Data1
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1481448233758617795, guid: c188522448191384590ad84c3a6ede84, type: 3}
-      propertyPath: dialogueLines.Array.data[0].audioEvent.Guid.Data2
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1481448233758617795, guid: c188522448191384590ad84c3a6ede84, type: 3}
-      propertyPath: dialogueLines.Array.data[0].audioEvent.Guid.Data3
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1481448233758617795, guid: c188522448191384590ad84c3a6ede84, type: 3}
-      propertyPath: dialogueLines.Array.data[0].audioEvent.Guid.Data4
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1794453646874255363, guid: c188522448191384590ad84c3a6ede84, type: 3}
       propertyPath: m_Name
       value: prisonerNPC
       objectReference: {fileID: 0}
     - target: {fileID: 7567764341511173324, guid: c188522448191384590ad84c3a6ede84, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.221325
+      value: -13.45
       objectReference: {fileID: 0}
     - target: {fileID: 7567764341511173324, guid: c188522448191384590ad84c3a6ede84, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.35162115
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 7567764341511173324, guid: c188522448191384590ad84c3a6ede84, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 47.80774
+      value: 34.6
       objectReference: {fileID: 0}
     - target: {fileID: 7567764341511173324, guid: c188522448191384590ad84c3a6ede84, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 7567764341511173324, guid: c188522448191384590ad84c3a6ede84, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7567764341511173324, guid: c188522448191384590ad84c3a6ede84, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 7567764341511173324, guid: c188522448191384590ad84c3a6ede84, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7567764341511173324, guid: c188522448191384590ad84c3a6ede84, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2205,11 +2177,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7567764341511173324, guid: c188522448191384590ad84c3a6ede84, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 7567764341511173324, guid: c188522448191384590ad84c3a6ede84, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8617161001880049853, guid: c188522448191384590ad84c3a6ede84, type: 3}
+      propertyPath: endSubtitles.Array.data[0].duration
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8617161001880049853, guid: c188522448191384590ad84c3a6ede84, type: 3}
+      propertyPath: endSubtitles.Array.data[0].subtitleText
+      value: "\uC9C0\uAE08\uC740 \uC77C\uAD11\uAC74\uC870 \uC2DC\uAC04\uC774\uC57C"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8617161001880049853, guid: c188522448191384590ad84c3a6ede84, type: 3}
+      propertyPath: endSubtitles.Array.data[1].subtitleText
+      value: "\uB0B4\uAC00 \uC81C\uC77C \uC88B\uC544\uD558\uB294 \uC2DC\uAC04\uC774\uC9C0"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3535,57 +3519,41 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 978637101}
     m_Modifications:
-    - target: {fileID: 1481448233758617795, guid: c188522448191384590ad84c3a6ede84, type: 3}
-      propertyPath: dialogueLines.Array.data[0].audioEvent.Path
+    - target: {fileID: 437466728018002258, guid: c188522448191384590ad84c3a6ede84, type: 3}
+      propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1481448233758617795, guid: c188522448191384590ad84c3a6ede84, type: 3}
-      propertyPath: dialogueLines.Array.data[0].audioEvent.Guid.Data1
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1481448233758617795, guid: c188522448191384590ad84c3a6ede84, type: 3}
-      propertyPath: dialogueLines.Array.data[0].audioEvent.Guid.Data2
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1481448233758617795, guid: c188522448191384590ad84c3a6ede84, type: 3}
-      propertyPath: dialogueLines.Array.data[0].audioEvent.Guid.Data3
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1481448233758617795, guid: c188522448191384590ad84c3a6ede84, type: 3}
-      propertyPath: dialogueLines.Array.data[0].audioEvent.Guid.Data4
-      value: 0
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 9100000, guid: 438286f1147153e4faeb14115231976a, type: 2}
     - target: {fileID: 1794453646874255363, guid: c188522448191384590ad84c3a6ede84, type: 3}
       propertyPath: m_Name
       value: prisonerNPC (3)
       objectReference: {fileID: 0}
     - target: {fileID: 7567764341511173324, guid: c188522448191384590ad84c3a6ede84, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14.1
+      value: -18.8
       objectReference: {fileID: 0}
     - target: {fileID: 7567764341511173324, guid: c188522448191384590ad84c3a6ede84, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.35162115
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 7567764341511173324, guid: c188522448191384590ad84c3a6ede84, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 30.1
+      value: 29.11
       objectReference: {fileID: 0}
     - target: {fileID: 7567764341511173324, guid: c188522448191384590ad84c3a6ede84, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 7567764341511173324, guid: c188522448191384590ad84c3a6ede84, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7567764341511173324, guid: c188522448191384590ad84c3a6ede84, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 7567764341511173324, guid: c188522448191384590ad84c3a6ede84, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7567764341511173324, guid: c188522448191384590ad84c3a6ede84, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3593,11 +3561,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7567764341511173324, guid: c188522448191384590ad84c3a6ede84, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 7567764341511173324, guid: c188522448191384590ad84c3a6ede84, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8617161001880049853, guid: c188522448191384590ad84c3a6ede84, type: 3}
+      propertyPath: endSubtitles.Array.data[0].subtitleText
+      value: "\uBC8C\uC368 \uC6D4\uC694\uC77C\uC774\uB77C\uB2C8..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8617161001880049853, guid: c188522448191384590ad84c3a6ede84, type: 3}
+      propertyPath: endSubtitles.Array.data[1].subtitleText
+      value: "\uC9D1 \uAC00\uACE0 \uC2F6\uB2E4..."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5498,57 +5474,37 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 978637101}
     m_Modifications:
-    - target: {fileID: 1481448233758617795, guid: c188522448191384590ad84c3a6ede84, type: 3}
-      propertyPath: dialogueLines.Array.data[0].audioEvent.Path
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1481448233758617795, guid: c188522448191384590ad84c3a6ede84, type: 3}
-      propertyPath: dialogueLines.Array.data[0].audioEvent.Guid.Data1
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1481448233758617795, guid: c188522448191384590ad84c3a6ede84, type: 3}
-      propertyPath: dialogueLines.Array.data[0].audioEvent.Guid.Data2
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1481448233758617795, guid: c188522448191384590ad84c3a6ede84, type: 3}
-      propertyPath: dialogueLines.Array.data[0].audioEvent.Guid.Data3
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1481448233758617795, guid: c188522448191384590ad84c3a6ede84, type: 3}
-      propertyPath: dialogueLines.Array.data[0].audioEvent.Guid.Data4
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1794453646874255363, guid: c188522448191384590ad84c3a6ede84, type: 3}
       propertyPath: m_Name
       value: prisonerNPC (1)
       objectReference: {fileID: 0}
     - target: {fileID: 7567764341511173324, guid: c188522448191384590ad84c3a6ede84, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.32
+      value: -3.89
       objectReference: {fileID: 0}
     - target: {fileID: 7567764341511173324, guid: c188522448191384590ad84c3a6ede84, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.35162115
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 7567764341511173324, guid: c188522448191384590ad84c3a6ede84, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 47.80774
+      value: 33.55
       objectReference: {fileID: 0}
     - target: {fileID: 7567764341511173324, guid: c188522448191384590ad84c3a6ede84, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.49999994
       objectReference: {fileID: 0}
     - target: {fileID: 7567764341511173324, guid: c188522448191384590ad84c3a6ede84, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7567764341511173324, guid: c188522448191384590ad84c3a6ede84, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.86602545
       objectReference: {fileID: 0}
     - target: {fileID: 7567764341511173324, guid: c188522448191384590ad84c3a6ede84, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7567764341511173324, guid: c188522448191384590ad84c3a6ede84, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5556,11 +5512,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7567764341511173324, guid: c188522448191384590ad84c3a6ede84, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 7567764341511173324, guid: c188522448191384590ad84c3a6ede84, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8617161001880049853, guid: c188522448191384590ad84c3a6ede84, type: 3}
+      propertyPath: endSubtitles.Array.data[0].subtitleText
+      value: "\uC548\uB155 \uC2E0\uC785\uC778\uAC00?"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
