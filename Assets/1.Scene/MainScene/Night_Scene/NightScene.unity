@@ -10505,7 +10505,7 @@ MonoBehaviour:
   healthFillImage: {fileID: 3661252673000845775}
   FinchVolume: {fileID: 9157870997968871918}
   maxHealth: 100
-  dangerThreshold: 0
+  dangerThreshold: 20
   fadeDuration: 0.5
 --- !u!224 &1240777151839401171
 RectTransform:
@@ -10781,7 +10781,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 1fb4b9969b506064ea2b937a95cab481, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
