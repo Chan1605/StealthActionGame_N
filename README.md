@@ -6,7 +6,7 @@
 
 <img src="Docs/Images/title.jpg" width="820" alt="타이틀 화면"/>
 
-![Unity](https://img.shields.io/badge/Unity-6000.x-000000?logo=unity&logoColor=white)
+![Unity](https://img.shields.io/badge/Unity-6000.2.81f-000000?logo=unity&logoColor=white)
 ![C#](https://img.shields.io/badge/C%23-239120?logo=csharp&logoColor=white)
 ![Platform](https://img.shields.io/badge/Platform-Windows-0078D6?logo=windows&logoColor=white)
 ![NavMesh](https://img.shields.io/badge/AI-NavMesh-2E7D32)
